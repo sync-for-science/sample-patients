@@ -84,10 +84,10 @@ if __name__=='__main__':
       fhir.FHIRSamplePatient(pid, path).writePatientData()
       # Show progress with '.' characters
       sys.stdout.flush()
-    parser.exit(0,"\nDone writing %d patient FHIR files!"%len(Patient.mpi))
+    parser.exit(0,"\nDone writing %d patient FHIR files!\n"%len(Patient.mpi))
 
   # Generate a new patients data file, re-randomizing old names, dob, etc:
-  Patient.generate()  
-  parser.exit(0,"Patient data written to: %s\n"%PATIENTS_FILE)
+  # Patient.generate()  
+  # parser.exit(0,"Patient data written to: %s\n"%PATIENTS_FILE)
 
   parser.error("No arguments given")
