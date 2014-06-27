@@ -52,14 +52,12 @@ def displayPatientSummary(pid):
 
 if __name__=='__main__':
 
-  parser = argparse.ArgumentParser(description='Test Data Generator')
+  parser = argparse.ArgumentParser(description='SMART on FHIR Test Data Generator')
   group = parser.add_mutually_exclusive_group()
   group.add_argument('--summary', metavar='pid',nargs='?', const="all", 
      help="displays patient summary (default is 'all')")
   group.add_argument('--write-fhir',dest='writeFHIR', metavar='dir', nargs='?', const='.',
      help="writes patient XML files to an FHIR sample data directory dir (default='.')")
-  group.add_argument('--patients', action='store_true',
-         help='Generates new patient data file (overwrites existing one)')
 
   args = parser.parse_args()
 
