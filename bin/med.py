@@ -29,7 +29,7 @@ also maintains complete med lists by patient id"""
         self.sig = m['SIG']
         self.q = m['Q']
         self.days = m['DAYS']
-        self.refills = m['REFILLS']
+        self.refills = int(m['REFILLS']) + 1 if m['REFILLS'] else m['REFILLS']
         self.qtt = m['Q_TO_TAKE_VALUE']
         if(self.qtt != ""): self.qtt = int(float(self.qtt))
         self.qttunit = m['Q_TO_TAKE_UNIT']

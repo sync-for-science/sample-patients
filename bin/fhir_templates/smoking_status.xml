@@ -1,0 +1,26 @@
+  {%- extends "entry.xml" %}
+  {%- block content %}
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: {{t.smokingStatusText}}</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72166-2"/>
+        <display value="Tobacco smoking status"/>
+      </coding>
+    </name>
+    <valueCodeableConcept>
+        <system value="http://snomed.info/id"/>
+        <code value="{{t.smokingStatusCode}}"/>
+        <display value="{{t.smokingStatusText}}"/>
+    </valueCodeableConcept>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="{{pid}}"/>
+    </subject>
+  </Observation>
+  {% endblock %}

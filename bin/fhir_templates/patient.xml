@@ -5,7 +5,7 @@
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
         {% block summary -%}
-        <p>{{p.fname}} {{p.initial}}. {{p.lname}}</p>
+        <p>{{p.fname}} {{p.lname}}</p>
         {%- endblock %}
       </div>
     </text>
@@ -20,11 +20,26 @@
     <name>
       <use value="official"/>
       <given value="{{p.fname}}"/>
+      {%- if p.initial %}
       <given value="{{p.initial}}."/>
+      {% endif %}
       <family value="{{p.lname}}"/>
     </name>
 
     <birthDate value="{{p.dob}}" />
+    
+    {%- if p.gestage %}
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/patient#gestage">
+       <valueQuantity>
+          <gestage>
+             <value value="{{p.gestage}}" />
+             <units value="weeks" />
+             <system value="http://unitsofmeasure.org" />
+             <code value="wk" />
+          </gestage>
+       </valueQuantity>
+    </extension>
+    {% endif %}
 
     <gender>
       <coding>
@@ -34,14 +49,15 @@
       </coding>
     </gender>
 
-    {% if p.home is defined %}
+    {%- if p.home %}
     <telecom>
       <use value="home"/>
       <system value="phone"/>
       <value value="{{p.home}}"/>
     </telecom>
     {% endif %}
-    {% if p.cell is defined %}
+
+    {%- if p.cell %}
     <telecom>
       <system value="phone"/>
       <value value="{{p.cell}}"/>
@@ -49,11 +65,14 @@
     </telecom>
     {% endif %}
 
+    {%- if p.email %}
     <telecom>
       <system value="email"/>
       <value value="{{p.email}}"/>
     </telecom>
+    {% endif %}
 
+    {%- if p.street %}
     <address>
       <use value="home"/>
       <line value="{{p.street}}{{p.apartment | default('')}}"/>
@@ -62,6 +81,7 @@
       <zip value="{{p.pcode}}"/>
       <country value="{{p.country}}"/>
     </address>
+    {% endif %}
 
     <active value="true"/>
   </Patient>

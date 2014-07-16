@@ -1,0 +1,70 @@
+  {% extends "entry.xml" %}
+  {% block content %}
+    <FamilyHistory xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Data on patient's {{fh.relativetitle}}</div>
+      </text>
+      <subject>
+         <reference value="{{pid}}"/>
+      </subject>
+      <relation>
+        <relationship>
+          <coding>
+           {%- if fh.relativecode == '66839005' %}
+            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+            <code value="FTH"/>
+            <display value="father"/>
+           {%- elif fh.relativecode == '72705000' %}
+            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+            <code value="MTH"/>
+            <display value="mother"/>
+           {%- elif fh.relativecode == '27733009' %}
+            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+            <code value="SIS"/>
+            <display value="sister"/>
+           {%- elif fh.relativecode == '70924004' %}
+            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+            <code value="BRO"/>
+            <display value="brother"/>
+           {%- elif fh.relativecode == '34871008' %}
+            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+            <code value="GRFTH"/>
+            <display value="grandfather"/>
+           {%- elif fh.relativecode == '113157001' %}
+            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+            <code value="GRMTH"/>
+            <display value="grandmother"/>
+           {% endif %}
+          </coding>
+        </relationship>
+        {%- if fh.dateofbirth %}
+        <bornDate>{{fh.dateofbirth}}</bornDate>
+        {% endif %}
+        {%- if fh.dateofdeath %}
+        <deceasedDate>{{fh.dateofdeath}}</deceasedDate>
+        {% endif %}
+        {%- if fh.problemcode %}
+        <condition>
+          <type>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="{{fh.problemcode}}"/>
+                <display value="{{fh.problemtitle}}"/>
+              </coding>
+          </type>
+        </condition>
+        {% endif %}
+        {%- if fh.heightcm %}
+        <extension url="http://fhir-registry.smartplatforms.org/Profile/family-history#height">
+            <valueQuantity>
+              <value value="{{fh.heightcm}}"/>
+              <units value="centimeters"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="cm"/>
+            </valueQuantity>
+        </extension>
+        {% endif %}
+      </relation>
+    </FamilyHistory>
+  {% endblock %}

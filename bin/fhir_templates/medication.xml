@@ -33,16 +33,16 @@
   <dosageInstruction>
     <timingSchedule>
       <event>
-	<start value="{{m.start}}"/>
-	{%- if m.end is defined and m.end != "" %}
-	<end value="{{m.end}}"/>
-	{%endif%}
+        <start value="{{m.start}}"/>
+        {%- if m.end is defined and m.end != "" %}
+        <end value="{{m.end}}"/>
+        {%endif%}
       </event>
       {%- if m.freqduration %}
       <repeat>
-	<frequency value="{{m.freq}}"/>
-	<duration value="1"/>
-	<units value="{{m.freqduration}}"/>
+        <frequency value="{{m.freq}}"/>
+        <duration value="1"/>
+        <units value="{{m.freqduration}}"/>
       </repeat>
       {% endif %}
     </timingSchedule>
@@ -54,6 +54,24 @@
       <code value="{{m.qttunit}}"/>
     </doseQuantity>
     {% endif %}
+    <text>{{m.sig}}</text>
   </dosageInstruction>
+  {%- if m.refills or m.q or m.days %}
+  <dispense>
+     <numberOfRepeatsAllowed>{{m.refills}}</numberOfRepeatsAllowed>
+     <quantity>
+        <value value="{{m.q}}"/>
+        <units value="{{m.qttunit}}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{{m.qttunit}}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="{{m.days}}"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  {% endif %}
 </MedicationPrescription>
 {% endblock %}

@@ -1,0 +1,27 @@
+  {% extends "entry.xml" %}
+  {% block content %}
+  <Procedure xmlns="http://hl7.org/fhir">
+   <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">{{w.name}}</div>   
+   </text>
+   <subject>
+      <reference value="{{pid}}"/>
+   </subject>
+   <type> 
+      <coding>
+        <system value="http://snomed.info/id"/>
+        <code value="{{w.snomed}}"/>
+        <display value="{{w.name}}"/>
+      </coding>
+      <text value="{{w.name}}"/>
+   </type>
+   <date>
+     <start value="{{w.date}}"/>
+     <end value="{{w.date}}"/>
+   </date>
+   {%- if w.notes %}
+   <notes value="{{w.notes}}"/>
+   {% endif %}
+  </Procedure>
+  {% endblock %}

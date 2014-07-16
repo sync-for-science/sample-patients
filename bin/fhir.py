@@ -2,15 +2,26 @@ import datetime
 from patient import Patient
 from med import Med
 from problem import Problem
+from procedure import Procedure
 from refill import Refill
 from lab import Lab
 from immunization import Immunization
 from vitals import VitalSigns
+from familyhistory import FamilyHistory
+from socialhistory import SocialHistory
 import os
 import uuid
 
 from jinja2 import Environment, FileSystemLoader
 template_env = Environment(loader=FileSystemLoader('fhir_templates'), autoescape=True)
+
+SMOKINGCODES = {
+    '428041000124106': 'Current some day smoker',
+    '266919005': 'Never smoker',
+    '449868002': 'Current every day smoker',
+    '266927001': 'Unknown if ever smoked',
+    '8517006': 'Former smoker'
+}
 
 base=0
 def uid(resource_type=None):
@@ -131,6 +142,33 @@ class FHIRSamplePatient(object):
     if self.pid in Problem.problems:  
       for c in Problem.problems[self.pid]:
         id = uid("Condition")
+        print >>pfile, template.render(dict(globals(), **locals()))
+        
+    template = template_env.get_template('procedure.xml')
+    if self.pid in Procedure.procedures:  
+      for w in Procedure.procedures[self.pid]:
+        id = uid("Procedure")
+        print >>pfile, template.render(dict(globals(), **locals()))
+        
+    template = template_env.get_template('immunization.xml')
+    if self.pid in Immunization.immunizations:  
+      for i in Immunization.immunizations[self.pid]:
+        id = uid("Immunization")
+        i.cvx_system, i.cvx_id = i.cvx.rsplit("#",1)
+        i.cvx_system += "#"
+        print >>pfile, template.render(dict(globals(), **locals()))
+
+    template = template_env.get_template('family_history.xml')
+    if self.pid in FamilyHistory.familyHistories:  
+      for fh in FamilyHistory.familyHistories[self.pid]:
+        id = uid("FamilyHistory")
+        print >>pfile, template.render(dict(globals(), **locals()))
+        
+    template = template_env.get_template('smoking_status.xml')
+    if self.pid in SocialHistory.socialHistories: 
+        t = SocialHistory.socialHistories[self.pid]
+        t.smokingStatusText = SMOKINGCODES[t.smokingStatusCode]
+        id = uid("SocialHistory")
         print >>pfile, template.render(dict(globals(), **locals()))
 
     print >>pfile, "\n</feed>"
