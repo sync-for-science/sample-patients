@@ -28,19 +28,6 @@
 
     <birthDate value="{{p.dob}}" />
     
-    {%- if p.gestage %}
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/patient#gestage">
-       <valueQuantity>
-          <gestage>
-             <value value="{{p.gestage}}" />
-             <units value="weeks" />
-             <system value="http://unitsofmeasure.org" />
-             <code value="wk" />
-          </gestage>
-       </valueQuantity>
-    </extension>
-    {% endif %}
-
     <gender>
       <coding>
         <system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
