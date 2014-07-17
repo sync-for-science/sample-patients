@@ -58,7 +58,7 @@
   </dosageInstruction>
   {%- if m.refills or m.q or m.days %}
   <dispense>
-     <numberOfRepeatsAllowed>{{m.refills}}</numberOfRepeatsAllowed>
+     <numberOfRepeatsAllowed value="{{m.refills}}"/>
      <quantity>
         <value value="{{m.q}}"/>
         <units value="{{m.qttunit}}"/>
