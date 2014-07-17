@@ -1,15 +1,20 @@
   {% extends "entry.xml" %}
   {% block content %}
     <Immunization xmlns="http://hl7.org/fhir">
-        <text>{{i.cvx_title}}</text>
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">{{i.cvx_title}}</div>
+        </text>
         <subject>
             <reference value="{{pid}}"/>
         </subject>
         <date value="{{i.date}}"/>
         <vaccineType>
-            <system value="{{i.cvx_system}}"/>
-            <code value="{{i.cvx_id}}"/>
-            <display value="{{i.cvx_title}}"/>
+            <coding>
+        	<system value="{{i.cvx_system}}"/>
+		 <code value="{{i.cvx_id}}"/>
+       		 <display value="{{i.cvx_title}}"/>
+		</coding>
         </vaccineType>
         <reported value="false"/>
     {%- if i.administration_status == 'http://smartplatforms.org/terms/codes/ImmunizationAdministrationStatus#doseGiven' %}
@@ -19,25 +24,31 @@
         {%- if i.refusal_reason == 'http://smartplatforms.org/terms/codes/ImmunizationRefusalReason#allergy' %}
         <explanation>
             <refusalReason>
+            <coding>
                 <system value="http://smartplatforms.org/terms/codes/ImmunizationRefusalReason#"/>
                 <code value="allergy"/>
                 <display value="Allergy to vaccine/vaccine components, or allergy to eggs"/>
+		</coding>
             </refusalReason>
         </explanation>
         {%- elif i.refusal_reason == 'http://smartplatforms.org/terms/codes/ImmunizationRefusalReason#documentedImmunityOrPreviousDisease' %}
         <explanation>
             <refusalReason>
+            <coding>
                 <system value="http://smartplatforms.org/terms/codes/ImmunizationRefusalReason#"/>
                 <code value="documentedImmunityOrPreviousDisease"/>
                 <display value="Documented immunity or previous disease"/>
+		</coding>
             </refusalReason>
         </explanation>
         {%- elif i.refusal_reason == 'http://smartplatforms.org/terms/codes/ImmunizationRefusalReason#notIndicatedPerGuidelines' %}
         <explanation>
             <refusalReason>
+            <coding>
                 <system value="http://smartplatforms.org/terms/codes/ImmunizationRefusalReason#"/>
                 <code value="notIndicatedPerGuidelines"/>
                 <display value="Not indicated per guidelines"/>
+		</coding>
             </refusalReason>
         </explanation>
         {% endif %}

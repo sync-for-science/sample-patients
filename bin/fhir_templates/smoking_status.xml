@@ -13,9 +13,11 @@
       </coding>
     </name>
     <valueCodeableConcept>
+      <coding>
         <system value="http://snomed.info/id"/>
         <code value="{{t.smokingStatusCode}}"/>
         <display value="{{t.smokingStatusText}}"/>
+      </coding>
     </valueCodeableConcept>
     <status value="final"/>
     <reliability value="ok"/>
