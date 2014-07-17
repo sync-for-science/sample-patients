@@ -54,7 +54,7 @@
       <code value="{{m.qttunit}}"/>
     </doseQuantity>
     {% endif %}
-    <text>{{m.sig}}</text>
+    <text value="{{m.sig}}"/>
   </dosageInstruction>
   {%- if m.refills or m.q or m.days %}
   <dispense>
