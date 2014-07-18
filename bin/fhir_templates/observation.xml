@@ -15,8 +15,9 @@
     {%- if o.scale is defined and o.scale == 'Qn' %}
     <valueQuantity>
       <value value="{{o.value | float(0)}}"/>
+      <system value="http://unitsofmeasure.org" />
       <units value="{{o.units}}"/>
-      <code value="{{o.units}}"/>
+      <code value="{{o.unitsCode}}"/>
     </valueQuantity>
     {% endif %}
     {%- if o.scale is defined and o.scale == 'Ord'%}

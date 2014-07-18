@@ -100,7 +100,8 @@ class FHIRSamplePatient(object):
                 "name": "Systolic blood pressure",
                 "scale": "Qn",
                 "value": bp['systolic'],
-                "units": "mm[Hg]"
+                "units": "mm[Hg]",
+                "unitsCode": "mm[Hg]"
         }
         template = template_env.get_template('observation.xml')
         print >>pfile, template.render(dict(globals(), **locals()))
@@ -112,14 +113,16 @@ class FHIRSamplePatient(object):
                 "name": "Diastolic blood pressure",
                 "scale": "Qn",
                 "value": bp['diastolic'],
-                "units": "mm[Hg]"
+                "units": "mm[Hg]",
+                "unitsCode": "mm[Hg]"
         }
         template = template_env.get_template('observation.xml')
         print >>pfile, template.render(dict(globals(), **locals()))
-
+        
     template = template_env.get_template('observation.xml')
     for o in othervitals:
         id = uid("Observation")
+        if o.units: o.unitsCode = o.units
         print >>pfile, template.render(dict(globals(), **locals()))
 
     if self.pid in Lab.results:  
@@ -170,6 +173,19 @@ class FHIRSamplePatient(object):
         t.smokingStatusText = SMOKINGCODES[t.smokingStatusCode]
         id = uid("SocialHistory")
         print >>pfile, template.render(dict(globals(), **locals()))
+        
+    template = template_env.get_template('observation.xml')
+    o = {
+        "date": p.dob,
+        "code": "18185-9",
+        "name": "Gestational age at birth",
+        "scale": "Qn",
+        "value": p.gestage,
+        "units": "weeks",
+        "unitsCode": "wk"
+    }
+    id = uid("Observation")
+    print >>pfile, template.render(dict(globals(), **locals()))
 
     print >>pfile, "\n</feed>"
     pfile.close()
