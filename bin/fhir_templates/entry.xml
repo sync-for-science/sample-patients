@@ -4,7 +4,7 @@
   <updated>{{now}}</updated>
   <published>{{now}}</published>
   <author>
-    <name>https://github.com/chb/smart_sample_patients</name>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
   <content type="text/xml">
     {% block content -%}
