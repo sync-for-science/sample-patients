@@ -122,7 +122,8 @@ class FHIRSamplePatient(object):
     template = template_env.get_template('observation.xml')
     for o in othervitals:
         id = uid("Observation")
-        if o.units: o.unitsCode = o.units
+        if "units" in o.keys():
+           o["unitsCode"] = o["units"]
         print >>pfile, template.render(dict(globals(), **locals()))
 
     if self.pid in Lab.results:  
