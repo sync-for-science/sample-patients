@@ -174,19 +174,20 @@ class FHIRSamplePatient(object):
         t.smokingStatusText = SMOKINGCODES[t.smokingStatusCode]
         id = uid("SocialHistory")
         print >>pfile, template.render(dict(globals(), **locals()))
-        
-    template = template_env.get_template('observation.xml')
-    o = {
-        "date": p.dob,
-        "code": "18185-9",
-        "name": "Gestational age at birth",
-        "scale": "Qn",
-        "value": p.gestage,
-        "units": "weeks",
-        "unitsCode": "wk"
-    }
-    id = uid("Observation")
-    print >>pfile, template.render(dict(globals(), **locals()))
+    
+    if p.gestage:
+        template = template_env.get_template('observation.xml')
+        o = {
+            "date": p.dob,
+            "code": "18185-9",
+            "name": "Gestational age at birth",
+            "scale": "Qn",
+            "value": p.gestage,
+            "units": "weeks",
+            "unitsCode": "wk"
+        }
+        id = uid("Observation")
+        print >>pfile, template.render(dict(globals(), **locals()))
 
     print >>pfile, "\n</feed>"
     pfile.close()
