@@ -36,7 +36,7 @@
         <start value="{{m.start}}"/>
         {%- if m.end is defined and m.end != "" %}
         <end value="{{m.end}}"/>
-        {%endif%}
+        {% endif %}
       </event>
       {%- if m.freqduration %}
       <repeat>

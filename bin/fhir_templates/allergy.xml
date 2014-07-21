@@ -1,0 +1,26 @@
+  {% extends "entry.xml" %}
+  {% block content %}
+    <AllergyIntolerance xmlns="http://hl7.org/fhir">
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">Sensitivity to {{al.allergen}}</div>
+        </text>
+        {%- if al.criticality %}
+        <criticality value="{{al.criticality}}"/>
+        {% endif %}
+        <sensitivityType value="allergy"/>
+        <recordedDate value="{{al.start}}"/>
+        <status value="confirmed"/>
+        <subject>
+          <reference value="{{pid}}"/>
+        </subject>
+        <substance>
+            <reference value="{{al.substance_id}}"/>
+        </substance>
+        {%- if al.reaction_id %}
+        <reaction>
+            <reference value="{{al.reaction_id}}"/>
+        </reaction>
+        {% endif %}
+    </AllergyIntolerance>
+  {% endblock %}

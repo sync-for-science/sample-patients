@@ -1,4 +1,5 @@
 import datetime
+from allergy import Allergy
 from patient import Patient
 from med import Med
 from problem import Problem
@@ -188,6 +189,63 @@ class FHIRSamplePatient(object):
         }
         id = uid("Observation")
         print >>pfile, template.render(dict(globals(), **locals()))
+
+    if self.pid in Allergy.allergies:
+        for al in Allergy.allergies[self.pid]:
+            if al.statement == 'positive':
+                id = "Substance/%s" % al.code
+                al.substance_id = id
+                template = template_env.get_template('substance.xml')
+                if al.type == 'drugClass':
+                    al.typeDescription = 'drug class'
+                    al.system = "http://purl.bioontology.org/ontology/NDFRT/"
+                elif al.type == 'drug':
+                    al.typeDescription = 'drug'
+                    al.system = "http://purl.bioontology.org/ontology/RXNORM/"
+                elif al.type == 'food':
+                    al.typeDescription = 'food',
+                    al.system = "http://fda.gov/UNII/"
+                elif al.type == 'environmental':
+                    al.typeDescription = 'environmental substance',
+                    al.system = "http://fda.gov/UNII/"
+                print >>pfile, template.render(dict(globals(), **locals()))
+                if al.reaction:
+                    if al.severity.lower() == 'mild':
+                        al.severity = 'minor'
+                        al.criticality = 'low'
+                    elif al.severity.lower() == 'severe':
+                        al.severity = 'severe'
+                        al.criticality = 'high'
+                    elif al.severity.lower() == 'life threatening' or al.severity.lower() == 'fatal':
+                        al.severity = 'severe'
+                        al.criticality = 'fatal'
+                    elif al.severity.lower() == 'moderate':
+                        al.severity = 'moderate'
+                        al.criticality = 'medium'
+                    else:
+                        al.severity = None
+                    id = uid("AdverseReaction")
+                    al.reaction_id = id
+                    template = template_env.get_template('adverse_reaction.xml')
+                    print >>pfile, template.render(dict(globals(), **locals()))
+                id = uid("AllergyIntolerance")
+                template = template_env.get_template('allergy.xml')
+                print >>pfile, template.render(dict(globals(), **locals()))
+            elif al.statement == 'negative' and al.type == 'general':
+                if al.code == '160244002':
+                    template = template_env.get_template('no_known_allergies.xml')
+                    id = uid("List")
+                    print >>pfile, template.render(dict(globals(), **locals()))
+                else:
+                    template = template_env.get_template('general_observation.xml')
+                    o = {
+                        "date": al.start,
+                        "system": "http://snomed.info/id",
+                        "code": al.code,
+                        "name": al.allergen
+                    }
+                    id = uid("Observation")
+                    print >>pfile, template.render(dict(globals(), **locals()))
 
     print >>pfile, "\n</feed>"
     pfile.close()
