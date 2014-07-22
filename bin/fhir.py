@@ -33,10 +33,11 @@ def uid(resource_type=None):
     else:
       return "%s/%s"%(resource_type, str(base))
 
-def getVital(v, vt):
+def getVital(v, vt, encounter_id):
   return {
     'date': v.timestamp[:10],
     'code': vt['uri'].split('/')[-1],
+    'encounter_id': encounter_id,
     'units': vt['unit'],
     'value': float(getattr(v, vt['name'])),
     'scale': 'Qn',
@@ -74,13 +75,17 @@ class FHIRSamplePatient(object):
 
     if self.pid in VitalSigns.vitals:
       for v in  VitalSigns.vitals[self.pid]:
+          encounter_id = uid("Encounter")
+          id = encounter_id
+          template = template_env.get_template('encounter.xml')
+          print >>pfile, template.render(dict(globals(), **locals()))
           for vt in VitalSigns.vitalTypes:
               try: 
-                  othervitals.append(getVital(v, vt))
+                  othervitals.append(getVital(v, vt, encounter_id))
               except: pass
           try: 
-              systolic = getVital(v, VitalSigns.systolic)
-              diastolic = getVital(v, VitalSigns.diastolic)
+              systolic = getVital(v, VitalSigns.systolic, encounter_id)
+              diastolic = getVital(v, VitalSigns.diastolic, encounter_id)
               bp = systolic
               bp['systolic'] = int(systolic['value'])
               bp['diastolic'] = int(diastolic['value'])

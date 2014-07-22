@@ -29,5 +29,12 @@
         <reference value="{{diastolicid}}"/>
       </target>
     </related>
+    {%- if bp.encounter_id %}
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="{{bp.encounter_id}}"/>
+        </valueResource>
+    </extension>
+    {% endif %}
   </Observation>
   {% endblock %}

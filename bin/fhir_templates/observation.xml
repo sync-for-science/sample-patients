@@ -58,5 +58,12 @@
       <value value="{{o.acc_num}}"/>
     </identifier>
     {% endif %}
+    {%- if o.encounter_id %}
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="{{o.encounter_id}}"/>
+        </valueResource>
+    </extension>
+    {% endif %}
   </Observation>
   {% endblock %}
