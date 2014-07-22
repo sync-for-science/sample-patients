@@ -1,0 +1,14 @@
+  {% extends "entry.xml" %}
+  {% block content %}
+    <Practitioner xmlns="http://hl7.org/fhir">
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">Practitioner: John Smith</div>
+        </text>
+        <name>
+           <use value="usual"/>
+           <family value="Smith"/>
+           <given value="John"/>
+        </name>
+    </Practitioner>
+  {% endblock %}

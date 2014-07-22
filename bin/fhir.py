@@ -1,5 +1,6 @@
 import datetime
 from allergy import Allergy
+from clinicalnote import ClinicalNote
 from patient import Patient
 from med import Med
 from problem import Problem
@@ -10,6 +11,7 @@ from immunization import Immunization
 from vitals import VitalSigns
 from familyhistory import FamilyHistory
 from socialhistory import SocialHistory
+from testdata import NOTES_PATH
 import os
 import uuid
 
@@ -252,5 +254,23 @@ class FHIRSamplePatient(object):
                     id = uid("Observation")
                     print >>pfile, template.render(dict(globals(), **locals()))
 
+    if self.pid in ClinicalNote.clinicalNotes:
+        id = 'Practitioner/1234'
+        template = template_env.get_template('practitioner.xml')
+        print >>pfile, template.render(dict(globals(), **locals()))
+        for d in ClinicalNote.clinicalNotes[self.pid]:
+            if d.mime_type == 'text/plain':
+                d.content = open(os.path.join(NOTES_PATH, self.pid, d.file_name)).read()
+                b = d
+                id = uid("Binary")
+                d.binary_id = id
+                template = template_env.get_template('binary_text.xml')
+                print >>pfile, template.render(dict(globals(), **locals()))
+                id = uid("DocumentReference")
+                d.code = '34109-9'
+                d.display = 'Note'
+                template = template_env.get_template('document.xml')
+                print >>pfile, template.render(dict(globals(), **locals()))
+        
     print >>pfile, "\n</feed>"
     pfile.close()

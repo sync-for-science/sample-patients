@@ -1,0 +1,2 @@
+PID	DATE	TITLE	MIME_TYPE	FILE_NAME
+2169591	2006-09-01	Pulmonology clinic acute visit	text/plain	note1.txt2169591	2007-01-21	Primary care clinic visit	text/plain	note2.txt2169591	2006-08-30	Emergency Department Note	text/plain	note3.txt

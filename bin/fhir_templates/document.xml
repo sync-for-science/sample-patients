@@ -1,0 +1,29 @@
+  {% extends "entry.xml" %}
+  {% block content %}
+    <DocumentReference xmlns="http://hl7.org/fhir">
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">{{d.title}}</div>
+        </text>
+        <subject>
+          <reference value="{{pid}}"/>
+        </subject>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="{{d.code}}"/>
+            <display value="{{d.display}}"/>
+          </coding>
+        </type>
+        <author>
+          <reference value="Practitioner/1234"/>
+        </author>
+        <created value="{{d.date}}"/>
+        <indexed value="{{now}}"/>
+        <status value="current"/>
+        <description value="{{d.title}}"/>
+        <primaryLanguage value="en-us"/>
+        <mimeType value="text/plain"/>
+        <location value="/{{d.binary_id}}"/>
+    </DocumentReference>
+  {% endblock %}

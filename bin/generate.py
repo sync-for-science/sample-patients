@@ -4,6 +4,7 @@ from med import Med
 from problem import Problem
 from procedure import Procedure
 from refill import Refill
+from clinicalnote import ClinicalNote
 from vitals import VitalSigns
 from immunization import Immunization
 from lab import Lab
@@ -29,6 +30,7 @@ def initData():
    Procedure.load()
    SocialHistory.load()
    FamilyHistory.load()
+   ClinicalNote.load()
    Allergy.load()
 
 def displayPatientSummary(pid):
