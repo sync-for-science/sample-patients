@@ -12,6 +12,7 @@ from vitals import VitalSigns
 from familyhistory import FamilyHistory
 from socialhistory import SocialHistory
 from testdata import NOTES_PATH
+from vitalspatientgenerator import generate_patient
 import os
 import uuid
 
@@ -61,6 +62,11 @@ class FHIRSamplePatient(object):
     now = datetime.datetime.now().isoformat()
     id = "Patient/%s"%self.pid
     pid = id
+    
+    if self.pid == '99912345':
+        vpatient = generate_patient()
+        p.dob = vpatient["birthday"]
+        VitalSigns.loadVitalsPatient(vpatient)
 
     print >>pfile, """<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">

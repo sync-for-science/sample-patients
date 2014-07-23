@@ -95,10 +95,42 @@ also maintains complete VitalSigns lists by patient id"""
       
       # Loop through VitalSigns and build patient VitalSigns lists:
       VitalSigns = csv.reader(file(VITALS_FILE,'U'),dialect='excel-tab')
-      header = VitalSigns.next() 
+      header = VitalSigns.next()
       for VitalSign in VitalSigns:
           cls(dict(zip(header,VitalSign))) # Create a VitalSign instance (saved in VitalSigns.vitals)
 
+    @classmethod
+    def loadVitalsPatient (cls, vp):
+        vitals = vp['vitals']
+        for v in vitals:
+            m = {}
+            if 'height' in v.keys():
+                m = {'WEIGHT': '', 'TEMPERATURE': '', 'RESPIRATORY_RATE': '', 'HEAD_CIRCUMFERENCE': '', 'HEART_RATE': '', 'OXYGEN_SATURATION': '', 'BMI': '',
+                    'TIMESTAMP': v['encounter']['date'],
+                    'START_DATE': v['encounter']['start_date'],
+                    'END_DATE': v['encounter']['end_date'],
+                    'PID': vp['pid'],
+                    'HEIGHT': v['height'],
+                    'ENCOUNTER_TYPE': v['encounter']['type'],
+                    'BP_POSITION': '',
+                    'BP_METHOD': '',
+                    'BP_SITE': '',
+                    'SYSTOLIC': '',
+                    'DIASTOLIC': ''}
+            else:
+                m = {'WEIGHT': '', 'TEMPERATURE': '', 'RESPIRATORY_RATE': '', 'HEAD_CIRCUMFERENCE': '', 'HEART_RATE': '', 'OXYGEN_SATURATION': '', 'BMI': '',
+                    'TIMESTAMP': v['encounter']['date'],
+                    'START_DATE': v['encounter']['start_date'],
+                    'END_DATE': v['encounter']['end_date'],
+                    'PID': vp['pid'],
+                    'HEIGHT': '',
+                    'ENCOUNTER_TYPE': v['encounter']['type'],
+                    'BP_POSITION': v['position'],
+                    'BP_METHOD': v['method'],
+                    'BP_SITE': v['site'],
+                    'SYSTOLIC': v['sbp'],
+                    'DIASTOLIC': v['dbp']}
+            cls(m)
 
     def __init__(self,m):
         for f in m:
