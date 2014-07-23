@@ -52,6 +52,40 @@ also maintains complete VitalSigns lists by patient id"""
                         'predicate': 'diastolic'}
                 ]
 
+    bpPositionCodes =  [{'name': 'sitting',
+                    'system': 'http://purl.bioontology.org/ontology/SNOMEDCT/',
+                    'code': '33586001'},
+                   {'name': 'supine',
+                    'system': 'http://purl.bioontology.org/ontology/SNOMEDCT/',
+                    'code': '40199007'},
+                   {'name': 'standing',
+                    'system': 'http://purl.bioontology.org/ontology/SNOMEDCT/',
+                    'code': '10904000'},
+                   {'name': 'right arm',
+                    'system': 'http://purl.bioontology.org/ontology/SNOMEDCT/',
+                    'code': '368209003'},
+                   {'name': 'left thigh',
+                    'system': 'http://purl.bioontology.org/ontology/SNOMEDCT/',
+                    'code': '61396006'},
+                   {'name': 'left arm',
+                    'system': 'http://purl.bioontology.org/ontology/SNOMEDCT/',
+                    'code': '368208006'},
+                   {'name': 'right thigh',
+                    'system': 'http://purl.bioontology.org/ontology/SNOMEDCT/',
+                    'code': '11207009'},
+                   {'name': 'invasive',
+                    'system': 'http://smartplatforms.org/terms/codes/BloodPressureMethod#',
+                    'code': 'invasive'},
+                   {'name': 'palpation',
+                    'system': 'http://smartplatforms.org/terms/codes/BloodPressureMethod#',
+                    'code': 'palpation'},
+                   {'name': 'machine',
+                    'system': 'http://smartplatforms.org/terms/codes/BloodPressureMethod#',
+                    'code': 'machine'},
+                   {'name': 'auscultation',
+                    'system': 'http://smartplatforms.org/terms/codes/BloodPressureMethod#',
+                    'code': 'auscultation'}
+                    ]
 
     vitals = {} # Dictionary of VitalSign lists, by patient id 
 

@@ -76,11 +76,18 @@ class FHIRSamplePatient(object):
     othervitals = []
 
     if self.pid in VitalSigns.vitals:
+      encounters = []
       for v in  VitalSigns.vitals[self.pid]:
-          encounter_id = uid("Encounter")
-          id = encounter_id
-          template = template_env.get_template('encounter.xml')
-          print >>pfile, template.render(dict(globals(), **locals()))
+          encounter_id = None
+          e = [i for i in encounters if i['date'] == v.start_date and i['type'] == v.encounter_type]
+          if len(e) > 0:
+              encounter_id = e[0]['id']
+          else:
+              encounter_id = uid("Encounter")
+              encounters.append ({'date': v.start_date, 'type': v.encounter_type, 'id': encounter_id})
+              id = encounter_id
+              template = template_env.get_template('encounter.xml')
+              print >>pfile, template.render(dict(globals(), **locals()))
           for vt in VitalSigns.vitalTypes:
               try: 
                   othervitals.append(getVital(v, vt, encounter_id))
@@ -91,9 +98,27 @@ class FHIRSamplePatient(object):
               bp = systolic
               bp['systolic'] = int(systolic['value'])
               bp['diastolic'] = int(diastolic['value'])
+              bp['site'] = v.bp_site
+              if bp['site']:
+                for pc in VitalSigns.bpPositionCodes:
+                    if pc['name'] == bp['site']:
+                        bp['site_code'] = pc['code']
+                        bp['site_system'] = pc['system']
+              bp['method'] = v.bp_method
+              if bp['method']:
+                for pc in VitalSigns.bpPositionCodes:
+                    if pc['name'] == bp['method']:
+                        bp['method_code'] = pc['code']
+                        bp['method_system'] = pc['system']
+              bp['position'] = v.bp_position
+              if bp['position']:
+                for pc in VitalSigns.bpPositionCodes:
+                    if pc['name'] == bp['position']:
+                        bp['position_code'] = pc['code']
+                        bp['position_system'] = pc['system']
               bps.append(bp)
           except: pass
-
+          
     for bp in bps:
         systolicid = uid("Observation")
         diastolicid = uid("Observation")

@@ -68,6 +68,12 @@
       <zip value="{{p.pcode}}"/>
       <country value="{{p.country}}"/>
     </address>
+    {%- elif p.pcode and p.country %}
+    <address>
+      <use value="home"/>
+      <zip value="{{p.pcode}}"/>
+      <country value="{{p.country}}"/>
+    </address>
     {% endif %}
 
     <active value="true"/>

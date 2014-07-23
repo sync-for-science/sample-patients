@@ -29,8 +29,35 @@
         <reference value="{{diastolicid}}"/>
       </target>
     </related>
+    {%- if bp.site %}
+    <bodySite>
+     <coding>
+         <system value="{{bp.site_system}}"/>
+         <code value="{{bp.site_code}}"/>
+         <display value="{{bp.site}}"/>
+     </coding>
+    </bodySite>
+    {% endif %}
+    {%- if bp.method %}
+    <method>
+     <coding>
+         <system value="{{bp.method_system}}"/>
+         <code value="{{bp.method_code}}"/>
+         <display value="{{bp.method}}"/>
+     </coding>
+    </method>
+    {% endif %}
+    {%- if bp.position %}
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+     <coding>
+         <system value="{{bp.position_system}}"/>
+         <code value="{{bp.position_code}}"/>
+         <display value="{{bp.position}}"/>
+     </coding>
+    </extension>
+    {% endif %}
     {%- if bp.encounter_id %}
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="{{bp.encounter_id}}"/>
         </valueResource>
