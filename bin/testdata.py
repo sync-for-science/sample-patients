@@ -24,6 +24,7 @@ NOTES_PATH = DATA_PATH+'notes'
 REFILLS_FILE = DATA_PATH+'refills.txt'
 RI_PATIENTS_FILE = RI_PATH+'ri-patients.txt'
 CLINICAL_NOTES_FILE = DATA_PATH+'clinicalnotes.txt'
+DOCUMENTS_FILE = DATA_PATH+'documents.txt'
 
 # Mapping file names:
 LOINC_FILE = MAP_PATH+'short_loinc.txt'

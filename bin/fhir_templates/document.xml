@@ -23,7 +23,11 @@
         <status value="current"/>
         <description value="{{d.title}}"/>
         <primaryLanguage value="en-us"/>
-        <mimeType value="text/plain"/>
+        <mimeType value="{{d.mime_type}}"/>
+        {%- if d.size and d.hash %}
+        <size value="{{d.size}}"/>
+        <hash value="{{d.hash}}"/>
+        {%- endif %}
         <location value="/{{d.binary_id}}"/>
     </DocumentReference>
   {% endblock %}

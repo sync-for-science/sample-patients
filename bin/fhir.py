@@ -9,10 +9,12 @@ from refill import Refill
 from lab import Lab
 from immunization import Immunization
 from vitals import VitalSigns
+from document import Document
 from familyhistory import FamilyHistory
 from socialhistory import SocialHistory
 from testdata import NOTES_PATH
 from vitalspatientgenerator import generate_patient
+from docs import fetch_document
 import os
 import uuid
 
@@ -285,10 +287,13 @@ class FHIRSamplePatient(object):
                     id = uid("Observation")
                     print >>pfile, template.render(dict(globals(), **locals()))
 
+    addedPractitioner = False
+                    
     if self.pid in ClinicalNote.clinicalNotes:
         id = 'Practitioner/1234'
         template = template_env.get_template('practitioner.xml')
         print >>pfile, template.render(dict(globals(), **locals()))
+        addedPractitioner = True
         for d in ClinicalNote.clinicalNotes[self.pid]:
             if d.mime_type == 'text/plain':
                 d.content = open(os.path.join(NOTES_PATH, self.pid, d.file_name)).read()
@@ -300,6 +305,42 @@ class FHIRSamplePatient(object):
                 id = uid("DocumentReference")
                 d.code = '34109-9'
                 d.display = 'Note'
+                template = template_env.get_template('document.xml')
+                print >>pfile, template.render(dict(globals(), **locals()))
+                
+    if self.pid in Document.documents:
+        if not addedPractitioner:
+            id = 'Practitioner/1234'
+            template = template_env.get_template('practitioner.xml')
+            print >>pfile, template.render(dict(globals(), **locals()))
+        for d in Document.documents[self.pid]:
+            if d.mime_type == 'text/plain':
+                d.content = open(os.path.join(NOTES_PATH, self.pid, d.file_name)).read()
+                b = d
+                id = uid("Binary")
+                d.binary_id = id
+                template = template_env.get_template('binary_text.xml')
+                print >>pfile, template.render(dict(globals(), **locals()))
+                id = uid("DocumentReference")
+                d.system = 'http://smartplatforms.org/terms/codes/DocumentType#'
+                d.code = d.type
+                d.display = d.type
+                template = template_env.get_template('document.xml')
+                print >>pfile, template.render(dict(globals(), **locals()))
+            else:
+                data = fetch_document (self.pid, d.filename)
+                d.content = data['base64_content']
+                d.size = data['size']
+                d.hash = data['hash']
+                b = d
+                id = uid("Binary")
+                d.binary_id = id
+                template = template_env.get_template('binary_base64.xml')
+                print >>pfile, template.render(dict(globals(), **locals()))
+                id = uid("DocumentReference")
+                d.system = 'http://smartplatforms.org/terms/codes/DocumentType#'
+                d.code = d.type
+                d.display = d.type
                 template = template_env.get_template('document.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
         
