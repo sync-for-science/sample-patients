@@ -25,7 +25,7 @@ also maintains complete documents lists by patient id"""
         self.title = p['TITLE']
         self.mime_type = p['MIME_TYPE']
         self.file_name = p['FILE_NAME']
-        self.file_name = p['TYPE']
+        self.type = p['TYPE']
         
         # Append document to the patient's documents list:
         if self.pid in  self.__class__.documents:

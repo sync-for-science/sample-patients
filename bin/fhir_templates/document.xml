@@ -10,7 +10,7 @@
         </subject>
         <type>
           <coding>
-            <system value="http://loinc.org"/>
+            <system value="http://smartplatforms.org/terms/codes/DocumentType#"/>
             <code value="{{d.code}}"/>
             <display value="{{d.display}}"/>
           </coding>
@@ -22,7 +22,6 @@
         <indexed value="{{now}}"/>
         <status value="current"/>
         <description value="{{d.title}}"/>
-        <primaryLanguage value="en-us"/>
         <mimeType value="{{d.mime_type}}"/>
         {%- if d.size and d.hash %}
         <size value="{{d.size}}"/>

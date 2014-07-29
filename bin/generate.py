@@ -11,6 +11,8 @@ from lab import Lab
 from allergy import Allergy
 from socialhistory import SocialHistory
 from familyhistory import FamilyHistory
+from imagingstudy import ImagingStudy
+from document import Document
 import argparse
 import sys
 import os
@@ -32,6 +34,8 @@ def initData():
    FamilyHistory.load()
    ClinicalNote.load()
    Allergy.load()
+   ImagingStudy.load()
+   Document.load()
 
 def displayPatientSummary(pid):
    """writes a patient summary to stdout"""

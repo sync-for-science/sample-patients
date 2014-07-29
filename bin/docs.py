@@ -8,7 +8,6 @@ def compute_hash(fileName):
     """Compute sha1 hash of the specified file"""
     m = hashlib.sha1()
     try:
-        print fileName
         fd = open(fileName,"rb")
     except IOError:
         print "Unable to open the file in readmode:", fileName

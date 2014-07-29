@@ -21,10 +21,12 @@ ALLERGIES_FILE = DATA_PATH+'allergies.txt'
 SOCIALHISTORY_FILE = DATA_PATH+'socialhistory.txt'
 FAMILYHISTORY_FILE = DATA_PATH+'familyhistory.txt'
 NOTES_PATH = DATA_PATH+'notes'
+DOCUMENTS_PATH = DATA_PATH+'documents'
 REFILLS_FILE = DATA_PATH+'refills.txt'
 RI_PATIENTS_FILE = RI_PATH+'ri-patients.txt'
 CLINICAL_NOTES_FILE = DATA_PATH+'clinicalnotes.txt'
 DOCUMENTS_FILE = DATA_PATH+'documents.txt'
+IMAGINGSTUDIES_FILE = DATA_PATH+'imagingstudies.txt'
 
 # Mapping file names:
 LOINC_FILE = MAP_PATH+'short_loinc.txt'

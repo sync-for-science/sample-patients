@@ -12,7 +12,9 @@ from vitals import VitalSigns
 from document import Document
 from familyhistory import FamilyHistory
 from socialhistory import SocialHistory
+from imagingstudy import ImagingStudy
 from testdata import NOTES_PATH
+from testdata import DOCUMENTS_PATH
 from vitalspatientgenerator import generate_patient
 from docs import fetch_document
 import os
@@ -315,7 +317,7 @@ class FHIRSamplePatient(object):
             print >>pfile, template.render(dict(globals(), **locals()))
         for d in Document.documents[self.pid]:
             if d.mime_type == 'text/plain':
-                d.content = open(os.path.join(NOTES_PATH, self.pid, d.file_name)).read()
+                d.content = open(os.path.join(DOCUMENTS_PATH, self.pid, d.file_name)).read()
                 b = d
                 id = uid("Binary")
                 d.binary_id = id
@@ -328,7 +330,7 @@ class FHIRSamplePatient(object):
                 template = template_env.get_template('document.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
             else:
-                data = fetch_document (self.pid, d.filename)
+                data = fetch_document (self.pid, d.file_name)
                 d.content = data['base64_content']
                 d.size = data['size']
                 d.hash = data['hash']
@@ -343,6 +345,58 @@ class FHIRSamplePatient(object):
                 d.display = d.type
                 template = template_env.get_template('document.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
-        
+    
+    if self.pid in ImagingStudy.imagingStudies:
+        st = {}
+        for img in ImagingStudy.imagingStudies[self.pid]:
+            data = fetch_document (self.pid, img.image_file_name)
+            img.content = data['base64_content']
+            img.size = data['size']
+            img.hash = data['hash']
+            b = img
+            id = uid("Binary")
+            img.binary_id = id
+            template = template_env.get_template('binary_base64.xml')
+            print >>pfile, template.render(dict(globals(), **locals()))
+            if img.study_oid not in st.keys():
+                st[img.study_oid] = {
+                    'title': img.study_title,
+                    'date': img.study_date,
+                    'accession_number': img.study_accession_number,
+                    'modality': img.study_modality,
+                    'oid': img.study_oid,
+                    'series_count': 0,
+                    'images_count': 0,
+                    'series': {}
+                }
+            series = st[img.study_oid]['series']
+            if img.series_oid not in series.keys():
+                st[img.study_oid]['series_count'] += 1
+                series[img.series_oid] = {
+                    'number': st[img.study_oid]['series_count'],
+                    'title': img.series_title,
+                    'oid': img.series_oid,
+                    'images_count': 0,
+                    'images': []
+                }
+            st[img.study_oid]['images_count'] += 1
+            series[img.series_oid]['images_count'] += 1
+            series[img.series_oid]['images'].append({
+                'title': img.image_title,
+                'date': img.image_date,
+                'file_name': img.image_file_name,
+                'oid': img.image_oid,
+                'binary_id': img.binary_id,
+                'sop': img.image_sop,
+                'number': series[img.series_oid]['images_count']
+            })
+
+            
+        for i in st:
+            s = st[i]
+            id = uid("ImagingStudy")
+            template = template_env.get_template('imagingstudy.xml')
+            print >>pfile, template.render(dict(globals(), **locals()))
+
     print >>pfile, "\n</feed>"
     pfile.close()
