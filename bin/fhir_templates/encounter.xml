@@ -13,6 +13,6 @@
       <period>
        <start value="{{v.start_date}}"/>
        <end value="{{v.end_date}}"/>
-      <period>
+      </period>
     </Encounter>
   {% endblock %}
