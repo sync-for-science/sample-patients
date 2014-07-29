@@ -9,7 +9,7 @@
       <subject>
         <reference value="{{pid}}"/>
       </subject>
-      <uid value="urn:oid:{{s.oid}}"/>
+      <uid value="urn:sampleoid:{{s.oid}}"/>
       <accessionNo>
         <value value="{{s.accession_number}}"/>
       </accessionNo>
@@ -20,7 +20,7 @@
       {%- for i in s.series %}
       <series>
         <number value="{{s.series[i].number}}"/>
-        <uid value="urn:oid:{{s.series[i].oid}}"/>
+        <uid value="urn:sampleoid:{{s.series[i].oid}}"/>
         {%- if s.series[i].title %}
         <description value="{{s.series[i].title}}"/>
         {%- endif %}
@@ -28,7 +28,7 @@
         {%- for img in s.series[i].images %}
         <instance>
           <number value="{{img.number}}"/>
-          <uid value="urn:oid:{{img.oid}}"/>
+          <uid value="urn:sampleoid:{{img.oid}}"/>
           <sopclass value="urn:oid:{{img.sop}}"/>
           <title value="{{img.title}}"/>
           <attachment>
