@@ -24,7 +24,7 @@
         <description value="{{d.title}}"/>
         <mimeType value="{{d.mime_type}}"/>
         {%- if d.size and d.hash %}
-        <size value="{{d.size}}"/>
+        <!-- <size value="{{d.size}}"/> -->
         <hash value="{{d.hash}}"/>
         {%- endif %}
         <location value="/{{d.binary_id}}"/>
