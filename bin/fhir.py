@@ -277,6 +277,16 @@ class FHIRSamplePatient(object):
                 if al.code == '160244002':
                     template = template_env.get_template('no_known_allergies.xml')
                     id = uid("List")
+                    al.loinc_code = '52473-6'
+                    al.loinc_display = 'Allergy'
+                    al.text = 'No known allergies'
+                    print >>pfile, template.render(dict(globals(), **locals()))
+                elif al.code == '409137002':
+                    template = template_env.get_template('no_known_allergies.xml')
+                    id = uid("List")
+                    al.loinc_code = '11382-9'
+                    al.loinc_display = 'Medication allergy'
+                    al.text = 'No known history of drug allergy'
                     print >>pfile, template.render(dict(globals(), **locals()))
                 else:
                     template = template_env.get_template('general_observation.xml')
