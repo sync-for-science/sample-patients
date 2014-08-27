@@ -59,6 +59,6 @@ PID	STATEMENT	TYPE	ALLERGEN	SYSTEM	CODE	START_DATE	END_DATE	REACTION	SNOMED	SEVE
 8888802	positive	environmental	tree pollens	UNII	JQ5HI5004M	2013		Allergic asthma	389145006	severe
 8888802	positive	food	shrimp	UNII	1891LE191T	2013		Anaphylaxis	39579001	severe
 8888803	positive	environmental	Latex	UNII	2LQ0UUW8IN	2013		Allergic contact dermatitis	238575004	severe
-8888803	positive	drug	Ciprfloxacin	RXNORM	203563	2013		Vomiting	422400008	severe
+8888803	positive	drug	Ciprofloxacin	RXNORM	203563	2013		Vomiting	422400008	severe
 8888804	negative	general	No known history of drug allergy	SNOMED	409137002	2010				
 99912345	negative	general	No known allergies	SNOMED	160244002	2008-05-05				
