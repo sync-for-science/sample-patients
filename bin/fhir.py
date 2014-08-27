@@ -240,10 +240,10 @@ class FHIRSamplePatient(object):
                 template = template_env.get_template('substance.xml')
                 if al.type == 'drugClass':
                     al.typeDescription = 'drug class'
-                    al.system = "http://purl.bioontology.org/ontology/NDFRT/"
+                    al.system = "http://rxnav.nlm.nih.gov/REST/Ndfrt"
                 elif al.type == 'drug':
                     al.typeDescription = 'drug'
-                    al.system = "http://purl.bioontology.org/ontology/RXNORM/"
+                    al.system = "http://rxnav.nlm.nih.gov/REST/rxcui"
                 elif al.type == 'food':
                     al.typeDescription = 'food',
                     al.system = "http://fda.gov/UNII/"
