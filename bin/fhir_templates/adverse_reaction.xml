@@ -13,7 +13,7 @@
       <symptom>
         <code>
           <coding>
-            <system value="http://snomed.info/id"/>
+            <system value="http://snomed.info/sct"/>
             <code value="{{al.snomed}}"/>
             <display value="{{al.reaction}}"/>
           </coding>

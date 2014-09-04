@@ -292,7 +292,7 @@ class FHIRSamplePatient(object):
                     template = template_env.get_template('general_observation.xml')
                     o = {
                         "date": al.start,
-                        "system": "http://snomed.info/id",
+                        "system": "http://snomed.info/sct",
                         "code": al.code,
                         "name": al.allergen
                     }
