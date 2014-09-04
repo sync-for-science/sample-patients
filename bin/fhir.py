@@ -243,7 +243,7 @@ class FHIRSamplePatient(object):
                     al.system = "http://rxnav.nlm.nih.gov/REST/Ndfrt"
                 elif al.type == 'drug':
                     al.typeDescription = 'drug'
-                    al.system = "http://rxnav.nlm.nih.gov/REST/rxcui"
+                    al.system = "http://www.nlm.nih.gov/research/umls/rxnorm"
                 elif al.type == 'food':
                     al.typeDescription = 'food',
                     al.system = "http://fda.gov/UNII/"
