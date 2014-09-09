@@ -201,8 +201,8 @@ class FHIRSamplePatient(object):
     if self.pid in Immunization.immunizations:  
       for i in Immunization.immunizations[self.pid]:
         id = uid("Immunization")
-        i.cvx_system, i.cvx_id = i.cvx.rsplit("#",1)
-        i.cvx_system += "#"
+        i.cvx_system, i.cvx_id = i.cvx.rsplit("cvx",1)
+        i.cvx_system += "cvx"
         print >>pfile, template.render(dict(globals(), **locals()))
 
     template = template_env.get_template('family_history.xml')
