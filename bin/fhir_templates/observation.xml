@@ -25,6 +25,7 @@
     {% endif %}
     <appliesDateTime value="{{o.date}}"/>
     <status value="final"/>
+    <reliability value="ok"/>
     <subject>
       <reference value="{{pid}}"/>
     </subject>
