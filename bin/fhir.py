@@ -235,7 +235,7 @@ class FHIRSamplePatient(object):
     if self.pid in Allergy.allergies:
         for al in Allergy.allergies[self.pid]:
             if al.statement == 'positive':
-                id = "Substance/%s" % '-'.join((al.sysyem.lower(), al.code))
+                id = "Substance/%s" % '-'.join((al.system.lower(), al.code))
                 al.substance_id = id
                 template = template_env.get_template('substance.xml')
                 if al.type == 'drugClass':
