@@ -20,6 +20,7 @@ also maintains complete imaging studies lists by patient id"""
           cls(dict(zip(header,prob))) # Create a clinical note instance 
 
     def __init__(self,p):
+        self.id = p['ID']
         self.pid = p['PID']
         self.study_title = p['STUDY_TITLE']
         self.study_date = p['STUDY_DATE']

@@ -30,6 +30,7 @@ also maintains complete refills lists by patient id"""
        return refills.values()
 
     def __init__(self,p):
+        self.id = p['ID']
         self.pid = p['PID']
         self.date = p['DATE']
         self.rxn= p['RXN'] 

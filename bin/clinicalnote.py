@@ -20,6 +20,7 @@ also maintains complete clinical notes lists by patient id"""
           cls(dict(zip(header,prob))) # Create a clinical note instance 
 
     def __init__(self,p):
+        self.id = p['ID']
         self.pid = p['PID']
         self.date = p['DATE']
         self.title = p['TITLE']

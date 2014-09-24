@@ -18,7 +18,8 @@ class FamilyHistory:
             cls(dict(zip(header,history))) # Create a FamilyHistory instance 
 
     def __init__(self,fh):
-        self.patientid = fh['PATIENT_ID']
+        self.id = fh['ID']
+        self.patientid = fh['PID']
         self.relativecode = fh['RELATIVE_CODE']
         self.relativetitle = fh['RELATIVE_TITLE'] 
         self.dateofbirth = fh['DATE_OF_BIRTH']

@@ -55,6 +55,7 @@ and a dictionary of loinc code frequencies"""
        print "%d unique tests (LOINC codes)"%len(cls.codes)
 
     def __init__(self,o):
+        self.id = o['ID']
         self.pid = o['PID']
         self.code= o['LOINC'] 
         self.date = o['DATE']

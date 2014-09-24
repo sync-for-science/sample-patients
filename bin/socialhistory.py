@@ -21,6 +21,7 @@ also maintains socialHistory by patient id"""
 
     def __init__(self,p):
         self.pid = p['PID']
+        self.id = p['ID']
         self.smokingStatusCode = p['SMOKINGSTATUSCODE']
 
         # Append socialHistory to the patient's socialHistory list:

@@ -19,6 +19,7 @@ class Procedure:
           cls(dict(zip(header,proc))) # Create a procedure instance 
 
     def __init__(self,p):
+        self.id = p['ID']
         self.pid = p['PID']
         self.date = p['DATE']
         self.snomed= p['SNOMED'] 

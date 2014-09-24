@@ -20,6 +20,7 @@ also maintains complete problem lists by patient id"""
           cls(dict(zip(header,prob))) # Create a problem instance 
 
     def __init__(self,p):
+        self.id = p['ID']
         self.pid = p['PID']
         self.start = p['START_DATE']
         self.end = p['END_DATE']

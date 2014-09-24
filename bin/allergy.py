@@ -20,6 +20,7 @@ also maintains complete allergy lists by patient id"""
           cls(dict(zip(header,prob))) # Create a allergy instance 
 
     def __init__(self,p):
+        self.id = p['ID']
         self.pid = p['PID']
         self.statement = p['STATEMENT']
         self.type = p['TYPE']

@@ -102,7 +102,8 @@ also maintains complete VitalSigns lists by patient id"""
     @classmethod
     def loadVitalsPatient (cls, vp):
         vitals = vp['vitals']
-        for v in vitals:
+        for (i, v) in enumerate(vitals):
+            id = "vp-%s" % (i+1)
             m = {}
             if 'height' in v.keys():
                 m = {'WEIGHT': '', 'TEMPERATURE': '', 'RESPIRATORY_RATE': '', 'HEAD_CIRCUMFERENCE': '', 'HEART_RATE': '', 'OXYGEN_SATURATION': '', 'BMI': '',
@@ -110,6 +111,7 @@ also maintains complete VitalSigns lists by patient id"""
                     'START_DATE': v['encounter']['start_date'],
                     'END_DATE': v['encounter']['end_date'],
                     'PID': vp['pid'],
+                    'ID': id,
                     'HEIGHT': v['height'],
                     'ENCOUNTER_TYPE': v['encounter']['type'],
                     'BP_POSITION': '',
@@ -123,6 +125,7 @@ also maintains complete VitalSigns lists by patient id"""
                     'START_DATE': v['encounter']['start_date'],
                     'END_DATE': v['encounter']['end_date'],
                     'PID': vp['pid'],
+                    'ID': id,
                     'HEIGHT': '',
                     'ENCOUNTER_TYPE': v['encounter']['type'],
                     'BP_POSITION': v['position'],
