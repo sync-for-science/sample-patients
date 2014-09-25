@@ -19,28 +19,18 @@
 
     <name>
       <use value="official"/>
+      <family value="{{p.lname}}"/>
       <given value="{{p.fname}}"/>
       {%- if p.initial %}
       <given value="{{p.initial}}."/>
-      {% endif %}
-      <family value="{{p.lname}}"/>
+      {%- endif %}
     </name>
-
-    <birthDate value="{{p.dob}}" />
     
-    <gender>
-      <coding>
-        <system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
-        <code value="{{p.gender | capitalize | truncate(1,true,'')}}"/>
-        <display value="{{p.gender | capitalize}}"/>
-      </coding>
-    </gender>
-
     {%- if p.home %}
     <telecom>
-      <use value="home"/>
       <system value="phone"/>
       <value value="{{p.home}}"/>
+      <use value="home"/>
     </telecom>
     {% endif %}
 
@@ -58,6 +48,16 @@
       <value value="{{p.email}}"/>
     </telecom>
     {% endif %}
+    
+    <gender>
+      <coding>
+        <system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
+        <code value="{{p.gender | capitalize | truncate(1,true,'')}}"/>
+        <display value="{{p.gender | capitalize}}"/>
+      </coding>
+    </gender>
+
+    <birthDate value="{{p.dob}}" />
 
     {%- if p.street %}
     <address>

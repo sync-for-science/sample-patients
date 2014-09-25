@@ -1,6 +1,13 @@
   {%- extends "entry.xml" %}
   {%- block content %}
   <Observation xmlns="http://hl7.org/fhir">
+    {%- if o.encounter_id %}
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="{{o.encounter_id}}"/>
+        </valueResource>
+    </extension>
+    {% endif %}
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">{{o.name}}</div>
@@ -18,12 +25,5 @@
     <subject>
       <reference value="{{pid}}"/>
     </subject>
-    {%- if o.encounter_id %}
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
-        <valueResource>
-            <reference value="{{o.encounter_id}}"/>
-        </valueResource>
-    </extension>
-    {% endif %}
   </Observation>
   {% endblock %}

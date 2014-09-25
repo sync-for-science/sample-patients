@@ -1,6 +1,24 @@
   {% extends "entry.xml" %}
   {% block content %}
   <Observation xmlns="http://hl7.org/fhir">
+    {%- if bp.encounter_id %}
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+        <valueResource>
+            <reference value="{{bp.encounter_id}}"/>
+        </valueResource>
+    </extension>
+    {% endif %}
+    {%- if bp.position %}
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+      <valueCodeableConcept>
+         <coding>
+             <system value="{{bp.position_system}}"/>
+             <code value="{{bp.position_code}}"/>
+             <display value="{{bp.position}}"/>
+         </coding>
+       </valueCodeableConcept>
+    </extension>
+    {% endif %}
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">{{bp.date}}: Blood pressure {{bp.systolic}}/{{bp.diastolic}} mmHg</div>
@@ -47,24 +65,6 @@
          <display value="{{bp.method}}"/>
      </coding>
     </method>
-    {% endif %}
-    {%- if bp.position %}
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
-      <valueCodeableConcept>
-         <coding>
-             <system value="{{bp.position_system}}"/>
-             <code value="{{bp.position_code}}"/>
-             <display value="{{bp.position}}"/>
-         </coding>
-       </valueCodeableConcept>
-    </extension>
-    {% endif %}
-    {%- if bp.encounter_id %}
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
-        <valueResource>
-            <reference value="{{bp.encounter_id}}"/>
-        </valueResource>
-    </extension>
     {% endif %}
   </Observation>
   {% endblock %}

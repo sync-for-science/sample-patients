@@ -1,6 +1,18 @@
   {%- extends "entry.xml" %}
   {%- block content %}
   <Observation xmlns="http://hl7.org/fhir">
+    {%- if o.encounter_id %}
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="{{o.encounter_id}}"/>
+        </valueResource>
+    </extension>
+    {% endif %}
+    {%- if o.low and o.scale == 'Ord' %}
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+        <valueString value='{{o.low}}'/>
+    </extension>
+    {% endif %}
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">{{o.date}}: {{o.name}} = {{o.value}} {{o.units|default('')}}</div>
@@ -15,8 +27,8 @@
     {%- if o.scale is defined and o.scale == 'Qn' %}
     <valueQuantity>
       <value value="{{o.value | float(0)}}"/>
-      <system value="http://unitsofmeasure.org" />
       <units value="{{o.units}}"/>
+      <system value="http://unitsofmeasure.org" />
       <code value="{{o.unitsCode}}"/>
     </valueQuantity>
     {% endif %}
@@ -29,11 +41,6 @@
     <subject>
       <reference value="{{pid}}"/>
     </subject>
-    {%- if o.low and o.scale == 'Ord' %}
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
-        <valueString value='{{o.low}}'/>
-    </extension>
-    {% endif %}
     {%- if o.low and o.high %}
     <referenceRange>
       <meaning>
@@ -62,13 +69,6 @@
       <system value="urn:smart-accession-number"/>
       <value value="{{o.acc_num}}"/>
     </identifier>
-    {% endif %}
-    {%- if o.encounter_id %}
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
-        <valueResource>
-            <reference value="{{o.encounter_id}}"/>
-        </valueResource>
-    </extension>
     {% endif %}
   </Observation>
   {% endblock %}

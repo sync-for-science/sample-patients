@@ -1,6 +1,16 @@
   {% extends "entry.xml" %}
   {% block content %}
     <FamilyHistory xmlns="http://hl7.org/fhir">
+      {%- if fh.heightcm %}
+      <extension url="http://fhir-registry.smartplatforms.org/Profile/family-history#height">
+        <valueQuantity>
+          <value value="{{fh.heightcm}}"/>
+          <units value="centimeters"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="cm"/>
+        </valueQuantity>
+      </extension>
+      {% endif %}
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">Data on patient's {{fh.relativetitle}}</div>
@@ -54,16 +64,6 @@
               </coding>
           </type>
         </condition>
-        {% endif %}
-        {%- if fh.heightcm %}
-        <extension url="http://fhir-registry.smartplatforms.org/Profile/family-history#height">
-            <valueQuantity>
-              <value value="{{fh.heightcm}}"/>
-              <units value="centimeters"/>
-              <system value="http://unitsofmeasure.org"/>
-              <code value="cm"/>
-            </valueQuantity>
-        </extension>
         {% endif %}
       </relation>
     </FamilyHistory>
