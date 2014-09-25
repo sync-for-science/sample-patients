@@ -64,11 +64,5 @@
         </high>
     </referenceRange>
     {% endif %}
-    {%- if o.id is defined %}
-    <identifier>
-      <system value="urn:smart-accession-number"/>
-      <value value="{{o.acc_num}}"/>
-    </identifier>
-    {% endif %}
   </Observation>
   {% endblock %}

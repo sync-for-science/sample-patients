@@ -9,14 +9,12 @@
         {%- endblock %}
       </div>
     </text>
-
     <identifier>
       <use value="usual"/>
       <label value="SMART Hospiptal MRN"/>
       <system value="urn:oid:0.1.2.3.4.5.6.7"/>
       <value value="{{p.pid}}"/>
     </identifier>
-
     <name>
       <use value="official"/>
       <family value="{{p.lname}}"/>
@@ -25,30 +23,26 @@
       <given value="{{p.initial}}."/>
       {%- endif %}
     </name>
-    
     {%- if p.home %}
     <telecom>
       <system value="phone"/>
       <value value="{{p.home}}"/>
       <use value="home"/>
     </telecom>
-    {% endif %}
-
+    {%- endif %}
     {%- if p.cell %}
     <telecom>
       <system value="phone"/>
       <value value="{{p.cell}}"/>
       <use value="mobile"/>
     </telecom>
-    {% endif %}
-
+    {%- endif %}
     {%- if p.email %}
     <telecom>
       <system value="email"/>
       <value value="{{p.email}}"/>
     </telecom>
-    {% endif %}
-    
+    {%- endif %}
     <gender>
       <coding>
         <system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
@@ -56,9 +50,7 @@
         <display value="{{p.gender | capitalize}}"/>
       </coding>
     </gender>
-
     <birthDate value="{{p.dob}}" />
-
     {%- if p.street %}
     <address>
       <use value="home"/>
@@ -74,8 +66,7 @@
       <zip value="{{p.pcode}}"/>
       <country value="{{p.country}}"/>
     </address>
-    {% endif %}
-
+    {%- endif %}
     <active value="true"/>
   </Patient>
   {% endblock %}
