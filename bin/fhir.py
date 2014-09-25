@@ -44,6 +44,7 @@ def uid(resource_type=None, id=None):
 
 def getVital(v, vt, encounter_id):
   return {
+    'id': v.id,
     'date': v.timestamp[:10],
     'code': vt['uri'].split('/')[-1],
     'encounter_id': encounter_id,
@@ -133,9 +134,9 @@ class FHIRSamplePatient(object):
           except: pass
           
     for bp in bps:
-        systolicid = uid("Observation", "systolic-%s" % bp['id'])
-        diastolicid = uid("Observation", "diastolic-%s" % bp['id'])
-        id = uid("Observation", "bp-%s" % bp['id'])
+        systolicid = uid("Observation", "%s-systolic" % bp['id'])
+        diastolicid = uid("Observation", "%s-diastolic" % bp['id'])
+        id = uid("Observation", "%s-bp" % bp['id'])
         template = template_env.get_template('blood_pressure.xml')
         print >>pfile, template.render(dict(globals(), **locals()))
 
@@ -167,14 +168,14 @@ class FHIRSamplePatient(object):
         
     template = template_env.get_template('observation.xml')
     for o in othervitals:
-        id = uid("Observation", o["name"].lower().replace(' ', ''))
+        id = uid("Observation", '-'.join((o["id"], o["name"].lower().replace(' ', '').replace('_', ''))))
         if "units" in o.keys():
            o["unitsCode"] = o["units"]
         print >>pfile, template.render(dict(globals(), **locals()))
 
     if self.pid in Lab.results:  
       for o in Lab.results[self.pid]:
-        id = uid("Observation", "lab-%s" % o.id)
+        id = uid("Observation", "%s-lab" % o.id)
         print >>pfile, template.render(dict(globals(), **locals()))
 
     medtemplate = template_env.get_template('medication.xml')
@@ -232,7 +233,7 @@ class FHIRSamplePatient(object):
             "units": "weeks",
             "unitsCode": "wk"
         }
-        id = uid("Observation", "gestage-%s" % self.pid)
+        id = uid("Observation", "%s-gestage" % self.pid)
         print >>pfile, template.render(dict(globals(), **locals()))
 
     if self.pid in Allergy.allergies:
@@ -299,7 +300,7 @@ class FHIRSamplePatient(object):
                         "code": al.code,
                         "name": al.allergen
                     }
-                    id = uid("Observation", "alergy-%s" % al.id)
+                    id = uid("Observation", "%s-allergy" % al.id)
                     print >>pfile, template.render(dict(globals(), **locals()))
 
     addedPractitioner = False
