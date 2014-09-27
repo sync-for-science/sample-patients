@@ -219,7 +219,7 @@ class FHIRSamplePatient(object):
     if self.pid in SocialHistory.socialHistories: 
         t = SocialHistory.socialHistories[self.pid]
         t.smokingStatusText = SMOKINGCODES[t.smokingStatusCode]
-        id = uid("SocialHistory", t.id)
+        id = uid("Observation", '-'.join((t.id,"smokingstatus")))
         print >>pfile, template.render(dict(globals(), **locals()))
     
     if p.gestage:
