@@ -314,7 +314,7 @@ class FHIRSamplePatient(object):
             if d.mime_type == 'text/plain':
                 d.content = open(os.path.join(NOTES_PATH, self.pid, d.file_name)).read()
                 b = d
-                id = uid("Binary", d.id)
+                id = uid("Binary", "%s-note" % d.id)
                 d.binary_id = id
                 template = template_env.get_template('binary_text.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
@@ -333,7 +333,7 @@ class FHIRSamplePatient(object):
             if d.mime_type == 'text/plain':
                 d.content = open(os.path.join(DOCUMENTS_PATH, self.pid, d.file_name)).read()
                 b = d
-                id = uid("Binary", d.id)
+                id = uid("Binary", "%s-document" % d.id)
                 d.binary_id = id
                 template = template_env.get_template('binary_text.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
@@ -349,7 +349,7 @@ class FHIRSamplePatient(object):
                 d.size = data['size']
                 d.hash = data['hash']
                 b = d
-                id = uid("Binary", d.id)
+                id = uid("Binary", "%s-document" % d.id)
                 d.binary_id = id
                 template = template_env.get_template('binary_base64.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
