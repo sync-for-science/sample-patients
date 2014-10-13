@@ -10,7 +10,7 @@
         </subject>
         <type>
           <coding>
-            <system value="http://smartplatforms.org/terms/codes/DocumentType#"/>
+            <system value="{{d.system}}"/>
             <code value="{{d.code}}"/>
             <display value="{{d.display}}"/>
           </coding>

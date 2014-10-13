@@ -320,6 +320,7 @@ class FHIRSamplePatient(object):
                 template = template_env.get_template('binary.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
                 id = uid("DocumentReference", "%s-note" % d.id)
+                d.system = "http://loinc.org"
                 d.code = '34109-9'
                 d.display = 'Note'
                 template = template_env.get_template('document.xml')
