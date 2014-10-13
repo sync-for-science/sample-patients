@@ -1,4 +1,0 @@
-  {% extends "entry.xml" %}
-  {% block content %}
-    <Binary contentType="binary/base64" xmlns="http://hl7.org/fhir">{{b.content}}</Binary>
-  {% endblock %}

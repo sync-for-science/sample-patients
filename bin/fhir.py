@@ -312,11 +312,12 @@ class FHIRSamplePatient(object):
         addedPractitioner = True
         for d in ClinicalNote.clinicalNotes[self.pid]:
             if d.mime_type == 'text/plain':
-                d.content = open(os.path.join(NOTES_PATH, self.pid, d.file_name)).read()
+                data = fetch_document (self.pid, d.file_name)
+                d.content = data['base64_content']
                 b = d
                 id = uid("Binary", "%s-note" % d.id)
                 d.binary_id = id
-                template = template_env.get_template('binary_text.xml')
+                template = template_env.get_template('binary.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
                 id = uid("DocumentReference", "%s-note" % d.id)
                 d.code = '34109-9'
@@ -335,7 +336,7 @@ class FHIRSamplePatient(object):
                 b = d
                 id = uid("Binary", "%s-document" % d.id)
                 d.binary_id = id
-                template = template_env.get_template('binary_text.xml')
+                template = template_env.get_template('binary.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
                 id = uid("DocumentReference", "%s-document" % d.id)
                 d.system = 'http://smartplatforms.org/terms/codes/DocumentType#'
@@ -351,7 +352,7 @@ class FHIRSamplePatient(object):
                 b = d
                 id = uid("Binary", "%s-document" % d.id)
                 d.binary_id = id
-                template = template_env.get_template('binary_base64.xml')
+                template = template_env.get_template('binary.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
                 id = uid("DocumentReference", "%s-document" % d.id)
                 d.system = 'http://smartplatforms.org/terms/codes/DocumentType#'
@@ -364,13 +365,14 @@ class FHIRSamplePatient(object):
         st = {}
         for img in ImagingStudy.imagingStudies[self.pid]:
             data = fetch_document (self.pid, img.image_file_name)
+            img.mime_type = "application/dicom"
             img.content = data['base64_content']
             img.size = data['size']
             img.hash = data['hash']
             b = img
-            id = uid("Binary", img.id)
+            id = uid("Binary", "%s-dicom" % img.id)
             img.binary_id = id
-            template = template_env.get_template('binary_base64.xml')
+            template = template_env.get_template('binary.xml')
             print >>pfile, template.render(dict(globals(), **locals()))
             if img.study_oid not in st.keys():
                 st[img.study_oid] = {
