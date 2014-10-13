@@ -318,7 +318,7 @@ class FHIRSamplePatient(object):
                 d.binary_id = id
                 template = template_env.get_template('binary_text.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
-                id = uid("DocumentReference", d.id)
+                id = uid("DocumentReference", "%s-note" % d.id)
                 d.code = '34109-9'
                 d.display = 'Note'
                 template = template_env.get_template('document.xml')
@@ -337,7 +337,7 @@ class FHIRSamplePatient(object):
                 d.binary_id = id
                 template = template_env.get_template('binary_text.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
-                id = uid("DocumentReference", d.id)
+                id = uid("DocumentReference", "%s-document" % d.id)
                 d.system = 'http://smartplatforms.org/terms/codes/DocumentType#'
                 d.code = d.type
                 d.display = d.type
@@ -353,7 +353,7 @@ class FHIRSamplePatient(object):
                 d.binary_id = id
                 template = template_env.get_template('binary_base64.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
-                id = uid("DocumentReference", d.id)
+                id = uid("DocumentReference", "%s-document" % d.id)
                 d.system = 'http://smartplatforms.org/terms/codes/DocumentType#'
                 d.code = d.type
                 d.display = d.type
