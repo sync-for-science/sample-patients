@@ -332,35 +332,21 @@ class FHIRSamplePatient(object):
             template = template_env.get_template('practitioner.xml')
             print >>pfile, template.render(dict(globals(), **locals()))
         for d in Document.documents[self.pid]:
-            if d.mime_type == 'text/plain':
-                d.content = open(os.path.join(DOCUMENTS_PATH, self.pid, d.file_name)).read()
-                b = d
-                id = uid("Binary", "%s-document" % d.id)
-                d.binary_id = id
-                template = template_env.get_template('binary.xml')
-                print >>pfile, template.render(dict(globals(), **locals()))
-                id = uid("DocumentReference", "%s-document" % d.id)
-                d.system = 'http://smartplatforms.org/terms/codes/DocumentType#'
-                d.code = d.type
-                d.display = d.type
-                template = template_env.get_template('document.xml')
-                print >>pfile, template.render(dict(globals(), **locals()))
-            else:
-                data = fetch_document (self.pid, d.file_name)
-                d.content = data['base64_content']
-                d.size = data['size']
-                d.hash = data['hash']
-                b = d
-                id = uid("Binary", "%s-document" % d.id)
-                d.binary_id = id
-                template = template_env.get_template('binary.xml')
-                print >>pfile, template.render(dict(globals(), **locals()))
-                id = uid("DocumentReference", "%s-document" % d.id)
-                d.system = 'http://smartplatforms.org/terms/codes/DocumentType#'
-                d.code = d.type
-                d.display = d.type
-                template = template_env.get_template('document.xml')
-                print >>pfile, template.render(dict(globals(), **locals()))
+            data = fetch_document (self.pid, d.file_name)
+            d.content = data['base64_content']
+            d.size = data['size']
+            d.hash = data['hash']
+            b = d
+            id = uid("Binary", "%s-document" % d.id)
+            d.binary_id = id
+            template = template_env.get_template('binary.xml')
+            print >>pfile, template.render(dict(globals(), **locals()))
+            id = uid("DocumentReference", "%s-document" % d.id)
+            d.system = 'http://smartplatforms.org/terms/codes/DocumentType#'
+            d.code = d.type
+            d.display = d.type
+            template = template_env.get_template('document.xml')
+            print >>pfile, template.render(dict(globals(), **locals()))
     
     if self.pid in ImagingStudy.imagingStudies:
         st = {}
