@@ -1,0 +1,42 @@
+  {% extends "entry.xml" %}
+  {% block content %}
+    <ImagingStudy xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">{{s.date}}: {{s.title}}</div>
+      </text>
+      <dateTime value="{{s.date}}"/>
+      <subject>
+        <reference value="{{pid}}"/>
+      </subject>
+      <uid value="urn:sampleoid:{{s.oid}}"/>
+      <accessionNo>
+        <value value="{{s.accession_number}}"/>
+      </accessionNo>
+      <description value="{{s.title}}"/>
+      <modality value="{{s.modality}}"/>
+      <numberOfSeries value="{{s.series_count}}"/>
+      <numberOfInstances value="{{s.images_count}}"/>
+      {%- for i in s.series %}
+      <series>
+        <number value="{{s.series[i].number}}"/>
+        <uid value="urn:sampleoid:{{s.series[i].oid}}"/>
+        {%- if s.series[i].title %}
+        <description value="{{s.series[i].title}}"/>
+        {%- endif %}
+        <numberOfInstances value="{{s.series[i].images_count}}"/>
+        {%- for img in s.series[i].images %}
+        <instance>
+          <number value="{{img.number}}"/>
+          <uid value="urn:sampleoid:{{img.oid}}"/>
+          <sopclass value="urn:oid:{{img.sop}}"/>
+          <title value="{{img.title}}"/>
+          <attachment>
+             <reference value="{{img.binary_id}}"/>
+          </attachment>
+        </instance>
+        {%- endfor %}
+      </series>
+      {%- endfor %}
+    </ImagingStudy>
+  {% endblock %}

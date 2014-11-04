@@ -13,7 +13,7 @@
       <name value="{{m.name}}"/>
       <code>
 	<coding>
-	  <system value="http://rxnav.nlm.nih.gov/REST/rxcui"/>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
 	  <code value="{{m.rxn}}"/>
 	  <display value="{{m.name}}"/>
 	</coding>
@@ -36,7 +36,7 @@
         <start value="{{m.start}}"/>
         {%- if m.end is defined and m.end != "" %}
         <end value="{{m.end}}"/>
-        {%endif%}
+        {% endif %}
       </event>
       {%- if m.freqduration %}
       <repeat>

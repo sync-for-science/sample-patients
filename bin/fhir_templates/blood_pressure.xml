@@ -3,7 +3,7 @@
   <Observation xmlns="http://hl7.org/fhir">
     <text>
       <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml">{{bp.date}}: {{bp.systolic}}/{{bp.diastolic}} mmHg</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">{{bp.date}}: Blood pressure {{bp.systolic}}/{{bp.diastolic}} mmHg</div>
     </text>
     <name>
       <coding>
@@ -30,5 +30,41 @@
         <reference value="{{diastolicid}}"/>
       </target>
     </related>
+    {%- if bp.site %}
+    <bodySite>
+     <coding>
+         <system value="{{bp.site_system}}"/>
+         <code value="{{bp.site_code}}"/>
+         <display value="{{bp.site}}"/>
+     </coding>
+    </bodySite>
+    {% endif %}
+    {%- if bp.method %}
+    <method>
+     <coding>
+         <system value="{{bp.method_system}}"/>
+         <code value="{{bp.method_code}}"/>
+         <display value="{{bp.method}}"/>
+     </coding>
+    </method>
+    {% endif %}
+    {%- if bp.position %}
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+      <valueCodeableConcept>
+         <coding>
+             <system value="{{bp.position_system}}"/>
+             <code value="{{bp.position_code}}"/>
+             <display value="{{bp.position}}"/>
+         </coding>
+       </valueCodeableConcept>
+    </extension>
+    {% endif %}
+    {%- if bp.encounter_id %}
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+        <valueResource>
+            <reference value="{{bp.encounter_id}}"/>
+        </valueResource>
+    </extension>
+    {% endif %}
   </Observation>
   {% endblock %}

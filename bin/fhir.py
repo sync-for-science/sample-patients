@@ -1,4 +1,6 @@
 import datetime
+from allergy import Allergy
+from clinicalnote import ClinicalNote
 from patient import Patient
 from med import Med
 from problem import Problem
@@ -7,8 +9,14 @@ from refill import Refill
 from lab import Lab
 from immunization import Immunization
 from vitals import VitalSigns
+from document import Document
 from familyhistory import FamilyHistory
 from socialhistory import SocialHistory
+from imagingstudy import ImagingStudy
+from testdata import NOTES_PATH
+from testdata import DOCUMENTS_PATH
+from vitalspatientgenerator import generate_patient
+from docs import fetch_document
 import os
 import uuid
 
@@ -32,10 +40,11 @@ def uid(resource_type=None):
     else:
       return "%s/%s"%(resource_type, str(base))
 
-def getVital(v, vt):
+def getVital(v, vt, encounter_id):
   return {
     'date': v.timestamp[:10],
     'code': vt['uri'].split('/')[-1],
+    'encounter_id': encounter_id,
     'units': vt['unit'],
     'value': float(getattr(v, vt['name'])),
     'scale': 'Qn',
@@ -57,6 +66,11 @@ class FHIRSamplePatient(object):
     now = datetime.datetime.now().isoformat()
     id = "Patient/%s"%self.pid
     pid = id
+    
+    if self.pid == '99912345':
+        vpatient = generate_patient()
+        p.dob = vpatient["birthday"]
+        VitalSigns.loadVitalsPatient(vpatient)
 
     print >>pfile, """<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -72,20 +86,49 @@ class FHIRSamplePatient(object):
     othervitals = []
 
     if self.pid in VitalSigns.vitals:
+      encounters = []
       for v in  VitalSigns.vitals[self.pid]:
+          encounter_id = None
+          e = [i for i in encounters if i['date'] == v.start_date and i['type'] == v.encounter_type]
+          if len(e) > 0:
+              encounter_id = e[0]['id']
+          else:
+              encounter_id = uid("Encounter")
+              encounters.append ({'date': v.start_date, 'type': v.encounter_type, 'id': encounter_id})
+              id = encounter_id
+              template = template_env.get_template('encounter.xml')
+              print >>pfile, template.render(dict(globals(), **locals()))
           for vt in VitalSigns.vitalTypes:
               try: 
-                  othervitals.append(getVital(v, vt))
+                  othervitals.append(getVital(v, vt, encounter_id))
               except: pass
           try: 
-              systolic = getVital(v, VitalSigns.systolic)
-              diastolic = getVital(v, VitalSigns.diastolic)
+              systolic = getVital(v, VitalSigns.systolic, encounter_id)
+              diastolic = getVital(v, VitalSigns.diastolic, encounter_id)
               bp = systolic
               bp['systolic'] = int(systolic['value'])
               bp['diastolic'] = int(diastolic['value'])
+              bp['site'] = v.bp_site
+              if bp['site']:
+                for pc in VitalSigns.bpPositionCodes:
+                    if pc['name'] == bp['site']:
+                        bp['site_code'] = pc['code']
+                        bp['site_system'] = pc['system']
+              bp['method'] = v.bp_method
+              if bp['method']:
+                for pc in VitalSigns.bpPositionCodes:
+                    if pc['name'] == bp['method']:
+                        bp['method_code'] = pc['code']
+                        bp['method_system'] = pc['system']
+              bp['position'] = v.bp_position
+              if bp['position']:
+                for pc in VitalSigns.bpPositionCodes:
+                    if pc['name'] == bp['position']:
+                        bp['position_code'] = pc['code']
+                        bp['position_system'] = pc['system']
               bps.append(bp)
           except: pass
-
+          
     for bp in bps:
         systolicid = uid("Observation")
         diastolicid = uid("Observation")
@@ -158,8 +201,8 @@ class FHIRSamplePatient(object):
     if self.pid in Immunization.immunizations:  
       for i in Immunization.immunizations[self.pid]:
         id = uid("Immunization")
-        i.cvx_system, i.cvx_id = i.cvx.rsplit("#",1)
-        i.cvx_system += "#"
+        i.cvx_system, i.cvx_id = i.cvx.rsplit("cvx",1)
+        i.cvx_system += "cvx"
         print >>pfile, template.render(dict(globals(), **locals()))
 
     template = template_env.get_template('family_history.xml')
@@ -188,6 +231,182 @@ class FHIRSamplePatient(object):
         }
         id = uid("Observation")
         print >>pfile, template.render(dict(globals(), **locals()))
+
+    if self.pid in Allergy.allergies:
+        for al in Allergy.allergies[self.pid]:
+            if al.statement == 'positive':
+                id = "Substance/%s" % al.code
+                al.substance_id = id
+                template = template_env.get_template('substance.xml')
+                if al.type == 'drugClass':
+                    al.typeDescription = 'drug class'
+                    al.system = "http://rxnav.nlm.nih.gov/REST/Ndfrt"
+                elif al.type == 'drug':
+                    al.typeDescription = 'drug'
+                    al.system = "http://www.nlm.nih.gov/research/umls/rxnorm"
+                elif al.type == 'food':
+                    al.typeDescription = 'food',
+                    al.system = "http://fda.gov/UNII/"
+                elif al.type == 'environmental':
+                    al.typeDescription = 'environmental substance',
+                    al.system = "http://fda.gov/UNII/"
+                print >>pfile, template.render(dict(globals(), **locals()))
+                if al.reaction:
+                    if al.severity.lower() == 'mild':
+                        al.severity = 'minor'
+                        al.criticality = 'low'
+                    elif al.severity.lower() == 'severe':
+                        al.severity = 'severe'
+                        al.criticality = 'high'
+                    elif al.severity.lower() == 'life threatening' or al.severity.lower() == 'fatal':
+                        al.severity = 'severe'
+                        al.criticality = 'fatal'
+                    elif al.severity.lower() == 'moderate':
+                        al.severity = 'moderate'
+                        al.criticality = 'medium'
+                    else:
+                        al.severity = None
+                    id = uid("AdverseReaction")
+                    al.reaction_id = id
+                    template = template_env.get_template('adverse_reaction.xml')
+                    print >>pfile, template.render(dict(globals(), **locals()))
+                id = uid("AllergyIntolerance")
+                template = template_env.get_template('allergy.xml')
+                print >>pfile, template.render(dict(globals(), **locals()))
+            elif al.statement == 'negative' and al.type == 'general':
+                if al.code == '160244002':
+                    template = template_env.get_template('no_known_allergies.xml')
+                    id = uid("List")
+                    al.loinc_code = '52473-6'
+                    al.loinc_display = 'Allergy'
+                    al.text = 'No known allergies'
+                    print >>pfile, template.render(dict(globals(), **locals()))
+                elif al.code == '409137002':
+                    template = template_env.get_template('no_known_allergies.xml')
+                    id = uid("List")
+                    al.loinc_code = '11382-9'
+                    al.loinc_display = 'Medication allergy'
+                    al.text = 'No known history of drug allergy'
+                    print >>pfile, template.render(dict(globals(), **locals()))
+                else:
+                    template = template_env.get_template('general_observation.xml')
+                    o = {
+                        "date": al.start,
+                        "system": "http://snomed.info/sct",
+                        "code": al.code,
+                        "name": al.allergen
+                    }
+                    id = uid("Observation")
+                    print >>pfile, template.render(dict(globals(), **locals()))
+
+    addedPractitioner = False
+                    
+    if self.pid in ClinicalNote.clinicalNotes:
+        id = 'Practitioner/1234'
+        template = template_env.get_template('practitioner.xml')
+        print >>pfile, template.render(dict(globals(), **locals()))
+        addedPractitioner = True
+        for d in ClinicalNote.clinicalNotes[self.pid]:
+            if d.mime_type == 'text/plain':
+                d.content = open(os.path.join(NOTES_PATH, self.pid, d.file_name)).read()
+                b = d
+                id = uid("Binary")
+                d.binary_id = id
+                template = template_env.get_template('binary_text.xml')
+                print >>pfile, template.render(dict(globals(), **locals()))
+                id = uid("DocumentReference")
+                d.code = '34109-9'
+                d.display = 'Note'
+                template = template_env.get_template('document.xml')
+                print >>pfile, template.render(dict(globals(), **locals()))
+                
+    if self.pid in Document.documents:
+        if not addedPractitioner:
+            id = 'Practitioner/1234'
+            template = template_env.get_template('practitioner.xml')
+            print >>pfile, template.render(dict(globals(), **locals()))
+        for d in Document.documents[self.pid]:
+            if d.mime_type == 'text/plain':
+                d.content = open(os.path.join(DOCUMENTS_PATH, self.pid, d.file_name)).read()
+                b = d
+                id = uid("Binary")
+                d.binary_id = id
+                template = template_env.get_template('binary_text.xml')
+                print >>pfile, template.render(dict(globals(), **locals()))
+                id = uid("DocumentReference")
+                d.system = 'http://smartplatforms.org/terms/codes/DocumentType#'
+                d.code = d.type
+                d.display = d.type
+                template = template_env.get_template('document.xml')
+                print >>pfile, template.render(dict(globals(), **locals()))
+            else:
+                data = fetch_document (self.pid, d.file_name)
+                d.content = data['base64_content']
+                d.size = data['size']
+                d.hash = data['hash']
+                b = d
+                id = uid("Binary")
+                d.binary_id = id
+                template = template_env.get_template('binary_base64.xml')
+                print >>pfile, template.render(dict(globals(), **locals()))
+                id = uid("DocumentReference")
+                d.system = 'http://smartplatforms.org/terms/codes/DocumentType#'
+                d.code = d.type
+                d.display = d.type
+                template = template_env.get_template('document.xml')
+                print >>pfile, template.render(dict(globals(), **locals()))
+    
+    if self.pid in ImagingStudy.imagingStudies:
+        st = {}
+        for img in ImagingStudy.imagingStudies[self.pid]:
+            data = fetch_document (self.pid, img.image_file_name)
+            img.content = data['base64_content']
+            img.size = data['size']
+            img.hash = data['hash']
+            b = img
+            id = uid("Binary")
+            img.binary_id = id
+            template = template_env.get_template('binary_base64.xml')
+            print >>pfile, template.render(dict(globals(), **locals()))
+            if img.study_oid not in st.keys():
+                st[img.study_oid] = {
+                    'title': img.study_title,
+                    'date': img.study_date,
+                    'accession_number': img.study_accession_number,
+                    'modality': img.study_modality,
+                    'oid': img.study_oid,
+                    'series_count': 0,
+                    'images_count': 0,
+                    'series': {}
+                }
+            series = st[img.study_oid]['series']
+            if img.series_oid not in series.keys():
+                st[img.study_oid]['series_count'] += 1
+                series[img.series_oid] = {
+                    'number': st[img.study_oid]['series_count'],
+                    'title': img.series_title,
+                    'oid': img.series_oid,
+                    'images_count': 0,
+                    'images': []
+                }
+            st[img.study_oid]['images_count'] += 1
+            series[img.series_oid]['images_count'] += 1
+            series[img.series_oid]['images'].append({
+                'title': img.image_title,
+                'date': img.image_date,
+                'file_name': img.image_file_name,
+                'oid': img.image_oid,
+                'binary_id': img.binary_id,
+                'sop': img.image_sop,
+                'number': series[img.series_oid]['images_count']
+            })
+
+            
+        for i in st:
+            s = st[i]
+            id = uid("ImagingStudy")
+            template = template_env.get_template('imagingstudy.xml')
+            print >>pfile, template.render(dict(globals(), **locals()))
 
     print >>pfile, "\n</feed>"
     pfile.close()

@@ -4,12 +4,15 @@ from med import Med
 from problem import Problem
 from procedure import Procedure
 from refill import Refill
+from clinicalnote import ClinicalNote
 from vitals import VitalSigns
 from immunization import Immunization
 from lab import Lab
 from allergy import Allergy
 from socialhistory import SocialHistory
 from familyhistory import FamilyHistory
+from imagingstudy import ImagingStudy
+from document import Document
 import argparse
 import sys
 import os
@@ -29,7 +32,10 @@ def initData():
    Procedure.load()
    SocialHistory.load()
    FamilyHistory.load()
+   ClinicalNote.load()
    Allergy.load()
+   ImagingStudy.load()
+   Document.load()
 
 def displayPatientSummary(pid):
    """writes a patient summary to stdout"""

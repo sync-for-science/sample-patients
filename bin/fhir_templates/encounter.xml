@@ -1,0 +1,18 @@
+  {% extends "entry.xml" %}
+  {% block content %}
+    <Encounter xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">{{v.start_date}}: {{v.encounter_type}} encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="{{v.encounter_type}}"/>
+      <subject>
+        <reference value="{{pid}}"/>
+      </subject>
+      <period>
+       <start value="{{v.start_date}}"/>
+       <end value="{{v.end_date}}"/>
+      </period>
+    </Encounter>
+  {% endblock %}
