@@ -67,6 +67,15 @@
       <country value="{{p.country}}"/>
     </address>
     {%- endif %}
+    {%- if p.photo_title %}
+    <photo>
+     <contentType value="{{p.photo_code}}"/>
+     <url value="/{{p.photo_binary_id}}"/>
+     <!--<size value="{{p.photo_size}}"/>-->
+     <hash value="{{p.photo_hash}}"/>
+     <title value="{{p.photo_title}}"/>
+    </photo>
+    {%- endif %}
     <active value="true"/>
   </Patient>
   {% endblock %}
