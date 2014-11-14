@@ -67,30 +67,11 @@ class FHIRSamplePatient(object):
     p = Patient.mpi[self.pid]
 
     now = datetime.datetime.now().isoformat()
-    id = "Patient/%s"%self.pid
-    pid = id
     
     if self.pid == '99912345':
         vpatient = generate_patient()
         p.dob = vpatient["birthday"]
         VitalSigns.loadVitalsPatient(vpatient)
-        
-    if self.pid in Document.documents:
-        for d in [doc for doc in Document.documents[self.pid] if doc.type == 'photograph']:
-            data = fetch_document (self.pid, d.file_name)
-            d.content = data['base64_content']
-            d.size = data['size']
-            d.hash = data['hash']
-            b = d
-            id = uid("Binary", "%s-document" % d.id)
-            d.binary_id = id
-            template = template_env.get_template('binary.xml')
-            print >>pfile, template.render(dict(globals(), **locals()))
-            p.photo_code = d.type
-            p.photo_binary_id = d.binary_id
-            p.photo_size = d.size
-            p.photo_hash = d.hash
-            p.photo_title = d.title
 
     print >>pfile, """<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -99,6 +80,24 @@ class FHIRSamplePatient(object):
   <updated>%s</updated>
 """%(uid(), now)
 
+    if self.pid in Document.documents:
+        for d in [doc for doc in Document.documents[self.pid] if doc.type == 'photograph']:
+            data = fetch_document (self.pid, d.file_name)
+            d.content = data['base64_content']
+            d.size = data['size']
+            d.hash = data['hash']
+            b = d
+            id = uid("Binary", "%s-photo" % d.id)
+            d.binary_id = id
+            template = template_env.get_template('binary.xml')
+            print >>pfile, template.render(dict(globals(), **locals()))
+            p.photo_code = d.mime_type
+            p.photo_binary_id = d.binary_id
+            p.photo_size = d.size
+            p.photo_hash = d.hash
+            p.photo_title = d.title
+
+    id = "Patient/%s"%self.pid
     template = template_env.get_template('patient.xml')
     print >>pfile, template.render(dict(globals(), **locals()))
 
