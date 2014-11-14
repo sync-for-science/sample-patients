@@ -98,6 +98,7 @@ class FHIRSamplePatient(object):
             p.photo_title = d.title
 
     id = "Patient/%s"%self.pid
+    pid = id
     template = template_env.get_template('patient.xml')
     print >>pfile, template.render(dict(globals(), **locals()))
 
