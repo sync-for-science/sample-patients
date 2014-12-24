@@ -1,6 +1,7 @@
   {% extends "entry.xml" %}
   {% block content %}
-    <Immunization xmlns="http://hl7.org/fhir">
+    <Immunization>
+  {{resource_id}}
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">{{i.cvx_title}}</div>

@@ -1,20 +1,21 @@
   {% extends "entry.xml" %}
   {% block content %}
-    <ImagingStudy xmlns="http://hl7.org/fhir">
+    <ImagingStudy>
+  {{resource_id}}
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">{{s.date}}: {{s.title}}</div>
       </text>
-      <dateTime value="{{s.date}}"/>
-      <subject>
+      <started value="{{s.date}}"/>
+      <patient>
         <reference value="{{pid}}"/>
-      </subject>
+      </patient>
       <uid value="urn:sampleoid:{{s.oid}}"/>
-      <accessionNo>
+      <accession>
         <value value="{{s.accession_number}}"/>
-      </accessionNo>
+      </accession>
       <description value="{{s.title}}"/>
-      <modality value="{{s.modality}}"/>
+      <modalityList value="{{s.modality}}"/>
       <numberOfSeries value="{{s.series_count}}"/>
       <numberOfInstances value="{{s.images_count}}"/>
       {%- for i in s.series %}

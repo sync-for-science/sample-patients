@@ -1,6 +1,7 @@
 {%- extends "entry.xml" %}
 {%- block content %}
-<MedicationPrescription xmlns="http://hl7.org/fhir">
+<MedicationPrescription>
+  {{resource_id}}
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -9,7 +10,8 @@
   </text>
 
   <contained>
-    <Medication id="med">
+    <Medication>
+      <id value="med"/>
       <name value="{{m.name}}"/>
       <code>
 	<coding>
@@ -31,7 +33,7 @@
   </medication>
 
   <dosageInstruction>
-    <timingSchedule>
+    <scheduledTiming>
       <event>
         <start value="{{m.start}}"/>
         {%- if m.end is defined and m.end != "" %}
@@ -45,7 +47,7 @@
         <units value="{{m.freqduration}}"/>
       </repeat>
       {% endif %}
-    </timingSchedule>
+    </scheduledTiming>
     {%- if m.qtt %}
     <doseQuantity>
       <value value="{{m.qtt}}"/>
@@ -61,19 +63,25 @@
   </dosageInstruction>
   {%- if m.refills or m.q or m.days %}
   <dispense>
+     {%- if m.refills %}
      <numberOfRepeatsAllowed value="{{m.refills}}"/>
+     {% endif %}
+     {%- if m.q %}
      <quantity>
         <value value="{{m.q}}"/>
         <units value="{{m.qttunit}}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{{m.qttunit}}"/>
      </quantity>
+     {% endif %}
+     {%- if m.days %}
      <expectedSupplyDuration>
         <value value="{{m.days}}"/>
         <units value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
+     {% endif %}
   </dispense>
   {% endif %}
 </MedicationPrescription>

@@ -1,6 +1,7 @@
 {%- extends "entry.xml" %}
 {%- block content %}
-<MedicationDispense xmlns="http://hl7.org/fhir">
+<MedicationDispense>
+  {{resource_id}}
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
@@ -10,7 +11,8 @@
   </text>  
 
   <contained>
-    <Medication id="med">
+    <Medication>
+      <id value="med"/>
       <name value="{{m.name}}"/>
       <code>
 	<coding>

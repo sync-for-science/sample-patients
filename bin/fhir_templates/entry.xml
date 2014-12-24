@@ -1,13 +1,8 @@
-<entry xmlns="http://www.w3.org/2005/Atom">
-  <title>SMART Patient-level resource</title>
-  <id>{{id}}</id>
-  <updated>{{now}}</updated>
-  <published>{{now}}</published>
-  <author>
-    <name>https://github.com/smart-on-fhir/sample-patients</name>
-  </author>
-  <content type="text/xml">
+<entry>
+  <status value="update"/>
+  <resource>
+    {% set resource_id=("<id value=\""+id.split('/')[1]+"\"/>")|safe %}
     {% block content -%}
     {%- endblock content %}
-  </content>
+  </resource>
 </entry>

@@ -74,11 +74,9 @@ class FHIRSamplePatient(object):
         VitalSigns.loadVitalsPatient(vpatient)
 
     print >>pfile, """<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>SMART patient bundle for transactional posting</title>
-  <id>urn:uuid:%s</id>
-  <updated>%s</updated>
-"""%(uid(), now)
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+"""
 
     if self.pid in Document.documents:
         for d in [doc for doc in Document.documents[self.pid] if doc.type == 'photograph']:
@@ -287,10 +285,6 @@ class FHIRSamplePatient(object):
                         al.criticality = 'medium'
                     else:
                         al.severity = None
-                    id = uid("AdverseReaction", al.id)
-                    al.reaction_id = id
-                    template = template_env.get_template('adverse_reaction.xml')
-                    print >>pfile, template.render(dict(globals(), **locals()))
                 id = uid("AllergyIntolerance", al.id)
                 template = template_env.get_template('allergy.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
@@ -419,5 +413,5 @@ class FHIRSamplePatient(object):
             template = template_env.get_template('imagingstudy.xml')
             print >>pfile, template.render(dict(globals(), **locals()))
 
-    print >>pfile, "\n</feed>"
+    print >>pfile, "\n</Bundle>"
     pfile.close()

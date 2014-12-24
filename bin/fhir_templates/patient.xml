@@ -1,6 +1,7 @@
   {% extends "entry.xml" %}
   {% block content %}
-  <Patient xmlns="http://hl7.org/fhir">
+  <Patient>
+    {{resource_id}}
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -43,13 +44,7 @@
       <value value="{{p.email}}"/>
     </telecom>
     {%- endif %}
-    <gender>
-      <coding>
-        <system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
-        <code value="{{p.gender | capitalize | truncate(1,true,'')}}"/>
-        <display value="{{p.gender | capitalize}}"/>
-      </coding>
-    </gender>
+    <gender value="{{p.gender}}" />
     <birthDate value="{{p.dob}}" />
     {%- if p.street %}
     <address>
@@ -57,13 +52,13 @@
       <line value="{{p.street}}{{p.apartment | default('')}}"/>
       <city value="{{p.city}}"/>
       <state value="{{p.region}}"/>
-      <zip value="{{p.pcode}}"/>
+      <postalCode value="{{p.pcode}}"/>
       <country value="{{p.country}}"/>
     </address>
     {%- elif p.pcode and p.country %}
     <address>
       <use value="home"/>
-      <zip value="{{p.pcode}}"/>
+      <postalCode value="{{p.pcode}}"/>
       <country value="{{p.country}}"/>
     </address>
     {%- endif %}

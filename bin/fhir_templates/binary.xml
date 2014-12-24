@@ -1,4 +1,8 @@
   {% extends "entry.xml" %}
   {% block content %}
-    <Binary contentType="{{b.mime_type}}" xmlns="http://hl7.org/fhir">{{b.content}}</Binary>
+  <Binary>
+   {{resource_id}}
+   <contentType value="{{b.mime_type}}"/>
+   <content value="{{b.content}}"/>
+  </Binary>
   {% endblock %}

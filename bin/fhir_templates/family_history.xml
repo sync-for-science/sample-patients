@@ -1,6 +1,7 @@
   {% extends "entry.xml" %}
   {% block content %}
-    <FamilyHistory xmlns="http://hl7.org/fhir">
+    <FamilyHistory>
+  {{resource_id}}
       {%- if fh.heightcm %}
       <extension url="http://fhir-registry.smarthealthit.org/Profile/family-history#height">
         <valueQuantity>
@@ -15,9 +16,9 @@
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">Data on patient's {{fh.relativetitle}}</div>
       </text>
-      <subject>
+      <patient>
          <reference value="{{pid}}"/>
-      </subject>
+      </patient>
       <relation>
         <relationship>
           <coding>
@@ -49,10 +50,10 @@
           </coding>
         </relationship>
         {%- if fh.dateofbirth %}
-        <bornDate>{{fh.dateofbirth}}</bornDate>
+        <bornDate value="{{fh.dateofbirth}}"/>
         {% endif %}
         {%- if fh.dateofdeath %}
-        <deceasedDate>{{fh.dateofdeath}}</deceasedDate>
+	<deceasedDate value="{{fh.dateofdeath}}"/>
         {% endif %}
         {%- if fh.problemcode %}
         <condition>

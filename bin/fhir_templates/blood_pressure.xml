@@ -1,11 +1,12 @@
   {% extends "entry.xml" %}
   {% block content %}
-  <Observation xmlns="http://hl7.org/fhir">
+  <Observation>
+    {{resource_id}}
     {%- if bp.encounter_id %}
     <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
-        <valueResource>
+        <valueReference>
             <reference value="{{bp.encounter_id}}"/>
-        </valueResource>
+        </valueReference>
     </extension>
     {% endif %}
     {%- if bp.position %}

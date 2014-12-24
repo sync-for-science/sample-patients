@@ -1,6 +1,7 @@
   {% extends "entry.xml" %}
   {% block content %}
-    <List xmlns="http://hl7.org/fhir">
+    <List>
+  {{resource_id}}
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">{{al.text}}</div>
