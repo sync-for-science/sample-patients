@@ -60,3 +60,6 @@ gestage	city	apartment	street	cell	dob	GENDER	region	initial	PID	YOB	pcode	RACE	
 25.2					2012-08-24				7777705				female				Montgomery	Angela
 					1989-10-26	M			9995679	1990	02155		male		USA		Alexis	Aaron
 	Belmont		17 Oak Rd		2004-10-15	M	MA		99912345	2005	02478		male	800-834-9386	USA	allen.vitalis@example.com	Vitalis	Allen
+	Durham		54 9th Street		1958-05-13	F	NC	M	5555001	1959	27701	White	female		USA	penny.love@example.com	Love	Penny
+	Greensboro		277 Dan Road		1967-01-02	M	NC	J	5555002	1968	27214	White	male		USA	michael.peters@example.com	Peters	Michael
+	Morrisville		2001 Airport Road		1952-05-12	F	NC	E	5555003	1953	27560	Black or African American	female		USA	mildred.hoffman@example.com	Hoffman	Mildred

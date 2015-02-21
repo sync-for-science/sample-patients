@@ -295,3 +295,59 @@ ID	PID	START_DATE	END_DATE	RxNorm	Name	SIG	Q	DAYS	REFILLS	Q_TO_TAKE_VALUE	Q_TO_T
 294	8888804	2012-11-09		860975	Metformin XR 500mg	1 tab po qd with evening meal							
 295	99912345	2006-10-08		309054	Cefdinir 25 MG/ML Oral Suspension	7 mL bid x 10 days				7	mL	2	/d
 296	99912345	2009-08-03		312320	Permethrin 10 MG/ML Topical Lotion	apply x1 as directed							
+297	5555001	2014-11-02		847241	Levemir Flexpen	50 units SQ once daily	1	45	0	50	units	1	/d
+298	5555001	2013-03-06	2014-11-01	847241	Levemir Flexpen	40 units SQ once daily	1	45	0	40	units	1	/d
+299	5555001	2014-11-01		847265	Novolog Flexpen	sliding scale prn	1	60	0				
+300	5555001	2014-10-04		351250	Escitalopram Tablet 20mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+301	5555001	2012-09-06	2014-10-06	349332	Escitalopram Tablet 10mg	1 tab qd	30	30	0	1	{tablet}	2	/d
+302	5555001	2014-10-16		197418	Bumetanide Tablet 1 mg	2 tabs bid	120	30	0	2	{tablet}	2	/d
+303	5555001	2013-10-13	2014-10-02	197418	Bumetanide Tablet 1 mg	1 tab bid	60	30	0	1	{tablet}	2	/d
+304	5555001	2012-02-01		979480	Losartan Tablet 100mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+305	5555001	2013-05-12		200033	Carvedilol Tablet 25mg	1 tab bid	60	30	0	1	{tablet}	2	/d
+306	5555001	2014-08-01		197987	Minoxidil Tablet 2.5mg	1 tab bid	60	30	0	1	{tablet}	2	/d
+307	5555001	2014-11-01		884173	Clonidine HCl Tablet 0.1 mg	2 tabs bid	120	30	0	2	{tablet}	2	/d
+308	5555001	2014-01-02		197320	Allopurinol Tablet 300mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+309	5555001	2014-08-01		999946	Simcor (simvastatin/niacinER) Tablet 40/500mg	1 tab qhs	30	30	0	1	{tablet}	1	/d
+310	5555001	2014-01-01	2014-08-08	198211	Simvastatin Tablet 40mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+311	5555001	2014-05-03		1367410	"Ergocalciferol Capsule 50,000 iu"	1 cap once a week	12	84	0	2	{tablet}	1	/wk
+312	5555001	2014-02-04	2014-05-02	1367410	"Ergocalciferol Capsule 50,000 iu"	1 cap 2x/week	24	84	0	1	{tablet}	2	/wk
+313	5555001	2014-08-05		243670	Aspirin Tablet 81mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+314	5555001	2014-10-03		197527	Clonazepam Tablet 0.5mg	1 tab bid prn anxiety	60	30	0	1	{tablet}	2	/d
+315	5555002	2012-04-06		259255	Atorvastatin Tablet 80mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+316	5555002	2014-08-06		352304	Zetia Tablet 10mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+317	5555002	2014-11-01		1098141	Niacin ER Tablet 500mg	1 tab qhs	30	30	0	1	{tablet}	1	/d
+318	5555002	2014-08-06		1043582	Kombiglyze XR Tablet 5/500mg	1 tab daily with meal	30	30	0	1	{tablet}	1	/d
+319	5555002	2014-05-16	2014-08-04	860996	Metformin XR Tablet 1000mg	1 tab daily with meal	30	30	0	1	{tablet}	1	/d
+320	5555002	2014-02-15	2014-05-12	860975	Metformin XR Tablet 500mg	1 tab daily with meal	30	30	0	1	{tablet}	1	/d
+321	5555002	2014-11-15		1544918	Bydureon 2mg per 0.65 ml prefilled pen	1 injection SQ weekly	12	84	0	1	inj	1	/wk
+322	5555002	2013-02-01		897646	Verapamil SR Tablet 240mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+323	5555002	2013-02-02		751616	Bystolic Tablet 10mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+324	5555002	2013-02-03		401968	Ramipril Tablet 10mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+325	5555002	2013-02-04		746201	Nasonex Nasal Inhaler	1 puffs per nostril qd	1	30	0	1	{puff}	1	/d
+326	5555002	2013-02-05		855174	Xyzal Tablet 5mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+327	5555002	2014-10-15		799040	Alvesco Metered Dose Inhaler 80mcg/puff	1 puff bid	1	30	0	1	{puff}	2	/d
+328	5555002	2012-11-04		859088	Ventolin HFA (200 actuations)	2 puffs q4-6 hrs prn asthma	1	30	0				
+329	5555002	2014-08-04		1092380	Vitamin D3 Capsule 4000 iu	1 cap daily	30	30	0	1	{tablet}	1	/d
+330	5555002	2014-02-06	2014-08-04	1367410	"Ergocalciferol Capsule 50,000 iu"	1 cap once a week	12	84	0	1	{tablet}	1	/wk
+331	5555002	2012-09-12		411110	Calcium Acetate 500mg	1 cap bid	60	30	0	1	{tablet}	2	/d
+332	5555002	2014-12-07		197807	Ibuprofen Capsule 800mg	1 tab tid prn pain	90	30	0	1	{tablet}	3	/d
+333	5555002	2014-12-07		828348	Cyclobenzaprine Tablet 10mg	1 tab qhs prn muscle spasm	30	30	0	1	{tablet}	1	/d
+334	5555002	2014-08-29		854873	Zolpidem Tablet 10mg	1 tab qhs prn sleep	30	30	0	1	{tablet}	1	/d
+335	5555003	2012-04-23		200033	Carvedilol Tablet 25mg	1 tab bid	60	30	0	1	{tablet}	2	/d
+336	5555003	2014-05-24		200096	Irbesartan Tablet 300mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+337	5555003	2012-07-23	2014-05-24	979480	losartan Tablet 100mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+338	5555003	2014-11-02		243670	Aspirin Tablet 81mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+339	5555003	2014-11-01	2014-05-14	1116639	Brilinta Tablet 90mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+340	5555003	2012-05-02		402014	Omeprazole Delayed Release Tablet 20mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+341	5555003	2014-08-11		966247	Synthroid Tablet 50mcg	1 tab qd	30	30	0	1	{tablet}	1	/d
+342	5555003	2014-08-11	2014-05-03	966158	Synthroid Tablet 25mcg	1 tab qd	30	30	0	1	{tablet}	1	/d
+343	5555003	2012-10-17		707566	Systane ophthalmic solution	1 drop OU bid	1	30	0	1	[drp]	2	/d
+344	5555003	2013-08-12		745752	ProAir HFA	2 puffs every 4 hrs for asthma	1	30	0				
+345	5555003	2014-08-12		896031	Flovent 100mcg/inh	1 puff every 12 hrs	1	30	0				
+346	5555003	2012-03-19	2014-08-12	896185	Advair 100/50	1 puff every 12 hrs for asthma	1	30	0				
+347	5555003	2014-03-19		352304	Zetia Tablet 10mg	1 tab qd	30	30	0	1	{tablet}	1	/d
+348	5555003	2014-02-01	2014-03-19	859749	Crestor Tablet 10mg	1 tab qhs	30	30	0	1	{tablet}	1	/d
+349	5555003	2012-04-12		577208	Fish Oil Capsule 1000mg	2 caps qd	60	30	0	2	{tablet}	1	/d
+350	5555003	2011-09-11		880853	Metamucil Sugar-Free	1 tsp. tid	1	30	0	1	tsp	3	/d
+351	5555003	2015-01-03		240029	Vitamin D3 Capsule 5000 iu	1 cap qd	30	30	0	1	{tablet}	1	/d
+352	5555003	2014-09-05	2014-12-23	1367410	"Ergocalciferol Capsule 50,000 iu"	1 cap once a week	12	84	0	1	{tablet}	1	/wk
