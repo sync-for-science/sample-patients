@@ -25,6 +25,7 @@ also maintains complete med lists by patient id"""
         self.pid = m['PID']
         self.start = m['START_DATE']
         self.end = m['END_DATE']
+        self.status = "active" if not self.end else "completed"
         self.rxn= m['RxNorm'] 
         self.name = m['Name']
         self.sig = m['SIG']

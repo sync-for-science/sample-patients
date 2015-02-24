@@ -21,7 +21,7 @@
     </Medication>
   </contained>
 
-  <status value="active" />
+  <status value="{{m.status}}" />
   <patient>
     <reference value="{{pid}}"/>
   </patient>
