@@ -63,3 +63,4 @@ gestage	city	apartment	street	cell	dob	GENDER	region	initial	PID	YOB	pcode	RACE	
 	Durham		54 9th Street		1958-05-13	F	NC	M	5555001	1959	27701	White	female		USA	penny.love@example.com	Love	Penny
 	Greensboro		277 Dan Road		1967-01-02	M	NC	J	5555002	1968	27214	White	male		USA	michael.peters@example.com	Peters	Michael
 	Morrisville		2001 Airport Road		1952-05-12	F	NC	E	5555003	1953	27560	Black or African American	female		USA	mildred.hoffman@example.com	Hoffman	Mildred
+					2010-12-16	F			6666001				female			demoally@hspc.com	Reynolds	Sophia

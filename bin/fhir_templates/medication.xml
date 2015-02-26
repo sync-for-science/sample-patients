@@ -54,6 +54,9 @@
       <code value="{{m.qttunit}}"/>
     </doseQuantity>
     {% endif %}
+    {%- if "prn" in m.sig %}
+    <asNeededBoolean value="true"/>
+    {% endif %}
     <text value="{{m.sig}}"/>
   </dosageInstruction>
   {%- if m.refills or m.q or m.days %}

@@ -351,3 +351,7 @@ ID	PID	START_DATE	END_DATE	RxNorm	Name	SIG	Q	DAYS	REFILLS	Q_TO_TAKE_VALUE	Q_TO_T
 350	5555003	2011-09-11		880853	Metamucil Sugar-Free	1 tsp. tid	1	30	0	1	tsp	3	/d
 351	5555003	2015-01-03		240029	Vitamin D3 Capsule 5000 iu	1 cap qd	30	30	0	1	{tablet}	1	/d
 352	5555003	2014-09-05	2014-12-23	1367410	"Ergocalciferol Capsule 50,000 iu"	1 cap once a week	12	84	0	1	{tablet}	1	/wk
+353	6666001	2015-01-01		573621	Albuterol 0.09 MG/ACTUAT [Proventil]	prn							
+354	6666001	2015-01-01		896235	60 ACTUAT Fluticasone propionate 0.045 MG/ACTUAT / salmeterol 0.021 MG/ACTUAT Metered Dose Inhaler [Advair]	1 puff bid				1	{puff}	2	/d
+355	6666001	2015-01-01		373585	Prednisone Oral Tablet	prn							
+356	6666001	2015-01-01		1183694	Singulair Pill	1 tab qd				1	{tablet}	1	/d
