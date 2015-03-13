@@ -355,3 +355,10 @@ ID	PID	START_DATE	END_DATE	RxNorm	Name	SIG	Q	DAYS	REFILLS	Q_TO_TAKE_VALUE	Q_TO_T
 354	6666001	2015-01-01		896235	60 ACTUAT Fluticasone propionate 0.045 MG/ACTUAT / salmeterol 0.021 MG/ACTUAT Metered Dose Inhaler [Advair]	1 puff bid				1	{puff}	2	/d
 355	6666001	2015-01-01		373585	Prednisone Oral Tablet	prn							
 356	6666001	2015-01-01		1183694	Singulair Pill	1 tab qd				1	{tablet}	1	/d
+357	4444001	2014-06-21		569998	Acetaminophen 325 MG [Tylenol]	1 tab q4h prn				1	{tablet}	6	/d
+358	4444001	2014-06-21		1189780	Aspirin 81 MG [Ecotrin]	1 tab qd				1	{tablet}	1	/d
+359	4444001	2015-01-27	2016-01-27	855635	Diclofenac Sodium 0.01 MG/MG Topical Gel [Voltaren]	bid						2	/d
+360	4444001	2012-04-13		635969	ferrous sulfate 325 MG [Feosol]	1 tab tid				1	{tablet}	3	/d
+361	4444001	2015-02-07		567575	Lisinopril 5 MG [Prinivil]	1 tab qd				1	{tablet}	1	/d
+362	4444001	2015-01-27		860976	Metformin hydrochloride 500 MG [Glucophage]	1 tab bid wf				1	{tablet}	2	/d
+363	4444001	2014-08-18	2015-08-18	1370507	metoprolol succinate 25 MG [Toprol]	1 tab qd				1	{tablet}	1	/d
