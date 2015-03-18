@@ -17,35 +17,35 @@
 		</coding>
         </vaccineType>
         <reported value="false"/>
-    {%- if i.administration_status == 'http://smartplatforms.org/terms/codes/ImmunizationAdministrationStatus#doseGiven' %}
+    {%- if i.administration_status == 'http://smarthealthit.org/terms/codes/ImmunizationAdministrationStatus#doseGiven' %}
         <refusedIndicator value="false"/>
-    {%- elif i.administration_status == 'http://smartplatforms.org/terms/codes/ImmunizationAdministrationStatus#notAdministered' %}
+    {%- elif i.administration_status == 'http://smarthealthit.org/terms/codes/ImmunizationAdministrationStatus#notAdministered' %}
         <refusedIndicator value="true"/>
-        {%- if i.refusal_reason == 'http://smartplatforms.org/terms/codes/ImmunizationRefusalReason#allergy' %}
+        {%- if i.refusal_reason == 'http://smarthealthit.org/terms/codes/ImmunizationRefusalReason#allergy' %}
         <explanation>
             <refusalReason>
             <coding>
-                <system value="http://smartplatforms.org/terms/codes/ImmunizationRefusalReason#"/>
+                <system value="http://smarthealthit.org/terms/codes/ImmunizationRefusalReason#"/>
                 <code value="allergy"/>
                 <display value="Allergy to vaccine/vaccine components, or allergy to eggs"/>
 		</coding>
             </refusalReason>
         </explanation>
-        {%- elif i.refusal_reason == 'http://smartplatforms.org/terms/codes/ImmunizationRefusalReason#documentedImmunityOrPreviousDisease' %}
+        {%- elif i.refusal_reason == 'http://smarthealthit.org/terms/codes/ImmunizationRefusalReason#documentedImmunityOrPreviousDisease' %}
         <explanation>
             <refusalReason>
             <coding>
-                <system value="http://smartplatforms.org/terms/codes/ImmunizationRefusalReason#"/>
+                <system value="http://smarthealthit.org/terms/codes/ImmunizationRefusalReason#"/>
                 <code value="documentedImmunityOrPreviousDisease"/>
                 <display value="Documented immunity or previous disease"/>
 		</coding>
             </refusalReason>
         </explanation>
-        {%- elif i.refusal_reason == 'http://smartplatforms.org/terms/codes/ImmunizationRefusalReason#notIndicatedPerGuidelines' %}
+        {%- elif i.refusal_reason == 'http://smarthealthit.org/terms/codes/ImmunizationRefusalReason#notIndicatedPerGuidelines' %}
         <explanation>
             <refusalReason>
             <coding>
-                <system value="http://smartplatforms.org/terms/codes/ImmunizationRefusalReason#"/>
+                <system value="http://smarthealthit.org/terms/codes/ImmunizationRefusalReason#"/>
                 <code value="notIndicatedPerGuidelines"/>
                 <display value="Not indicated per guidelines"/>
 		</coding>

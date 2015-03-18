@@ -2,14 +2,14 @@
   {%- block content %}
   <Observation xmlns="http://hl7.org/fhir">
     {%- if o.encounter_id %}
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="{{o.encounter_id}}"/>
         </valueResource>
     </extension>
     {% endif %}
     {%- if o.low and o.scale == 'Ord' %}
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='{{o.low}}'/>
     </extension>
     {% endif %}

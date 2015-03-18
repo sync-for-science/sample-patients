@@ -2,7 +2,7 @@
   {% block content %}
     <FamilyHistory xmlns="http://hl7.org/fhir">
       {%- if fh.heightcm %}
-      <extension url="http://fhir-registry.smartplatforms.org/Profile/family-history#height">
+      <extension url="http://fhir-registry.smarthealthit.org/Profile/family-history#height">
         <valueQuantity>
           <value value="{{fh.heightcm}}"/>
           <units value="centimeters"/>

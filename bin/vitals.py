@@ -74,16 +74,16 @@ also maintains complete VitalSigns lists by patient id"""
                     'system': 'http://purl.bioontology.org/ontology/SNOMEDCT/',
                     'code': '11207009'},
                    {'name': 'invasive',
-                    'system': 'http://smartplatforms.org/terms/codes/BloodPressureMethod#',
+                    'system': 'http://smarthealthit.org/terms/codes/BloodPressureMethod#',
                     'code': 'invasive'},
                    {'name': 'palpation',
-                    'system': 'http://smartplatforms.org/terms/codes/BloodPressureMethod#',
+                    'system': 'http://smarthealthit.org/terms/codes/BloodPressureMethod#',
                     'code': 'palpation'},
                    {'name': 'machine',
-                    'system': 'http://smartplatforms.org/terms/codes/BloodPressureMethod#',
+                    'system': 'http://smarthealthit.org/terms/codes/BloodPressureMethod#',
                     'code': 'machine'},
                    {'name': 'auscultation',
-                    'system': 'http://smartplatforms.org/terms/codes/BloodPressureMethod#',
+                    'system': 'http://smarthealthit.org/terms/codes/BloodPressureMethod#',
                     'code': 'auscultation'}
                     ]
 

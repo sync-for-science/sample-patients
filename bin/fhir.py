@@ -359,7 +359,7 @@ class FHIRSamplePatient(object):
             template = template_env.get_template('binary.xml')
             print >>pfile, template.render(dict(globals(), **locals()))
             id = uid("DocumentReference", "%s-document" % d.id)
-            d.system = 'http://smartplatforms.org/terms/codes/DocumentType#'
+            d.system = 'http://smarthealthit.org/terms/codes/DocumentType#'
             d.code = d.type
             d.display = d.type
             template = template_env.get_template('document.xml')

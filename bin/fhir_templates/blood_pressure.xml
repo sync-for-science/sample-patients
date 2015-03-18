@@ -2,14 +2,14 @@
   {% block content %}
   <Observation xmlns="http://hl7.org/fhir">
     {%- if bp.encounter_id %}
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="{{bp.encounter_id}}"/>
         </valueResource>
     </extension>
     {% endif %}
     {%- if bp.position %}
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#position">
       <valueCodeableConcept>
          <coding>
              <system value="{{bp.position_system}}"/>
