@@ -1,0 +1,37 @@
+{
+    "resourceType": "Patient",
+    "id": "Patient",
+    "identifier": [
+        {
+            "label": "MRN",
+            "value": "624598"
+        }
+    ],
+    "name": [
+        {
+            "text": "Erheum, One Test",
+            "family": [
+                "Erheum"
+            ],
+            "given": [
+                "One"
+            ]
+        }
+    ],
+    "gender": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/v3/AdministrativeGender",
+                "code": "F",
+                "display": "Female"
+            }
+        ]
+    },
+    "birthDate": "6/17/1963",
+    "careProvider": [
+        {
+            "reference": "Practitioner/989",
+            "display": "Eric Newman MD"
+        }
+    ]
+}
