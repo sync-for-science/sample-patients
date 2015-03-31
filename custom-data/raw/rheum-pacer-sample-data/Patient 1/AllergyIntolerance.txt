@@ -5,13 +5,13 @@
             "content": {
                 "resourceType": "AllergyIntolerance",
                 "sensitivityType": "allergy",
-                "recordedDate": "10/2/2014",
+                "recordedDate": "2014-10-02T00:00:00Z",
                 "status": "confirmed",
                 "subject": {
                     "reference": "Patient/552356"
                 },
                 "substance": {
-                    "display": "Peanuts"
+                    "reference": "Substance/QE1QX6B99R"
                 }
             }
         },
@@ -19,13 +19,13 @@
             "content": {
                 "resourceType": "AllergyIntolerance",
                 "sensitivityType": "allergy",
-                "recordedDate": "3/17/2015",
+                "recordedDate": "2015-03-17T00:00:00Z",
                 "status": "confirmed",
                 "subject": {
                     "reference": "Patient/552356"
                 },
                 "substance": {
-                    "display": "Dust Allergy"
+                    "reference": "Substance/EYO007VX98"
                 }
             }
         }

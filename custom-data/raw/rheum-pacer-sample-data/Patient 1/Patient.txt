@@ -1,6 +1,5 @@
 {
     "resourceType": "Patient",
-    "id": "Patient",
     "identifier": [
         {
             "label": "MRN",
@@ -27,11 +26,11 @@
             }
         ]
     },
-    "birthDate": "6/17/1963",
+    "birthDate": "1963-06-17T00:00:00Z",
     "careProvider": [
         {
             "reference": "Practitioner/989",
-            "display": "Eric Newman MD"
+            "display": "Thomas P Olenginski-Like MD"
         }
     ]
 }

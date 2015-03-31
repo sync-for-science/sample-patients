@@ -4,15 +4,13 @@
         {
             "content": {
                 "resourceType": "Immunization",
-                "text": {
-                    "id": "Fluzone"
-                },
-                "date": "9/25/2014",
+                "date": "2014-09-25T00:00:00Z",
                 "vaccineType": {
                     "coding": [
                         {
                             "system": "http://hl7.org/implement/standards/fhir/v3/VaccineType/",
-                            "code": "88"
+                            "code": "88",
+                            "display": "Fluzone"
                         }
                     ]
                 },

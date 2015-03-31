@@ -1,6 +1,5 @@
 {
     "resourceType": "Encounter",
-    "id": "Encounter",
     "identifier": [
         {
             "label": "CSN",
@@ -11,8 +10,8 @@
         "reference": "Patient/552356"
     },
     "period": {
-        "start": "3/12/2015 10:30",
-        "end": "3/12/2015 11:15"
+        "start": "2015-03-12T10:30:00Z",
+        "end": "2015-03-12T11:15:00Z"
     },
     "location": [
         {
@@ -20,8 +19,8 @@
                 "display": "BW Rheumatology"
             },
             "period": {
-                "start": "3/12/2015 10:30",
-                "end": "3/12/2015 11:15"
+                "start": "2015-03-12T10:30:00Z",
+                "end": "2015-03-12T11:15:00Z"
             }
         }
     ]

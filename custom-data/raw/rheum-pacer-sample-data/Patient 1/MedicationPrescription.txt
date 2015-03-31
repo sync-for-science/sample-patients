@@ -7,7 +7,7 @@
                 "contained": [
                     {
                         "resourceType": "Medication",
-                        "id": "1000",
+                        "id": "2000",
                         "text": {
                             "id": "methotrexate 10 mg oral tablet"
                         },
@@ -31,22 +31,22 @@
                     "reference": "Practitioner/989"
                 },
                 "medication": {
-                    "reference": "1000",
+                    "reference": "2000",
                     "display": "methotrexate 10 mg oral tablet"
                 },
                 "dosageInstruction": [
                     {
                         "text": "10 mg, 2 tab(s), Oral, qWeek, 2 tabs",
-                        "timingPeriod": {
-                            "start": "5/1/2014"
+                        "timingSchedule": {
+                            "event": [
+                                {
+                                    "start": "2014-05-01T00:00:00Z"
+                                }
+                            ]
                         }
                     }
                 ],
                 "dispense": {
-                    "medication": {
-                        "reference": "1000",
-                        "display": "methotrexate 10 mg oral tablet"
-                    },
                     "quantity": {
                         "value": 1,
                         "units": "tabs"
@@ -60,7 +60,7 @@
                 "contained": [
                     {
                         "resourceType": "Medication",
-                        "id": "1001",
+                        "id": "2001",
                         "text": {
                             "id": "prednisone 5 mg oral tablet"
                         },
@@ -84,22 +84,22 @@
                     "reference": "Practitioner/989"
                 },
                 "medication": {
-                    "reference": "1001",
+                    "reference": "2001",
                     "display": "prednisone 5 mg oral tablet"
                 },
                 "dosageInstruction": [
                     {
                         "text": "1 tabs, Oral, Daily, 30 tabs",
-                        "timingPeriod": {
-                            "start": "3/1/2013"
+                        "timingSchedule": {
+                            "event": [
+                                {
+                                    "start": "2013-03-01T00:00:00Z"
+                                }
+                            ]
                         }
                     }
                 ],
                 "dispense": {
-                    "medication": {
-                        "reference": "1001",
-                        "display": "prednisone 5 mg oral tablet"
-                    },
                     "quantity": {
                         "value": 30,
                         "units": "tabs"
@@ -113,7 +113,7 @@
                 "contained": [
                     {
                         "resourceType": "Medication",
-                        "id": "1002",
+                        "id": "2002",
                         "text": {
                             "id": "Lisinopril 10 mg oral tablet"
                         },
@@ -137,22 +137,22 @@
                     "reference": "Practitioner/989"
                 },
                 "medication": {
-                    "reference": "1002",
+                    "reference": "2002",
                     "display": "Lisinopril 10 mg oral tablet"
                 },
                 "dosageInstruction": [
                     {
                         "text": "1 daily",
-                        "timingPeriod": {
-                            "start": "6/7/2013"
+                        "timingSchedule": {
+                            "event": [
+                                {
+                                    "start": "2013-06-07T00:00:00Z"
+                                }
+                            ]
                         }
                     }
                 ],
                 "dispense": {
-                    "medication": {
-                        "reference": "1002",
-                        "display": "Lisinopril 10 mg oral tablet"
-                    },
                     "quantity": {
                         "value": 60,
                         "units": "tabs"

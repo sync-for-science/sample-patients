@@ -7,7 +7,7 @@
                 "contained": [
                     {
                         "resourceType": "Medication",
-                        "id": "4000",
+                        "id": "5000",
                         "text": {
                             "id": "prednisone 5 mg oral tablet"
                         },
@@ -31,23 +31,23 @@
                     "reference": "Practitioner/989"
                 },
                 "medication": {
-                    "reference": "4000",
+                    "reference": "5000",
                     "display": "prednisone 5 mg oral tablet"
                 },
                 "dosageInstruction": [
                     {
                         "text": "1 tabs, Oral, Daily, 30 tabs",
-                        "timingPeriod": {
-                            "start": "12/28/2012",
-                            "end": "3/3/2015"
+                        "timingSchedule": {
+                            "event": [
+                                {
+                                    "start": "2012-12-28T00:00:00Z",
+                                    "end": "2015-03-03T00:00:00Z"
+                                }
+                            ]
                         }
                     }
                 ],
                 "dispense": {
-                    "medication": {
-                        "reference": "4000",
-                        "display": "prednisone 5 mg oral tablet"
-                    },
                     "quantity": {
                         "value": 30,
                         "units": "tabs"
@@ -61,7 +61,7 @@
                 "contained": [
                     {
                         "resourceType": "Medication",
-                        "id": "4001",
+                        "id": "5001",
                         "text": {
                             "id": "Procardia XL 30 mg oral tablet, extended release"
                         },
@@ -85,22 +85,22 @@
                     "reference": "Practitioner/989"
                 },
                 "medication": {
-                    "reference": "4001",
+                    "reference": "5001",
                     "display": "Procardia XL 30 mg oral tablet, extended release"
                 },
                 "dosageInstruction": [
                     {
                         "text": "1 tabs, Oral, Daily, 30 tabs",
-                        "timingPeriod": {
-                            "start": "2/11/2013"
+                        "timingSchedule": {
+                            "event": [
+                                {
+                                    "start": "2013-02-11T00:00:00Z"
+                                }
+                            ]
                         }
                     }
                 ],
                 "dispense": {
-                    "medication": {
-                        "reference": "4001",
-                        "display": "Procardia XL 30 mg oral tablet, extended release"
-                    },
                     "quantity": {
                         "value": 30,
                         "units": "tabs"
@@ -114,7 +114,7 @@
                 "contained": [
                     {
                         "resourceType": "Medication",
-                        "id": "4002",
+                        "id": "5002",
                         "text": {
                             "id": "Zocor 10 mg oral tablet"
                         },
@@ -138,22 +138,22 @@
                     "reference": "Practitioner/989"
                 },
                 "medication": {
-                    "reference": "4002",
+                    "reference": "5002",
                     "display": "Zocor 10 mg oral tablet"
                 },
                 "dosageInstruction": [
                     {
                         "text": "1 tabs, Oral, Once a Day (at bedtime), 30 tabs",
-                        "timingPeriod": {
-                            "start": "4/30/2013"
+                        "timingSchedule": {
+                            "event": [
+                                {
+                                    "start": "2013-04-30T00:00:00Z"
+                                }
+                            ]
                         }
                     }
                 ],
                 "dispense": {
-                    "medication": {
-                        "reference": "4002",
-                        "display": "Zocor 10 mg oral tablet"
-                    },
                     "quantity": {
                         "value": 30,
                         "units": "tabs"
@@ -167,7 +167,7 @@
                 "contained": [
                     {
                         "resourceType": "Medication",
-                        "id": "4003",
+                        "id": "5003",
                         "text": {
                             "id": "methotrexate 10 mg oral tablet"
                         },
@@ -191,22 +191,22 @@
                     "reference": "Practitioner/989"
                 },
                 "medication": {
-                    "reference": "4003",
+                    "reference": "5003",
                     "display": "methotrexate 10 mg oral tablet"
                 },
                 "dosageInstruction": [
                     {
                         "text": "10 mg, 1 tab(s), Oral, qWeek, 1 tabs",
-                        "timingPeriod": {
-                            "start": "3/15/2012"
+                        "timingSchedule": {
+                            "event": [
+                                {
+                                    "start": "2012-03-15T00:00:00Z"
+                                }
+                            ]
                         }
                     }
                 ],
                 "dispense": {
-                    "medication": {
-                        "reference": "4003",
-                        "display": "methotrexate 10 mg oral tablet"
-                    },
                     "quantity": {
                         "value": 1,
                         "units": "tabs"

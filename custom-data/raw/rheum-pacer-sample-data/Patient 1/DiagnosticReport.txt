@@ -11,7 +11,7 @@
                             "code": "36307-7"
                         }
                     ],
-                    "text": "FOOT, 3+ VIEWS"
+                    "text": "2013-06-15T00:00:00Z"
                 },
                 "issued": "6/15/2013",
                 "subject": {
@@ -30,7 +30,7 @@
                             "code": "24721-3"
                         }
                     ],
-                    "text": "HAND 2 VIEWS"
+                    "text": "2014-05-05T00:00:00Z"
                 },
                 "issued": "5/5/2014",
                 "subject": {
@@ -49,13 +49,13 @@
                             "code": "36554-4"
                         }
                     ],
-                    "text": "CHEST 1 VIEW"
+                    "text": "2004-05-24T00:00:00Z"
                 },
                 "issued": "5/24/2004",
                 "subject": {
                     "reference": "Patient/552356"
                 },
-                "conclusion": "PORTABLE CHEST - 5/20/04 HISTORY: Decreased O2 saturations in the 80s. Status post right TKA. Abnormal density is present in the left lung base consistent with infiltrate or other air-space disease. There is also abnormal density in the right lung base consistent with atelectasis. The cardiomediastinal silhouette is midline. The pulmonary vasculature is within normal limits. The bony thorax is grossly intact. IMPRESSION: 1. Abnormal density in the left lung base consistent with infiltrate versus other air-space disease. 2. Atelectasis at the right lung base."
+                "conclusion": "PORTABLE CHEST - 5/20/04 HISTORY: Decreased O2 saturations in the 80s. Status post right TKA. Abnormal density is present in the left lung base consistent with infiltrate or other air-space disease. There is also abnormal density in the right lung base consistent with atelectasis. The cardiomediastinal silhouette is midline. The pulmonary vasculature is within normal limits. The bony thorax is grossly intact. IMPRESSION: 1. Abnormal density in the left lung base consistent with infiltrate versus other air-space disease. 2. Atelectasis at the right lung base. I have personally reviewed this examination and agree with the resident/fellow physician's interpretation. Resident Physician: SELENA M HINTON MD [71891] Radiologist: BERNARD DENNIS M GO MD [24035]"
             }
         },
         {
@@ -68,7 +68,7 @@
                             "code": "48737-1"
                         }
                     ],
-                    "text": "HAND + WRIST, 3+ VIEWS"
+                    "text": "2012-08-18T00:00:00Z"
                 },
                 "issued": "8/18/2012",
                 "subject": {
@@ -87,7 +87,7 @@
                             "code": "36398-7"
                         }
                     ],
-                    "text": "HAND-WRIST 2 VIEWS"
+                    "text": "2014-02-16T00:00:00Z"
                 },
                 "issued": "2/16/2014",
                 "subject": {
@@ -106,7 +106,7 @@
                             "code": "46343-0"
                         }
                     ],
-                    "text": "HAND-WRIST MINIMUM 3 VIEWS VIEWS"
+                    "text": "2012-03-22T00:00:00Z"
                 },
                 "issued": "3/22/2012",
                 "subject": {
@@ -125,7 +125,7 @@
                             "code": "37699-6"
                         }
                     ],
-                    "text": "FOOT COMPLETE MINIMUM 3 VIEWS"
+                    "text": "2013-01-30T00:00:00Z"
                 },
                 "issued": "1/30/2013",
                 "subject": {
@@ -144,13 +144,13 @@
                             "code": "37697-0"
                         }
                     ],
-                    "text": "FOOT, 2 VIEWS"
+                    "text": "2013-02-07T00:00:00Z"
                 },
                 "issued": "2/7/2013",
                 "subject": {
                     "reference": "Patient/552356"
                 },
-                "conclusion": "History: Likely adult Still's disease; assess for erosive disease Three views of the right hand/wrist including PA, oblique and lateral views, February 5, 2013: No recent fracture or dislocation is identified. There is very mild joint space narrowing of the fifth DIP joint. No cortical erosion is noted. No soft tissue abnormality is noted. Impression: Mild osteoarthritic changes. Three views of the left hand/wrist including PA, oblique and lateral views, February 5, 2013: No recent fracture or dislocation is identified. No cortical erosion is noted. There is mild osteophyte lipping along the head of the second and third middle phalanges medially. No soft tissue abnormality is noted. Impression: Mild osteoarthritic changes. AP and lateral views of the right foot, February 5, 2013: No recent fracture or dislocation is identified. No cortical erosion is noted. There is mild osteophyte lipping along the head of the first metatarsal laterally. There is an osteophyte spur along the inferior border of the calcaneus. No soft tissue abnormality is noted. Impression: Mild osteoarthritic changes. Calcaneal spur. AP and lateral views of the left foot, February 5, 2013: No recent fracture or dislocation is identified. No cortical erosion is noted. There is no osteophyte lipping along the head of the first metatarsal laterally. There is an osteophyte spur along the inferior border of the calcaneus. No soft tissue abnormality is noted. Impression: Mild osteoarthritc changes. Calcaneal spur."
+                "conclusion": "History: Likely adult Still's disease; assess for erosive disease Three views of the right hand/wrist including PA, oblique and lateral views, February 5, 2010: No recent fracture or dislocation is identified. There is very mild joint space narrowing of the fifth DIP joint. No cortical erosion is noted. No soft tissue abnormality is noted. Impression: Mild osteoarthritic changes. Three views of the left hand/wrist including PA, oblique and lateral views, February 5, 2010: No recent fracture or dislocation is identified. No cortical erosion is noted. There is mild osteophyte lipping along the head of the second and third middle phalanges medially. No soft tissue abnormality is noted. Impression: Mild osteoarthritic changes. AP and lateral views of the right foot, February 5, 2010: No recent fracture or dislocation is identified. No cortical erosion is noted. There is mild osteophyte lipping along the head of the first metatarsal laterally. There is an osteophyte spur along the inferior border of the calcaneus. No soft tissue abnormality is noted. Impression: Mild osteoarthritic changes. Calcaneal spur. AP and lateral views of the left foot, February 5, 2010: No recent fracture or dislocation is identified. No cortical erosion is noted. There is no osteophyte lipping along the head of the first metatarsal laterally. There is an osteophyte spur along the inferior border of the calcaneus. No soft tissue abnormality is noted. Impression: Mild osteoarthritc changes. Calcaneal spur."
             }
         }
     ]

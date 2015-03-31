@@ -5,13 +5,13 @@
             "content": {
                 "resourceType": "AllergyIntolerance",
                 "sensitivityType": "allergy",
-                "recordedDate": "3/14/2015",
+                "recordedDate": "2015-03-14T00:00:00Z",
                 "status": "confirmed",
                 "subject": {
                     "reference": "Patient/624598"
                 },
                 "substance": {
-                    "display": "Aspirin"
+                    "reference": "Substance/1191"
                 }
             }
         },
@@ -19,13 +19,13 @@
             "content": {
                 "resourceType": "AllergyIntolerance",
                 "sensitivityType": "allergy",
-                "recordedDate": "3/14/2015",
+                "recordedDate": "2015-03-14T00:00:00Z",
                 "status": "confirmed",
                 "subject": {
                     "reference": "Patient/624598"
                 },
                 "substance": {
-                    "display": "Erythromycin"
+                    "reference": "Substance/QE1QX6B99R"
                 }
             }
         },
@@ -33,7 +33,7 @@
             "content": {
                 "resourceType": "AllergyIntolerance",
                 "sensitivityType": "allergy",
-                "recordedDate": "3/14/2015",
+                "recordedDate": "2015-03-14T00:00:00Z",
                 "status": "confirmed",
                 "subject": {
                     "reference": "Patient/624598"

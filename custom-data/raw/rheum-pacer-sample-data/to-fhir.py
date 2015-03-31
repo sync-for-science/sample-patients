@@ -4,7 +4,7 @@ import re
 
 patients = glob.glob("./Patient*")
 
-types = ["AllergyIntolerance", "Encounter", "MedicationPrescription", "DiagnosticReport", "Immunization", "Observation"]
+types = ["AllergyIntolerance", "Condition", "Encounter", "MedicationPrescription", "DiagnosticReport", "Immunization", "Observation"]
 
 resources = []
 def add_resource(rid, r):
@@ -29,6 +29,41 @@ def set_id(r, r_type):
         del r['id']
     return (rid, r)
 
+
+substances = {
+    'Substance/QE1QX6B99R': ["Peanut", "http://fda.gov/UNII/", "QE1QX6B99R"],
+    'Substance/EYO007VX98': ["Dust", "http://fda.gov/UNII/", "EYO007VX98"],
+    'Substance/1191': ["Aspirin", "http://www.nlm.nih.gov/research/umls/rxnorm", "1191"]
+}
+
+def resource_cleanup(r):
+    if r['resourceType'] == 'MedicationPrescription':
+        contained_med_ref = '#' + r['medication']['reference']
+        r['medication']['reference'] = contained_med_ref
+        r['contained'][0]['text'] = {
+             "status": "generated",
+             "div": "<div>%s</div>"%r['contained'][0]['text']['id']}
+    if r['resourceType'] == 'AllergyIntolerance' and 'reference' in r['substance']:
+        substance_label, substance_system, substance_code = substances[r['substance']['reference']]
+        r['substance']['reference'] = "#substance"
+        r['contained'] = [{
+          "resourceType": "Substance",
+          "id": "substance",
+          "text": {
+            "status": "generated",
+            "div": "<div>%s</div>"%substance_label
+          },
+          "type": {
+            "coding": [
+              {
+                "system": substance_system,
+                "code": substance_code,
+                "display": substance_label
+              }
+            ]
+          }
+        }]
+
 bad_date_regex = re.compile("(\d+)/(\d+)/(\d+)")
 def is_bad_date(d):
     return bad_date_regex.match(d)
@@ -37,20 +72,7 @@ def fix_bad_date(d):
     m,d,y = bad_date_regex.match(d).groups()
     return "%s-%s-%s"%(y, m.rjust(2,'0'), d.rjust(2,'0'))
 
-def resource_cleanup(r):
-    if r['resourceType'] == 'MedicationPrescription':
-        contained_med_ref = '#' + r['medication']['reference']
-        r['medication']['reference'] = contained_med_ref
-        r['dispense']['medication']['reference'] = contained_med_ref
-        r['contained'][0]['text'] = {
-             "status": "generated",
-             "div": "<div>%s</div>"%r['contained'][0]['text']['id']}
 
-    if r['resourceType'] == 'Immunization':
-        r['text'] = {
-             "status": "generated",
-             "div": "<div>%s</div>"%r['text']['id']}
-    
 def cleanup(data, path = None, depth=0):
     if path == None: path = []
     if type(data) is list:
@@ -91,4 +113,6 @@ feed = {
   'entry': resources
 }
 
+#for r in resources:
+#    print r['id']
 print json.dumps(feed, indent=2)
