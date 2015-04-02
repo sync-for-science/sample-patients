@@ -30,7 +30,7 @@
     "careProvider": [
         {
             "reference": "Practitioner/989",
-            "display": "Gibson MD, James"
+            "display": "Eric Newman MD"
         }
     ]
 }

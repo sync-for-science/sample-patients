@@ -5,7 +5,7 @@
       "content": {
         "careProvider": [
           {
-            "display": "Gibson MD, James", 
+            "display": "Eric Newman MD", 
             "reference": "Practitioner/989"
           }
         ], 
@@ -44,6 +44,7 @@
       "content": {
         "status": "confirmed", 
         "substance": {
+          "display": "Aspirin", 
           "reference": "#substance"
         }, 
         "sensitivityType": "allergy", 
@@ -78,6 +79,42 @@
       "content": {
         "status": "confirmed", 
         "substance": {
+          "display": "Erythromycin", 
+          "reference": "#substance"
+        }, 
+        "sensitivityType": "allergy", 
+        "resourceType": "AllergyIntolerance", 
+        "contained": [
+          {
+            "resourceType": "Substance", 
+            "text": {
+              "status": "generated", 
+              "div": "<div>Erythromycin</div>"
+            }, 
+            "type": {
+              "coding": [
+                {
+                  "code": "4053", 
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm", 
+                  "display": "Erythromycin"
+                }
+              ]
+            }, 
+            "id": "substance"
+          }
+        ], 
+        "recordedDate": "2015-03-14T00:00:00Z", 
+        "subject": {
+          "reference": "Patient/rheum-pacer-sample-data-1001"
+        }
+      }, 
+      "id": "AllergyIntolerance/rheum-pacer-sample-data-1003"
+    }, 
+    {
+      "content": {
+        "status": "confirmed", 
+        "substance": {
+          "display": "Peanuts", 
           "reference": "#substance"
         }, 
         "sensitivityType": "allergy", 
@@ -101,21 +138,6 @@
             "id": "substance"
           }
         ], 
-        "recordedDate": "2015-03-14T00:00:00Z", 
-        "subject": {
-          "reference": "Patient/rheum-pacer-sample-data-1001"
-        }
-      }, 
-      "id": "AllergyIntolerance/rheum-pacer-sample-data-1003"
-    }, 
-    {
-      "content": {
-        "status": "confirmed", 
-        "substance": {
-          "display": "Peanuts"
-        }, 
-        "sensitivityType": "allergy", 
-        "resourceType": "AllergyIntolerance", 
         "recordedDate": "2015-03-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
@@ -840,7 +862,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 142
+          "value": 142.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-03-14T00:00:00Z", 
@@ -865,7 +887,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 91
+          "value": 91.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-03-14T00:00:00Z", 
@@ -925,7 +947,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 141
+          "value": 141.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-01-14T00:00:00Z", 
@@ -950,7 +972,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 91
+          "value": 91.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-01-14T00:00:00Z", 
@@ -1010,7 +1032,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 142
+          "value": 142.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-11-11T00:00:00Z", 
@@ -1035,7 +1057,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 92
+          "value": 92.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-11-11T00:00:00Z", 
@@ -1095,7 +1117,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 142
+          "value": 142.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-09-18T00:00:00Z", 
@@ -1120,7 +1142,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 92
+          "value": 92.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-09-18T00:00:00Z", 
@@ -1180,7 +1202,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 143
+          "value": 143.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-07-18T00:00:00Z", 
@@ -1205,7 +1227,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 92
+          "value": 92.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-07-18T00:00:00Z", 
@@ -1265,7 +1287,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 141
+          "value": 141.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-05-20T00:00:00Z", 
@@ -1290,7 +1312,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 93
+          "value": 93.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-05-20T00:00:00Z", 
@@ -1350,7 +1372,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 140
+          "value": 140.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-03-11T00:00:00Z", 
@@ -1375,7 +1397,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 91
+          "value": 91.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-03-11T00:00:00Z", 
@@ -1435,7 +1457,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 142
+          "value": 142.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-01-29T00:00:00Z", 
@@ -1460,7 +1482,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 90
+          "value": 90.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-01-29T00:00:00Z", 
@@ -1520,7 +1542,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 142
+          "value": 142.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-11-10T00:00:00Z", 
@@ -1545,7 +1567,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 92
+          "value": 92.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-11-10T00:00:00Z", 
@@ -1605,7 +1627,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 141
+          "value": 141.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-09-29T00:00:00Z", 
@@ -1630,7 +1652,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 93
+          "value": 93.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-09-29T00:00:00Z", 
@@ -1690,7 +1712,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 141
+          "value": 141.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-07-07T00:00:00Z", 
@@ -1715,7 +1737,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 92
+          "value": 92.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-07-07T00:00:00Z", 
@@ -1775,7 +1797,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 141
+          "value": 141.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-05-29T00:00:00Z", 
@@ -1800,7 +1822,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 95
+          "value": 95.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-05-29T00:00:00Z", 
@@ -1860,7 +1882,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 143
+          "value": 143.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-03-15T00:00:00Z", 
@@ -1885,7 +1907,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 96
+          "value": 96.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-03-15T00:00:00Z", 
@@ -1945,7 +1967,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 143
+          "value": 143.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-01-12T00:00:00Z", 
@@ -1970,7 +1992,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 95
+          "value": 95.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-01-12T00:00:00Z", 
@@ -2030,7 +2052,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 144
+          "value": 144.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-11-02T00:00:00Z", 
@@ -2055,7 +2077,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 92
+          "value": 92.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-11-02T00:00:00Z", 
@@ -2115,7 +2137,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 145
+          "value": 145.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-09-11T00:00:00Z", 
@@ -2140,7 +2162,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 93
+          "value": 93.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-09-11T00:00:00Z", 
@@ -2200,7 +2222,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 142
+          "value": 142.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-07-14T00:00:00Z", 
@@ -2225,7 +2247,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 92
+          "value": 92.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-07-14T00:00:00Z", 
@@ -2285,7 +2307,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 141
+          "value": 141.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-05-18T00:00:00Z", 
@@ -2310,7 +2332,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 91
+          "value": 91.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-05-18T00:00:00Z", 
@@ -2370,7 +2392,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 142
+          "value": 142.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-03-18T00:00:00Z", 
@@ -2395,7 +2417,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 91
+          "value": 91.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-03-18T00:00:00Z", 
@@ -2455,7 +2477,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 142
+          "value": 142.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-01-11T00:00:00Z", 
@@ -2480,7 +2502,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 92
+          "value": 92.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-01-11T00:00:00Z", 
@@ -2548,10 +2570,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2015-03-14", 
+        "appliesDateTime": "2015-03-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2572,10 +2595,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2015-01-14", 
+        "appliesDateTime": "2015-01-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2596,10 +2620,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-11-11", 
+        "appliesDateTime": "2014-11-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2620,10 +2645,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 66
+          "units": "in", 
+          "value": 66.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-09-18", 
+        "appliesDateTime": "2014-09-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2644,10 +2670,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-07-18", 
+        "appliesDateTime": "2014-07-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2668,10 +2695,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-05-20", 
+        "appliesDateTime": "2014-05-20T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2692,10 +2720,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-03-11", 
+        "appliesDateTime": "2014-03-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2716,10 +2745,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-01-29", 
+        "appliesDateTime": "2014-01-29T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2740,10 +2770,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-11-10", 
+        "appliesDateTime": "2013-11-10T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2764,10 +2795,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-09-29", 
+        "appliesDateTime": "2013-09-29T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2788,10 +2820,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 66
+          "units": "in", 
+          "value": 66.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-07-07", 
+        "appliesDateTime": "2013-07-07T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2812,10 +2845,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-05-29", 
+        "appliesDateTime": "2013-05-29T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2836,10 +2870,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-03-15", 
+        "appliesDateTime": "2013-03-15T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2860,10 +2895,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-01-12", 
+        "appliesDateTime": "2013-01-12T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2884,10 +2920,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-11-02", 
+        "appliesDateTime": "2012-11-02T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2908,10 +2945,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-09-11", 
+        "appliesDateTime": "2012-09-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2932,10 +2970,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-07-14", 
+        "appliesDateTime": "2012-07-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2956,10 +2995,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 66
+          "units": "in", 
+          "value": 66.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-05-18", 
+        "appliesDateTime": "2012-05-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -2980,10 +3020,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-03-18", 
+        "appliesDateTime": "2012-03-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3004,10 +3045,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 67
+          "units": "in", 
+          "value": 67.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-01-11", 
+        "appliesDateTime": "2012-01-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3028,10 +3070,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 141
+          "units": "lb", 
+          "value": 141.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2015-03-14", 
+        "appliesDateTime": "2015-03-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3052,10 +3095,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 142
+          "units": "lb", 
+          "value": 142.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2015-01-14", 
+        "appliesDateTime": "2015-01-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3076,10 +3120,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 142
+          "units": "lb", 
+          "value": 142.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-11-11", 
+        "appliesDateTime": "2014-11-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3100,10 +3145,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 136
+          "units": "lb", 
+          "value": 136.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-09-18", 
+        "appliesDateTime": "2014-09-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3124,10 +3170,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 141
+          "units": "lb", 
+          "value": 141.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-07-18", 
+        "appliesDateTime": "2014-07-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3148,10 +3195,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 139
+          "units": "lb", 
+          "value": 139.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-05-20", 
+        "appliesDateTime": "2014-05-20T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3172,10 +3220,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 141
+          "units": "lb", 
+          "value": 141.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-03-11", 
+        "appliesDateTime": "2014-03-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3196,10 +3245,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 141
+          "units": "lb", 
+          "value": 141.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-01-29", 
+        "appliesDateTime": "2014-01-29T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3220,10 +3270,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 142
+          "units": "lb", 
+          "value": 142.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-11-10", 
+        "appliesDateTime": "2013-11-10T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3244,10 +3295,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 142
+          "units": "lb", 
+          "value": 142.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-09-29", 
+        "appliesDateTime": "2013-09-29T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3268,10 +3320,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 136
+          "units": "lb", 
+          "value": 136.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-07-07", 
+        "appliesDateTime": "2013-07-07T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3292,10 +3345,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 141
+          "units": "lb", 
+          "value": 141.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-05-29", 
+        "appliesDateTime": "2013-05-29T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3316,10 +3370,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 139
+          "units": "lb", 
+          "value": 139.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-03-15", 
+        "appliesDateTime": "2013-03-15T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3340,10 +3395,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 141
+          "units": "lb", 
+          "value": 141.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-01-12", 
+        "appliesDateTime": "2013-01-12T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3364,10 +3420,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 141
+          "units": "lb", 
+          "value": 141.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-11-02", 
+        "appliesDateTime": "2012-11-02T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3388,10 +3445,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 142
+          "units": "lb", 
+          "value": 142.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-09-11", 
+        "appliesDateTime": "2012-09-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3412,10 +3470,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 142
+          "units": "lb", 
+          "value": 142.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-07-14", 
+        "appliesDateTime": "2012-07-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3436,10 +3495,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 136
+          "units": "lb", 
+          "value": 136.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-05-18", 
+        "appliesDateTime": "2012-05-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3460,10 +3520,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 141
+          "units": "lb", 
+          "value": 141.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-03-18", 
+        "appliesDateTime": "2012-03-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3484,10 +3545,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 139
+          "units": "lb", 
+          "value": 139.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-01-11", 
+        "appliesDateTime": "2012-01-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3508,10 +3570,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 22.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2015-03-14", 
+        "appliesDateTime": "2015-03-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3532,10 +3595,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 22.2
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2015-01-14", 
+        "appliesDateTime": "2015-01-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3556,10 +3620,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 22.2
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-11-11", 
+        "appliesDateTime": "2014-11-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3580,10 +3645,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 21.9
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-09-18", 
+        "appliesDateTime": "2014-09-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3604,10 +3670,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 22.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-07-18", 
+        "appliesDateTime": "2014-07-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3628,10 +3695,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 21.7
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-05-20", 
+        "appliesDateTime": "2014-05-20T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3652,10 +3720,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 22.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-03-11", 
+        "appliesDateTime": "2014-03-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3676,10 +3745,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 22.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-01-29", 
+        "appliesDateTime": "2014-01-29T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3700,10 +3770,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 22.2
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-11-10", 
+        "appliesDateTime": "2013-11-10T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3724,10 +3795,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 22.2
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-09-29", 
+        "appliesDateTime": "2013-09-29T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3748,10 +3820,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 21.9
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-07-07", 
+        "appliesDateTime": "2013-07-07T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3772,10 +3845,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 22.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-05-29", 
+        "appliesDateTime": "2013-05-29T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3796,10 +3870,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 21.7
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-03-15", 
+        "appliesDateTime": "2013-03-15T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3820,10 +3895,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 22.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-01-12", 
+        "appliesDateTime": "2013-01-12T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3844,10 +3920,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 22.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-11-02", 
+        "appliesDateTime": "2012-11-02T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3868,10 +3945,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 22.2
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-09-11", 
+        "appliesDateTime": "2012-09-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3892,10 +3970,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 22.2
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-07-14", 
+        "appliesDateTime": "2012-07-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3916,10 +3995,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 21.9
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-05-18", 
+        "appliesDateTime": "2012-05-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3940,10 +4020,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 22.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-03-18", 
+        "appliesDateTime": "2012-03-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3964,10 +4045,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "kg/m2", 
           "value": 21.7
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-01-11", 
+        "appliesDateTime": "2012-01-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -3988,10 +4070,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 68
+          "units": "bpm", 
+          "value": 68.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2015-03-14", 
+        "appliesDateTime": "2015-03-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4012,10 +4095,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 70
+          "units": "bpm", 
+          "value": 70.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2015-01-14", 
+        "appliesDateTime": "2015-01-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4036,10 +4120,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 66
+          "units": "bpm", 
+          "value": 66.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-11-11", 
+        "appliesDateTime": "2014-11-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4060,10 +4145,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 66
+          "units": "bpm", 
+          "value": 66.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-09-18", 
+        "appliesDateTime": "2014-09-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4084,10 +4170,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 70
+          "units": "bpm", 
+          "value": 70.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-07-18", 
+        "appliesDateTime": "2014-07-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4108,10 +4195,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 62
+          "units": "bpm", 
+          "value": 62.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-05-20", 
+        "appliesDateTime": "2014-05-20T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4132,10 +4220,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 66
+          "units": "bpm", 
+          "value": 66.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-03-11", 
+        "appliesDateTime": "2014-03-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4156,10 +4245,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 66
+          "units": "bpm", 
+          "value": 66.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-01-29", 
+        "appliesDateTime": "2014-01-29T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4180,10 +4270,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 68
+          "units": "bpm", 
+          "value": 68.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-11-10", 
+        "appliesDateTime": "2013-11-10T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4204,10 +4295,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 68
+          "units": "bpm", 
+          "value": 68.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-09-29", 
+        "appliesDateTime": "2013-09-29T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4228,10 +4320,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 69
+          "units": "bpm", 
+          "value": 69.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-07-07", 
+        "appliesDateTime": "2013-07-07T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4252,10 +4345,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 65
+          "units": "bpm", 
+          "value": 65.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-05-29", 
+        "appliesDateTime": "2013-05-29T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4276,10 +4370,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 66
+          "units": "bpm", 
+          "value": 66.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-03-15", 
+        "appliesDateTime": "2013-03-15T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4300,10 +4395,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 68
+          "units": "bpm", 
+          "value": 68.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-01-12", 
+        "appliesDateTime": "2013-01-12T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4324,10 +4420,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 68
+          "units": "bpm", 
+          "value": 68.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-11-02", 
+        "appliesDateTime": "2012-11-02T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4348,10 +4445,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 66
+          "units": "bpm", 
+          "value": 66.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-09-11", 
+        "appliesDateTime": "2012-09-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4372,10 +4470,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 64
+          "units": "bpm", 
+          "value": 64.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-07-14", 
+        "appliesDateTime": "2012-07-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4396,10 +4495,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 65
+          "units": "bpm", 
+          "value": 65.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-05-18", 
+        "appliesDateTime": "2012-05-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4420,10 +4520,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 69
+          "units": "bpm", 
+          "value": 69.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-03-18", 
+        "appliesDateTime": "2012-03-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4444,10 +4545,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 70
+          "units": "bpm", 
+          "value": 70.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-01-11", 
+        "appliesDateTime": "2012-01-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4468,10 +4570,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 37
+          "units": "DegC", 
+          "value": 37.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2015-03-14", 
+        "appliesDateTime": "2015-03-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4492,10 +4595,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 37
+          "units": "DegC", 
+          "value": 37.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2015-01-14", 
+        "appliesDateTime": "2015-01-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4516,10 +4620,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 37
+          "units": "DegC", 
+          "value": 37.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-11-11", 
+        "appliesDateTime": "2014-11-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4540,10 +4645,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 37
+          "units": "DegC", 
+          "value": 37.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-09-18", 
+        "appliesDateTime": "2014-09-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4564,10 +4670,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "DegC", 
           "value": 37.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-07-18", 
+        "appliesDateTime": "2014-07-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4588,10 +4695,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "DegC", 
           "value": 36.8
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-05-20", 
+        "appliesDateTime": "2014-05-20T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4612,10 +4720,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "DegC", 
           "value": 36.8
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-03-11", 
+        "appliesDateTime": "2014-03-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4636,10 +4745,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 37
+          "units": "DegC", 
+          "value": 37.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-01-29", 
+        "appliesDateTime": "2014-01-29T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4660,10 +4770,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "DegC", 
           "value": 37.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-11-10", 
+        "appliesDateTime": "2013-11-10T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4684,10 +4795,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "DegC", 
           "value": 37.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-09-29", 
+        "appliesDateTime": "2013-09-29T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4708,10 +4820,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 37
+          "units": "DegC", 
+          "value": 37.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-07-07", 
+        "appliesDateTime": "2013-07-07T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4732,10 +4845,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "DegC", 
           "value": 36.8
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-05-29", 
+        "appliesDateTime": "2013-05-29T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4756,10 +4870,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "DegC", 
           "value": 36.8
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-03-15", 
+        "appliesDateTime": "2013-03-15T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4780,10 +4895,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "DegC", 
           "value": 37.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-01-12", 
+        "appliesDateTime": "2013-01-12T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4804,10 +4920,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "DegC", 
           "value": 36.8
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-11-02", 
+        "appliesDateTime": "2012-11-02T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4828,10 +4945,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "DegC", 
           "value": 37.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-09-11", 
+        "appliesDateTime": "2012-09-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4852,10 +4970,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 37
+          "units": "DegC", 
+          "value": 37.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-07-14", 
+        "appliesDateTime": "2012-07-14T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4876,10 +4995,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
+          "units": "DegC", 
           "value": 37.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-05-18", 
+        "appliesDateTime": "2012-05-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4900,10 +5020,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 37
+          "units": "DegC", 
+          "value": 37.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-03-18", 
+        "appliesDateTime": "2012-03-18T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4924,10 +5045,11 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 37
+          "units": "DegC", 
+          "value": 37.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-01-11", 
+        "appliesDateTime": "2012-01-11T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4948,10 +5070,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 18
+          "value": 18.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-10-01", 
+        "appliesDateTime": "2013-10-01T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4972,10 +5094,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 23
+          "value": 23.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-09-30", 
+        "appliesDateTime": "2014-09-30T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -4996,10 +5118,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 18
+          "value": 18.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-05-22", 
+        "appliesDateTime": "2014-05-22T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5020,10 +5142,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 19
+          "value": 19.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-10-09", 
+        "appliesDateTime": "2014-10-09T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5044,10 +5166,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 17
+          "value": 17.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-06-08", 
+        "appliesDateTime": "2013-06-08T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5068,10 +5190,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 91
+          "value": 91.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-09-30", 
+        "appliesDateTime": "2014-09-30T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5092,10 +5214,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 200
+          "value": 200.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-05-22", 
+        "appliesDateTime": "2014-05-22T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5116,10 +5238,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 211
+          "value": 211.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-10-09", 
+        "appliesDateTime": "2012-10-09T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5140,10 +5262,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 220
+          "value": 220.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-06-08", 
+        "appliesDateTime": "2014-06-08T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5164,10 +5286,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 209
+          "value": 209.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2011-10-01", 
+        "appliesDateTime": "2011-10-01T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5188,10 +5310,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 12
+          "value": 12.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-05-22", 
+        "appliesDateTime": "2014-05-22T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5215,7 +5337,7 @@
           "value": 12.4
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-02-19", 
+        "appliesDateTime": "2014-02-19T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5239,7 +5361,7 @@
           "value": 12.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-12-04", 
+        "appliesDateTime": "2013-12-04T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5260,10 +5382,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 12
+          "value": 12.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-10-01", 
+        "appliesDateTime": "2012-10-01T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5284,10 +5406,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 17
+          "value": 17.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-10-01", 
+        "appliesDateTime": "2014-10-01T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5308,10 +5430,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 18
+          "value": 18.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-09-30", 
+        "appliesDateTime": "2014-09-30T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5332,10 +5454,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 16
+          "value": 16.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-05-22", 
+        "appliesDateTime": "2014-05-22T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5356,10 +5478,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 17
+          "value": 17.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-10-09", 
+        "appliesDateTime": "2013-10-09T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5380,10 +5502,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 18
+          "value": 18.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-06-08", 
+        "appliesDateTime": "2014-06-08T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5407,7 +5529,7 @@
           "value": 9.6
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-10-01", 
+        "appliesDateTime": "2013-10-01T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5431,7 +5553,7 @@
           "value": 9.9
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-05-22", 
+        "appliesDateTime": "2014-05-22T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5455,7 +5577,7 @@
           "value": 9.8
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-02-19", 
+        "appliesDateTime": "2014-02-19T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5476,10 +5598,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 10
+          "value": 10.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-12-04", 
+        "appliesDateTime": "2013-12-04T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5500,10 +5622,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 200
+          "value": 200.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-10-01", 
+        "appliesDateTime": "2014-10-01T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5524,10 +5646,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 200
+          "value": 200.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-05-22", 
+        "appliesDateTime": "2014-05-22T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5548,10 +5670,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 200
+          "value": 200.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-02-19", 
+        "appliesDateTime": "2014-02-19T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5572,10 +5694,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 200
+          "value": 200.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-12-04", 
+        "appliesDateTime": "2014-12-04T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5596,10 +5718,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 30
+          "value": 30.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-09-30", 
+        "appliesDateTime": "2014-09-30T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5620,7 +5742,7 @@
         }, 
         "resourceType": "Observation", 
         "reliability": "ok", 
-        "appliesDateTime": "2014-11-07", 
+        "appliesDateTime": "2014-11-07T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }, 
@@ -5642,7 +5764,7 @@
         }, 
         "resourceType": "Observation", 
         "reliability": "ok", 
-        "appliesDateTime": "2013-08-24", 
+        "appliesDateTime": "2013-08-24T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }, 
@@ -5664,7 +5786,7 @@
         }, 
         "resourceType": "Observation", 
         "reliability": "ok", 
-        "appliesDateTime": "2012-10-01", 
+        "appliesDateTime": "2012-10-01T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }, 
@@ -5686,7 +5808,7 @@
         }, 
         "resourceType": "Observation", 
         "reliability": "ok", 
-        "appliesDateTime": "2013-10-01", 
+        "appliesDateTime": "2013-10-01T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }, 
@@ -5708,7 +5830,7 @@
         }, 
         "resourceType": "Observation", 
         "reliability": "ok", 
-        "appliesDateTime": "2014-09-30", 
+        "appliesDateTime": "2014-09-30T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }, 
@@ -5730,7 +5852,7 @@
         }, 
         "resourceType": "Observation", 
         "reliability": "ok", 
-        "appliesDateTime": "2012-11-07", 
+        "appliesDateTime": "2012-11-07T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }, 
@@ -5752,7 +5874,7 @@
         }, 
         "resourceType": "Observation", 
         "reliability": "ok", 
-        "appliesDateTime": "2014-08-24", 
+        "appliesDateTime": "2014-08-24T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }, 
@@ -5774,10 +5896,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 42
+          "value": 42.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-09-30", 
+        "appliesDateTime": "2014-09-30T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5798,10 +5920,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 78
+          "value": 78.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2012-11-07", 
+        "appliesDateTime": "2012-11-07T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5822,10 +5944,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 13
+          "value": 13.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-10-07", 
+        "appliesDateTime": "2014-10-07T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5846,10 +5968,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 11
+          "value": 11.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-10-07", 
+        "appliesDateTime": "2014-10-07T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5870,10 +5992,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 12
+          "value": 12.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-06-08", 
+        "appliesDateTime": "2014-06-08T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5894,7 +6016,7 @@
         }, 
         "resourceType": "Observation", 
         "reliability": "ok", 
-        "appliesDateTime": "2014-09-02", 
+        "appliesDateTime": "2014-09-02T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }, 
@@ -5916,7 +6038,7 @@
         }, 
         "resourceType": "Observation", 
         "reliability": "ok", 
-        "appliesDateTime": "2014-09-02", 
+        "appliesDateTime": "2014-09-02T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }, 
@@ -5938,10 +6060,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 1
+          "value": 1.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-05-22", 
+        "appliesDateTime": "2014-05-22T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5965,7 +6087,7 @@
           "value": 1.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-02-19", 
+        "appliesDateTime": "2014-02-19T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -5986,10 +6108,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 1
+          "value": 1.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-12-04", 
+        "appliesDateTime": "2014-12-04T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -6010,10 +6132,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 1
+          "value": 1.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-11-07", 
+        "appliesDateTime": "2014-11-07T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -6037,7 +6159,7 @@
           "value": 0.6
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-10-09", 
+        "appliesDateTime": "2013-10-09T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -6061,7 +6183,7 @@
           "value": 0.6
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-06-08", 
+        "appliesDateTime": "2013-06-08T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -6085,7 +6207,7 @@
           "value": 0.7
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-10-01", 
+        "appliesDateTime": "2013-10-01T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -6106,10 +6228,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 4
+          "value": 4.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-10-01", 
+        "appliesDateTime": "2014-10-01T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -6133,7 +6255,7 @@
           "value": 4.2
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-09-30", 
+        "appliesDateTime": "2014-09-30T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -6154,10 +6276,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 4
+          "value": 4.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2014-05-22", 
+        "appliesDateTime": "2014-05-22T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -6181,7 +6303,7 @@
           "value": 4.1
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-10-09", 
+        "appliesDateTime": "2013-10-09T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -6202,10 +6324,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 4
+          "value": 4.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2013-06-08", 
+        "appliesDateTime": "2013-06-08T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1001"
         }
@@ -6216,7 +6338,7 @@
       "content": {
         "careProvider": [
           {
-            "display": "Thomas P Olenginski-Like MD", 
+            "display": "Eric Newman MD", 
             "reference": "Practitioner/989"
           }
         ], 
@@ -6816,7 +6938,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 141
+          "value": 141.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-03-12T00:00:00Z", 
@@ -6841,7 +6963,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 91
+          "value": 91.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-03-12T00:00:00Z", 
@@ -6901,7 +7023,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 145
+          "value": 145.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-01-12T00:00:00Z", 
@@ -6926,7 +7048,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 90
+          "value": 90.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-01-12T00:00:00Z", 
@@ -6986,7 +7108,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 141
+          "value": 141.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-12-20T00:00:00Z", 
@@ -7011,7 +7133,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 90
+          "value": 90.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-12-20T00:00:00Z", 
@@ -7071,7 +7193,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 142
+          "value": 142.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-11-30T00:00:00Z", 
@@ -7096,7 +7218,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 91
+          "value": 91.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-11-30T00:00:00Z", 
@@ -7156,7 +7278,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 143
+          "value": 143.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-10-31T00:00:00Z", 
@@ -7181,7 +7303,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 92
+          "value": 92.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-10-31T00:00:00Z", 
@@ -7241,7 +7363,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 144
+          "value": 144.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-09-25T00:00:00Z", 
@@ -7266,7 +7388,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 93
+          "value": 93.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-09-25T00:00:00Z", 
@@ -7326,7 +7448,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 142
+          "value": 142.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-07-13T00:00:00Z", 
@@ -7351,7 +7473,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 93
+          "value": 93.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-07-13T00:00:00Z", 
@@ -7411,7 +7533,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 144
+          "value": 144.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-06-02T00:00:00Z", 
@@ -7436,7 +7558,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 94
+          "value": 94.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-06-02T00:00:00Z", 
@@ -7496,7 +7618,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 144
+          "value": 144.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-05-01T00:00:00Z", 
@@ -7521,7 +7643,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 95
+          "value": 95.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-05-01T00:00:00Z", 
@@ -7581,7 +7703,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 140
+          "value": 140.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-04-16T00:00:00Z", 
@@ -7606,7 +7728,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 92
+          "value": 92.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-04-16T00:00:00Z", 
@@ -7666,7 +7788,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 145
+          "value": 145.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-03-11T00:00:00Z", 
@@ -7691,7 +7813,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 91
+          "value": 91.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-03-11T00:00:00Z", 
@@ -7751,7 +7873,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 142
+          "value": 142.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-02-20T00:00:00Z", 
@@ -7776,7 +7898,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 92
+          "value": 92.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-02-20T00:00:00Z", 
@@ -7836,7 +7958,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 142
+          "value": 142.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-01-15T00:00:00Z", 
@@ -7861,7 +7983,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 92
+          "value": 92.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-01-15T00:00:00Z", 
@@ -7921,7 +8043,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 141
+          "value": 141.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-12-10T00:00:00Z", 
@@ -7946,7 +8068,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 91
+          "value": 91.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-12-10T00:00:00Z", 
@@ -8006,7 +8128,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 143
+          "value": 143.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-10-29T00:00:00Z", 
@@ -8031,7 +8153,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 93
+          "value": 93.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-10-29T00:00:00Z", 
@@ -8091,7 +8213,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 144
+          "value": 144.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-09-07T00:00:00Z", 
@@ -8116,7 +8238,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 92
+          "value": 92.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-09-07T00:00:00Z", 
@@ -8176,7 +8298,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 141
+          "value": 141.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-06-10T00:00:00Z", 
@@ -8201,7 +8323,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 90
+          "value": 90.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-06-10T00:00:00Z", 
@@ -8261,7 +8383,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 142
+          "value": 142.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-03-01T00:00:00Z", 
@@ -8286,7 +8408,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 91
+          "value": 91.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-03-01T00:00:00Z", 
@@ -8346,7 +8468,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 143
+          "value": 143.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-01-04T00:00:00Z", 
@@ -8371,7 +8493,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 92
+          "value": 92.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-01-04T00:00:00Z", 
@@ -8431,7 +8553,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 141
+          "value": 141.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-11-20T00:00:00Z", 
@@ -8456,7 +8578,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "mmHg", 
-          "value": 92
+          "value": 92.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-11-20T00:00:00Z", 
@@ -8525,7 +8647,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-03-12T00:00:00Z", 
@@ -8550,7 +8672,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-01-12T00:00:00Z", 
@@ -8575,7 +8697,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-12-20T00:00:00Z", 
@@ -8600,7 +8722,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-11-30T00:00:00Z", 
@@ -8625,7 +8747,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-10-31T00:00:00Z", 
@@ -8650,7 +8772,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-09-25T00:00:00Z", 
@@ -8675,7 +8797,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-07-13T00:00:00Z", 
@@ -8700,7 +8822,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-06-02T00:00:00Z", 
@@ -8725,7 +8847,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-05-01T00:00:00Z", 
@@ -8750,7 +8872,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-04-16T00:00:00Z", 
@@ -8775,7 +8897,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-03-11T00:00:00Z", 
@@ -8800,7 +8922,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-02-20T00:00:00Z", 
@@ -8825,7 +8947,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-01-15T00:00:00Z", 
@@ -8850,7 +8972,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-12-10T00:00:00Z", 
@@ -8875,7 +8997,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-10-29T00:00:00Z", 
@@ -8900,7 +9022,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-09-07T00:00:00Z", 
@@ -8925,7 +9047,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-06-10T00:00:00Z", 
@@ -8950,7 +9072,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-03-01T00:00:00Z", 
@@ -8975,7 +9097,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-01-04T00:00:00Z", 
@@ -9000,7 +9122,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "in", 
-          "value": 59
+          "value": 59.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-11-20T00:00:00Z", 
@@ -9025,7 +9147,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 122
+          "value": 122.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-03-12T00:00:00Z", 
@@ -9050,7 +9172,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 125
+          "value": 125.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-01-12T00:00:00Z", 
@@ -9075,7 +9197,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 123
+          "value": 123.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-12-20T00:00:00Z", 
@@ -9100,7 +9222,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 124
+          "value": 124.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-11-30T00:00:00Z", 
@@ -9125,7 +9247,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 125
+          "value": 125.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-10-31T00:00:00Z", 
@@ -9150,7 +9272,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 123
+          "value": 123.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-09-25T00:00:00Z", 
@@ -9175,7 +9297,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 124
+          "value": 124.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-07-13T00:00:00Z", 
@@ -9200,7 +9322,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 126
+          "value": 126.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-06-02T00:00:00Z", 
@@ -9225,7 +9347,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 123
+          "value": 123.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-05-01T00:00:00Z", 
@@ -9250,7 +9372,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 124
+          "value": 124.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-04-16T00:00:00Z", 
@@ -9275,7 +9397,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 125
+          "value": 125.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-03-11T00:00:00Z", 
@@ -9300,7 +9422,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 123
+          "value": 123.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-02-20T00:00:00Z", 
@@ -9325,7 +9447,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 124
+          "value": 124.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-01-15T00:00:00Z", 
@@ -9350,7 +9472,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 125
+          "value": 125.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-12-10T00:00:00Z", 
@@ -9375,7 +9497,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 123
+          "value": 123.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-10-29T00:00:00Z", 
@@ -9400,7 +9522,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 124
+          "value": 124.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-09-07T00:00:00Z", 
@@ -9425,7 +9547,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 125
+          "value": 125.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-06-10T00:00:00Z", 
@@ -9450,7 +9572,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 123
+          "value": 123.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-03-01T00:00:00Z", 
@@ -9475,7 +9597,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 129
+          "value": 129.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-01-04T00:00:00Z", 
@@ -9500,7 +9622,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "lb", 
-          "value": 131
+          "value": 131.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-11-20T00:00:00Z", 
@@ -9600,7 +9722,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "kg/m2", 
-          "value": 25
+          "value": 25.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-11-30T00:00:00Z", 
@@ -9675,7 +9797,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "kg/m2", 
-          "value": 25
+          "value": 25.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-07-13T00:00:00Z", 
@@ -9750,7 +9872,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "kg/m2", 
-          "value": 25
+          "value": 25.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-04-16T00:00:00Z", 
@@ -9825,7 +9947,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "kg/m2", 
-          "value": 25
+          "value": 25.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-01-15T00:00:00Z", 
@@ -9900,7 +10022,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "kg/m2", 
-          "value": 25
+          "value": 25.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-09-07T00:00:00Z", 
@@ -10025,7 +10147,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 69
+          "value": 69.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-03-12T00:00:00Z", 
@@ -10050,7 +10172,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 64
+          "value": 64.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-01-12T00:00:00Z", 
@@ -10075,7 +10197,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 68
+          "value": 68.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-12-20T00:00:00Z", 
@@ -10100,7 +10222,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 89
+          "value": 89.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-11-30T00:00:00Z", 
@@ -10125,7 +10247,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 64
+          "value": 64.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-10-31T00:00:00Z", 
@@ -10150,7 +10272,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 68
+          "value": 68.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-09-25T00:00:00Z", 
@@ -10175,7 +10297,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 88
+          "value": 88.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-07-13T00:00:00Z", 
@@ -10200,7 +10322,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 64
+          "value": 64.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-06-02T00:00:00Z", 
@@ -10225,7 +10347,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 68
+          "value": 68.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-05-01T00:00:00Z", 
@@ -10250,7 +10372,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 87
+          "value": 87.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-04-16T00:00:00Z", 
@@ -10275,7 +10397,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 64
+          "value": 64.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-03-11T00:00:00Z", 
@@ -10300,7 +10422,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 68
+          "value": 68.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-02-20T00:00:00Z", 
@@ -10325,7 +10447,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 86
+          "value": 86.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-01-15T00:00:00Z", 
@@ -10350,7 +10472,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 64
+          "value": 64.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-12-10T00:00:00Z", 
@@ -10375,7 +10497,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 68
+          "value": 68.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-10-29T00:00:00Z", 
@@ -10400,7 +10522,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 85
+          "value": 85.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-09-07T00:00:00Z", 
@@ -10425,7 +10547,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 64
+          "value": 64.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-06-10T00:00:00Z", 
@@ -10450,7 +10572,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 68
+          "value": 68.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-03-01T00:00:00Z", 
@@ -10475,7 +10597,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 64
+          "value": 64.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-01-04T00:00:00Z", 
@@ -10500,7 +10622,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "bpm", 
-          "value": 68
+          "value": 68.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-11-20T00:00:00Z", 
@@ -10525,7 +10647,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 39
+          "value": 39.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-03-12T00:00:00Z", 
@@ -10550,7 +10672,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 38
+          "value": 38.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-01-12T00:00:00Z", 
@@ -10575,7 +10697,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 39
+          "value": 39.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-12-20T00:00:00Z", 
@@ -10600,7 +10722,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 39
+          "value": 39.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-11-30T00:00:00Z", 
@@ -10625,7 +10747,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 38
+          "value": 38.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-10-31T00:00:00Z", 
@@ -10650,7 +10772,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 39
+          "value": 39.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-09-25T00:00:00Z", 
@@ -10675,7 +10797,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 39
+          "value": 39.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-07-13T00:00:00Z", 
@@ -10700,7 +10822,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 38
+          "value": 38.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-06-02T00:00:00Z", 
@@ -10725,7 +10847,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 39
+          "value": 39.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-05-01T00:00:00Z", 
@@ -10750,7 +10872,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 39
+          "value": 39.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-04-16T00:00:00Z", 
@@ -10775,7 +10897,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 38
+          "value": 38.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-03-11T00:00:00Z", 
@@ -10800,7 +10922,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 39
+          "value": 39.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-02-20T00:00:00Z", 
@@ -10825,7 +10947,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 39
+          "value": 39.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2014-01-15T00:00:00Z", 
@@ -10850,7 +10972,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 38
+          "value": 38.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-12-10T00:00:00Z", 
@@ -10875,7 +10997,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 39
+          "value": 39.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-10-29T00:00:00Z", 
@@ -10900,7 +11022,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 39
+          "value": 39.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-09-07T00:00:00Z", 
@@ -10925,7 +11047,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 38
+          "value": 38.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-06-10T00:00:00Z", 
@@ -10950,7 +11072,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 39
+          "value": 39.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-03-01T00:00:00Z", 
@@ -10975,7 +11097,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 38
+          "value": 38.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2013-01-04T00:00:00Z", 
@@ -11000,7 +11122,7 @@
         "resourceType": "Observation", 
         "valueQuantity": {
           "units": "DegC", 
-          "value": 39
+          "value": 39.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2012-11-20T00:00:00Z", 
@@ -11051,7 +11173,7 @@
           "value": 7.35
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2015-03-15T00:00:00Z", 
+        "appliesDateTime": "2014-02-15T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1246"
         }
@@ -11099,7 +11221,7 @@
           "value": 11.3
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2015-03-15T00:00:00Z", 
+        "appliesDateTime": "2014-02-15T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1246"
         }
@@ -11120,7 +11242,7 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 121
+          "value": 121.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-03-15T00:00:00Z", 
@@ -11144,10 +11266,10 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 115
+          "value": 115.0
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2015-03-15T00:00:00Z", 
+        "appliesDateTime": "2014-02-15T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1246"
         }
@@ -11195,7 +11317,7 @@
           "value": 1.5
         }, 
         "reliability": "ok", 
-        "appliesDateTime": "2015-03-15T00:00:00Z", 
+        "appliesDateTime": "2014-02-15T00:00:00Z", 
         "subject": {
           "reference": "Patient/rheum-pacer-sample-data-1246"
         }
@@ -11240,7 +11362,7 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 26
+          "value": 26.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-03-15T00:00:00Z", 
@@ -11264,7 +11386,7 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 33
+          "value": 33.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-03-15T00:00:00Z", 
@@ -11288,7 +11410,7 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 91
+          "value": 91.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-03-15T00:00:00Z", 
@@ -11336,7 +11458,7 @@
         }, 
         "resourceType": "Observation", 
         "valueQuantity": {
-          "value": 160
+          "value": 160.0
         }, 
         "reliability": "ok", 
         "appliesDateTime": "2015-03-12T00:00:00Z", 

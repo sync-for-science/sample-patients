@@ -3,6 +3,7 @@ import json
 import re
 
 patients = glob.glob("./Patient*")
+#patients = sorted(glob.glob("./Patient*"))
 
 types = ["AllergyIntolerance", "Condition", "Encounter", "MedicationPrescription", "DiagnosticReport", "Immunization", "Observation"]
 
@@ -33,7 +34,8 @@ def set_id(r, r_type):
 substances = {
     'Substance/QE1QX6B99R': ["Peanut", "http://fda.gov/UNII/", "QE1QX6B99R"],
     'Substance/EYO007VX98': ["Dust", "http://fda.gov/UNII/", "EYO007VX98"],
-    'Substance/1191': ["Aspirin", "http://www.nlm.nih.gov/research/umls/rxnorm", "1191"]
+    'Substance/1191': ["Aspirin", "http://www.nlm.nih.gov/research/umls/rxnorm", "1191"],
+    'Substance/4053': ["Erythromycin", "http://www.nlm.nih.gov/research/umls/rxnorm", "4053"]
 }
 
 def resource_cleanup(r):
@@ -113,6 +115,6 @@ feed = {
   'entry': resources
 }
 
-#for r in resources:
-#    print r['id']
-print json.dumps(feed, indent=2)
+for r in resources:
+    print r['id']
+#print json.dumps(feed, indent=2)
