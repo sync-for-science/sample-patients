@@ -115,6 +115,6 @@ feed = {
   'entry': resources
 }
 
-for r in resources:
-    print r['id']
-#print json.dumps(feed, indent=2)
+#for r in resources:
+#    print r['id']
+print json.dumps(feed, indent=2)
