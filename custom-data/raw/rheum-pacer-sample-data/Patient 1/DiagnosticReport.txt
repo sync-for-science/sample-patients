@@ -11,9 +11,9 @@
                             "code": "36307-7"
                         }
                     ],
-                    "text": "2013-06-15T00:00:00Z"
+                    "text": "FOOT, 3+ VIEWS"
                 },
-                "issued": "6/15/2013",
+                "issued": "2013-06-15T00:00:00Z",
                 "subject": {
                     "reference": "Patient/552356"
                 },
@@ -30,9 +30,9 @@
                             "code": "24721-3"
                         }
                     ],
-                    "text": "2014-05-05T00:00:00Z"
+                    "text": "HAND 2 VIEWS"
                 },
-                "issued": "5/5/2014",
+                "issued": "2014-05-05T00:00:00Z",
                 "subject": {
                     "reference": "Patient/552356"
                 },
@@ -49,9 +49,9 @@
                             "code": "36554-4"
                         }
                     ],
-                    "text": "2004-05-24T00:00:00Z"
+                    "text": "CHEST 1 VIEW"
                 },
-                "issued": "5/24/2004",
+                "issued": "2004-05-24T00:00:00Z",
                 "subject": {
                     "reference": "Patient/552356"
                 },
@@ -68,9 +68,9 @@
                             "code": "48737-1"
                         }
                     ],
-                    "text": "2012-08-18T00:00:00Z"
+                    "text": "HAND + WRIST, 3+ VIEWS"
                 },
-                "issued": "8/18/2012",
+                "issued": "2012-08-18T00:00:00Z",
                 "subject": {
                     "reference": "Patient/552356"
                 },
@@ -87,9 +87,9 @@
                             "code": "36398-7"
                         }
                     ],
-                    "text": "2014-02-16T00:00:00Z"
+                    "text": "HAND-WRIST 2 VIEWS"
                 },
-                "issued": "2/16/2014",
+                "issued": "2014-02-16T00:00:00Z",
                 "subject": {
                     "reference": "Patient/552356"
                 },
@@ -106,9 +106,9 @@
                             "code": "46343-0"
                         }
                     ],
-                    "text": "2012-03-22T00:00:00Z"
+                    "text": "HAND-WRIST MINIMUM 3 VIEWS VIEWS"
                 },
-                "issued": "3/22/2012",
+                "issued": "2012-03-22T00:00:00Z",
                 "subject": {
                     "reference": "Patient/552356"
                 },
@@ -125,9 +125,9 @@
                             "code": "37699-6"
                         }
                     ],
-                    "text": "2013-01-30T00:00:00Z"
+                    "text": "FOOT COMPLETE MINIMUM 3 VIEWS"
                 },
-                "issued": "1/30/2013",
+                "issued": "2013-01-30T00:00:00Z",
                 "subject": {
                     "reference": "Patient/552356"
                 },
@@ -144,9 +144,9 @@
                             "code": "37697-0"
                         }
                     ],
-                    "text": "2013-02-07T00:00:00Z"
+                    "text": "FOOT, 2 VIEWS"
                 },
-                "issued": "2/7/2013",
+                "issued": "2013-02-07T00:00:00Z",
                 "subject": {
                     "reference": "Patient/552356"
                 },
