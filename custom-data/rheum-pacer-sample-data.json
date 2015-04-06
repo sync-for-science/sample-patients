@@ -311,7 +311,7 @@
             "code": {
               "coding": [
                 {
-                  "code": "763181", 
+                  "code": "312617", 
                   "system": "http://www.nlm.nih.gov/research/umls/rxnorm", 
                   "display": "prednisone 5 mg oral tablet"
                 }
@@ -476,7 +476,7 @@
             "code": {
               "coding": [
                 {
-                  "code": "287734", 
+                  "code": "105586", 
                   "system": "http://www.nlm.nih.gov/research/umls/rxnorm", 
                   "display": "methotrexate 10 mg oral tablet"
                 }
@@ -6582,7 +6582,7 @@
             "code": {
               "coding": [
                 {
-                  "code": "287734", 
+                  "code": "105586", 
                   "system": "http://www.nlm.nih.gov/research/umls/rxnorm", 
                   "display": "methotrexate 10 mg oral tablet"
                 }
@@ -6637,7 +6637,7 @@
             "code": {
               "coding": [
                 {
-                  "code": "763181", 
+                  "code": "312617", 
                   "system": "http://www.nlm.nih.gov/research/umls/rxnorm", 
                   "display": "prednisone 5 mg oral tablet"
                 }
