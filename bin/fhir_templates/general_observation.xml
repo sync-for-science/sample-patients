@@ -13,13 +13,13 @@
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">{{o.name}}</div>
     </text>
-    <name>
+    <code>
       <coding>
         <system value="{{o.system}}"/>
         <code value="{{o.code}}"/>
         <display value="{{o.name}}"/>
       </coding>
-    </name>
+    </code>
     <appliesDateTime value="{{o.date}}"/>
     <status value="final"/>
     <reliability value="ok"/>

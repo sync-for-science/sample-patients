@@ -18,13 +18,13 @@
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">{{o.date}}: {{o.name}} = {{o.value}} {{o.units|default('')}}</div>
     </text>
-    <name>
+    <code>
       <coding>
         <system value="http://loinc.org"/>
         <code value="{{o.code}}"/>
         <display value="{{o.name}}"/>
       </coding>
-    </name>
+    </code>
     {%- if o.scale is defined and o.scale == 'Qn' %}
     <valueQuantity>
       <value value="{{o.value | float(0)}}"/>

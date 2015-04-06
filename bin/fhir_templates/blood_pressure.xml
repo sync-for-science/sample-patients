@@ -24,13 +24,13 @@
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">{{bp.date}}: Blood pressure {{bp.systolic}}/{{bp.diastolic}} mmHg</div>
     </text>
-    <name>
+    <code>
       <coding>
         <system value="http://loinc.org"/>
         <code value="55284-4"/>
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
-    </name>
+    </code>
     <appliesDateTime value="{{bp.date}}"/>
     <status value="final"/>
     <reliability value="ok"/>
@@ -50,13 +50,13 @@
       </target>
     </related>
     {%- if bp.site %}
-    <bodySite>
+    <bodySiteCodeableConcept>
      <coding>
          <system value="{{bp.site_system}}"/>
          <code value="{{bp.site_code}}"/>
          <display value="{{bp.site}}"/>
      </coding>
-    </bodySite>
+    </bodySiteCodeableConcept>
     {% endif %}
     {%- if bp.method %}
     <method>

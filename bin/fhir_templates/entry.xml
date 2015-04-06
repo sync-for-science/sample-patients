@@ -1,8 +1,11 @@
 <entry>
-  <status value="update"/>
   <resource>
     {% set resource_id=("<id value=\""+id.split('/')[1]+"\"/>")|safe %}
     {% block content -%}
     {%- endblock content %}
   </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="{{id}}"/>
+  </transaction>
 </entry>
