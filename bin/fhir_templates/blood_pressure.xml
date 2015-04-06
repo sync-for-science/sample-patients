@@ -3,14 +3,14 @@
   <Observation>
     {{resource_id}}
     {%- if bp.encounter_id %}
-    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#encounter">
         <valueReference>
             <reference value="{{bp.encounter_id}}"/>
         </valueReference>
     </extension>
     {% endif %}
     {%- if bp.position %}
-    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#position">
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position">
       <valueCodeableConcept>
          <coding>
              <system value="{{bp.position_system}}"/>

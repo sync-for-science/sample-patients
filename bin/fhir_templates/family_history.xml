@@ -3,7 +3,7 @@
     <FamilyHistory>
   {{resource_id}}
       {%- if fh.heightcm %}
-      <extension url="http://fhir-registry.smarthealthit.org/Profile/family-history#height">
+      <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height">
         <valueQuantity>
           <value value="{{fh.heightcm}}"/>
           <units value="centimeters"/>

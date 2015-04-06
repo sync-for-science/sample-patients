@@ -3,7 +3,7 @@
   <Observation>
   {{resource_id}}
     {%- if o.encounter_id %}
-    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#encounter" >
         <valueReference>
             <reference value="{{o.encounter_id}}"/>
         </valueReference>
