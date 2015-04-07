@@ -45,7 +45,7 @@ def fuzz(ratio, t1, t2):
   return ret
 
 def add_years(d1, y):
-  return d1 + timedelta(days=365*y)
+  return d1 + timedelta(days=int(365*y))
 
 def choose_random (optionA, optionB, probability):
     n = random.uniform(0, 1)

@@ -32,9 +32,9 @@
           <uid value="urn:sampleoid:{{img.oid}}"/>
           <sopclass value="urn:oid:{{img.sop}}"/>
           <title value="{{img.title}}"/>
-          <attachment>
-             <reference value="{{img.binary_id}}"/>
-          </attachment>
+          <content>
+             <url value="{{img.binary_id}}"/>
+          </content>
         </instance>
         {%- endfor %}
       </series>

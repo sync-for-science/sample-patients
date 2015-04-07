@@ -6,9 +6,9 @@
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">{{c.name}}</div>   
    </text>
-    <subject>
+    <patient>
       <reference value="{{pid}}"/>
-    </subject>
+    </patient>
     <code> 
       <coding>
         <system value="http://snomed.info/sct"/>
@@ -17,7 +17,7 @@
       </coding>
       <text value="{{c.name}}"/>
     </code>
-   <status value="confirmed"/>
+   <clinicalStatus value="confirmed"/>
    <onsetDate value="{{c.start}}"/>
    {% if c.end %}
    <abatementDate value="{{c.end}}"/>

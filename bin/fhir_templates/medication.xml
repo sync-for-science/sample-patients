@@ -34,17 +34,17 @@
 
   <dosageInstruction>
     <scheduledTiming>
-      <event>
-        <start value="{{m.start}}"/>
-        {%- if m.end is defined and m.end != "" %}
-        <end value="{{m.end}}"/>
-        {% endif %}
-      </event>
       {%- if m.freqduration %}
       <repeat>
+        <bounds>
+          <start value="{{m.start}}"/>
+          {%- if m.end is defined and m.end != "" %}
+          <end value="{{m.end}}"/>
+          {% endif %}
+        </bounds>
         <frequency value="{{m.freq}}"/>
         <duration value="1"/>
-        <units value="{{m.freqduration}}"/>
+        <durationUnits value="{{m.freqduration}}"/>
       </repeat>
       {% endif %}
     </scheduledTiming>

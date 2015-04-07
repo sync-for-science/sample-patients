@@ -17,10 +17,7 @@
       </coding>
       <text value="{{w.name}}"/>
    </type>
-   <date>
-     <start value="{{w.date}}"/>
-     <end value="{{w.date}}"/>
-   </date>
+   <performedDateTime value="{{w.date}}"/>
    {%- if w.notes %}
    <notes value="{{w.notes}}"/>
    {% endif %}

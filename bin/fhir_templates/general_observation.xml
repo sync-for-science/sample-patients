@@ -2,13 +2,6 @@
   {%- block content %}
   <Observation>
   {{resource_id}}
-    {%- if o.encounter_id %}
-    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#encounter" >
-        <valueReference>
-            <reference value="{{o.encounter_id}}"/>
-        </valueReference>
-    </extension>
-    {% endif %}
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">{{o.name}}</div>
@@ -26,5 +19,10 @@
     <subject>
       <reference value="{{pid}}"/>
     </subject>
+    {%- if o.encounter_id %}
+    <encounter>
+      <reference value="{{o.encounter_id}}"/>
+    </encounter>
+    {% endif %}
   </Observation>
   {% endblock %}

@@ -12,8 +12,14 @@
     </text>
     <identifier>
       <use value="usual"/>
-      <label value="SMART Hospital MRN"/>
-      <system value="urn:oid:0.1.2.3.4.5.6.7"/>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+      </type>
+      <system value="http://hospital.smarthealthit.org"/>
       <value value="{{p.pid}}"/>
     </identifier>
     <name>
