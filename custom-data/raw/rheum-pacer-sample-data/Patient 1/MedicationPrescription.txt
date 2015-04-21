@@ -16,7 +16,7 @@
                             "coding": [
                                 {
                                     "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-                                    "code": "287734",
+                                    "code": "105586",
                                     "display": "methotrexate 10 mg oral tablet"
                                 }
                             ]
@@ -69,7 +69,7 @@
                             "coding": [
                                 {
                                     "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-                                    "code": "763181",
+                                    "code": "312617",
                                     "display": "prednisone 5 mg oral tablet"
                                 }
                             ]

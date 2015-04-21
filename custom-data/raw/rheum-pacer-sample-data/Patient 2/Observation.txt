@@ -49,7 +49,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 142,
+          "value": 142.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2015-03-14T00:00:00Z",
@@ -74,7 +74,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 91,
+          "value": 91.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2015-03-14T00:00:00Z",
@@ -133,7 +133,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 141,
+          "value": 141.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2015-01-14T00:00:00Z",
@@ -158,7 +158,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 91,
+          "value": 91.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2015-01-14T00:00:00Z",
@@ -217,7 +217,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 142,
+          "value": 142.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2014-11-11T00:00:00Z",
@@ -242,7 +242,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 92,
+          "value": 92.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2014-11-11T00:00:00Z",
@@ -301,7 +301,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 142,
+          "value": 142.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2014-09-18T00:00:00Z",
@@ -326,7 +326,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 92,
+          "value": 92.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2014-09-18T00:00:00Z",
@@ -385,7 +385,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 143,
+          "value": 143.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2014-07-18T00:00:00Z",
@@ -410,7 +410,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 92,
+          "value": 92.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2014-07-18T00:00:00Z",
@@ -469,7 +469,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 141,
+          "value": 141.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2014-05-20T00:00:00Z",
@@ -494,7 +494,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 93,
+          "value": 93.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2014-05-20T00:00:00Z",
@@ -553,7 +553,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 140,
+          "value": 140.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2014-03-11T00:00:00Z",
@@ -578,7 +578,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 91,
+          "value": 91.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2014-03-11T00:00:00Z",
@@ -637,7 +637,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 142,
+          "value": 142.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2014-01-29T00:00:00Z",
@@ -662,7 +662,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 90,
+          "value": 90.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2014-01-29T00:00:00Z",
@@ -721,7 +721,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 142,
+          "value": 142.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2013-11-10T00:00:00Z",
@@ -746,7 +746,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 92,
+          "value": 92.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2013-11-10T00:00:00Z",
@@ -805,7 +805,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 141,
+          "value": 141.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2013-09-29T00:00:00Z",
@@ -830,7 +830,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 93,
+          "value": 93.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2013-09-29T00:00:00Z",
@@ -889,7 +889,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 141,
+          "value": 141.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2013-07-07T00:00:00Z",
@@ -914,7 +914,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 92,
+          "value": 92.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2013-07-07T00:00:00Z",
@@ -973,7 +973,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 141,
+          "value": 141.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2013-05-29T00:00:00Z",
@@ -998,7 +998,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 95,
+          "value": 95.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2013-05-29T00:00:00Z",
@@ -1057,7 +1057,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 143,
+          "value": 143.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2013-03-15T00:00:00Z",
@@ -1082,7 +1082,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 96,
+          "value": 96.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2013-03-15T00:00:00Z",
@@ -1141,7 +1141,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 143,
+          "value": 143.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2013-01-12T00:00:00Z",
@@ -1166,7 +1166,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 95,
+          "value": 95.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2013-01-12T00:00:00Z",
@@ -1225,7 +1225,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 144,
+          "value": 144.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2012-11-02T00:00:00Z",
@@ -1250,7 +1250,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 92,
+          "value": 92.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2012-11-02T00:00:00Z",
@@ -1309,7 +1309,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 145,
+          "value": 145.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2012-09-11T00:00:00Z",
@@ -1334,7 +1334,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 93,
+          "value": 93.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2012-09-11T00:00:00Z",
@@ -1393,7 +1393,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 142,
+          "value": 142.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2012-07-14T00:00:00Z",
@@ -1418,7 +1418,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 92,
+          "value": 92.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2012-07-14T00:00:00Z",
@@ -1477,7 +1477,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 141,
+          "value": 141.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2012-05-18T00:00:00Z",
@@ -1502,7 +1502,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 91,
+          "value": 91.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2012-05-18T00:00:00Z",
@@ -1561,7 +1561,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 142,
+          "value": 142.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2012-03-18T00:00:00Z",
@@ -1586,7 +1586,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 91,
+          "value": 91.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2012-03-18T00:00:00Z",
@@ -1645,7 +1645,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 142,
+          "value": 142.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2012-01-11T00:00:00Z",
@@ -1670,7 +1670,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 92,
+          "value": 92.0,
           "units": "mmHg"
         },
         "appliesDateTime": "2012-01-11T00:00:00Z",
@@ -1739,9 +1739,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "3/14/2015",
+        "appliesDateTime": "2015-03-14T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -1763,9 +1764,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "1/14/2015",
+        "appliesDateTime": "2015-01-14T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -1787,9 +1789,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "11/11/2014",
+        "appliesDateTime": "2014-11-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -1811,9 +1814,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 66
+          "value": 66.0,
+          "units": "in"
         },
-        "appliesDateTime": "9/18/2014",
+        "appliesDateTime": "2014-09-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -1835,9 +1839,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "7/18/2014",
+        "appliesDateTime": "2014-07-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -1859,9 +1864,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "5/20/2014",
+        "appliesDateTime": "2014-05-20T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -1883,9 +1889,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "3/11/2014",
+        "appliesDateTime": "2014-03-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -1907,9 +1914,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "1/29/2014",
+        "appliesDateTime": "2014-01-29T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -1931,9 +1939,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "11/10/2013",
+        "appliesDateTime": "2013-11-10T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -1955,9 +1964,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "9/29/2013",
+        "appliesDateTime": "2013-09-29T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -1979,9 +1989,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 66
+          "value": 66.0,
+          "units": "in"
         },
-        "appliesDateTime": "7/7/2013",
+        "appliesDateTime": "2013-07-07T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2003,9 +2014,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "5/29/2013",
+        "appliesDateTime": "2013-05-29T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2027,9 +2039,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "3/15/2013",
+        "appliesDateTime": "2013-03-15T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2051,9 +2064,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "1/12/2013",
+        "appliesDateTime": "2013-01-12T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2075,9 +2089,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "11/2/2012",
+        "appliesDateTime": "2012-11-02T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2099,9 +2114,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "9/11/2012",
+        "appliesDateTime": "2012-09-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2123,9 +2139,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "7/14/2012",
+        "appliesDateTime": "2012-07-14T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2147,9 +2164,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 66
+          "value": 66.0,
+          "units": "in"
         },
-        "appliesDateTime": "5/18/2012",
+        "appliesDateTime": "2012-05-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2171,9 +2189,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "3/18/2012",
+        "appliesDateTime": "2012-03-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2195,9 +2214,10 @@
           "text": "Height"
         },
         "valueQuantity": {
-          "value": 67
+          "value": 67.0,
+          "units": "in"
         },
-        "appliesDateTime": "1/11/2012",
+        "appliesDateTime": "2012-01-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2219,9 +2239,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 141
+          "value": 141.0,
+          "units": "lb"
         },
-        "appliesDateTime": "3/14/2015",
+        "appliesDateTime": "2015-03-14T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2243,9 +2264,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 142
+          "value": 142.0,
+          "units": "lb"
         },
-        "appliesDateTime": "1/14/2015",
+        "appliesDateTime": "2015-01-14T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2267,9 +2289,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 142
+          "value": 142.0,
+          "units": "lb"
         },
-        "appliesDateTime": "11/11/2014",
+        "appliesDateTime": "2014-11-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2291,9 +2314,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 136
+          "value": 136.0,
+          "units": "lb"
         },
-        "appliesDateTime": "9/18/2014",
+        "appliesDateTime": "2014-09-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2315,9 +2339,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 141
+          "value": 141.0,
+          "units": "lb"
         },
-        "appliesDateTime": "7/18/2014",
+        "appliesDateTime": "2014-07-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2339,9 +2364,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 139
+          "value": 139.0,
+          "units": "lb"
         },
-        "appliesDateTime": "5/20/2014",
+        "appliesDateTime": "2014-05-20T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2363,9 +2389,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 141
+          "value": 141.0,
+          "units": "lb"
         },
-        "appliesDateTime": "3/11/2014",
+        "appliesDateTime": "2014-03-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2387,9 +2414,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 141
+          "value": 141.0,
+          "units": "lb"
         },
-        "appliesDateTime": "1/29/2014",
+        "appliesDateTime": "2014-01-29T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2411,9 +2439,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 142
+          "value": 142.0,
+          "units": "lb"
         },
-        "appliesDateTime": "11/10/2013",
+        "appliesDateTime": "2013-11-10T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2435,9 +2464,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 142
+          "value": 142.0,
+          "units": "lb"
         },
-        "appliesDateTime": "9/29/2013",
+        "appliesDateTime": "2013-09-29T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2459,9 +2489,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 136
+          "value": 136.0,
+          "units": "lb"
         },
-        "appliesDateTime": "7/7/2013",
+        "appliesDateTime": "2013-07-07T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2483,9 +2514,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 141
+          "value": 141.0,
+          "units": "lb"
         },
-        "appliesDateTime": "5/29/2013",
+        "appliesDateTime": "2013-05-29T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2507,9 +2539,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 139
+          "value": 139.0,
+          "units": "lb"
         },
-        "appliesDateTime": "3/15/2013",
+        "appliesDateTime": "2013-03-15T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2531,9 +2564,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 141
+          "value": 141.0,
+          "units": "lb"
         },
-        "appliesDateTime": "1/12/2013",
+        "appliesDateTime": "2013-01-12T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2555,9 +2589,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 141
+          "value": 141.0,
+          "units": "lb"
         },
-        "appliesDateTime": "11/2/2012",
+        "appliesDateTime": "2012-11-02T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2579,9 +2614,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 142
+          "value": 142.0,
+          "units": "lb"
         },
-        "appliesDateTime": "9/11/2012",
+        "appliesDateTime": "2012-09-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2603,9 +2639,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 142
+          "value": 142.0,
+          "units": "lb"
         },
-        "appliesDateTime": "7/14/2012",
+        "appliesDateTime": "2012-07-14T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2627,9 +2664,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 136
+          "value": 136.0,
+          "units": "lb"
         },
-        "appliesDateTime": "5/18/2012",
+        "appliesDateTime": "2012-05-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2651,9 +2689,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 141
+          "value": 141.0,
+          "units": "lb"
         },
-        "appliesDateTime": "3/18/2012",
+        "appliesDateTime": "2012-03-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2675,9 +2714,10 @@
           "text": "Weight"
         },
         "valueQuantity": {
-          "value": 139
+          "value": 139.0,
+          "units": "lb"
         },
-        "appliesDateTime": "1/11/2012",
+        "appliesDateTime": "2012-01-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2699,9 +2739,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 22.1
+          "value": 22.1,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "3/14/2015",
+        "appliesDateTime": "2015-03-14T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2723,9 +2764,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 22.2
+          "value": 22.2,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "1/14/2015",
+        "appliesDateTime": "2015-01-14T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2747,9 +2789,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 22.2
+          "value": 22.2,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "11/11/2014",
+        "appliesDateTime": "2014-11-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2771,9 +2814,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 21.9
+          "value": 21.9,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "9/18/2014",
+        "appliesDateTime": "2014-09-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2795,9 +2839,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 22.1
+          "value": 22.1,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "7/18/2014",
+        "appliesDateTime": "2014-07-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2819,9 +2864,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 21.7
+          "value": 21.7,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "5/20/2014",
+        "appliesDateTime": "2014-05-20T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2843,9 +2889,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 22.1
+          "value": 22.1,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "3/11/2014",
+        "appliesDateTime": "2014-03-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2867,9 +2914,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 22.1
+          "value": 22.1,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "1/29/2014",
+        "appliesDateTime": "2014-01-29T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2891,9 +2939,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 22.2
+          "value": 22.2,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "11/10/2013",
+        "appliesDateTime": "2013-11-10T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2915,9 +2964,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 22.2
+          "value": 22.2,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "9/29/2013",
+        "appliesDateTime": "2013-09-29T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2939,9 +2989,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 21.9
+          "value": 21.9,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "7/7/2013",
+        "appliesDateTime": "2013-07-07T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2963,9 +3014,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 22.1
+          "value": 22.1,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "5/29/2013",
+        "appliesDateTime": "2013-05-29T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -2987,9 +3039,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 21.7
+          "value": 21.7,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "3/15/2013",
+        "appliesDateTime": "2013-03-15T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3011,9 +3064,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 22.1
+          "value": 22.1,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "1/12/2013",
+        "appliesDateTime": "2013-01-12T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3035,9 +3089,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 22.1
+          "value": 22.1,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "11/2/2012",
+        "appliesDateTime": "2012-11-02T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3059,9 +3114,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 22.2
+          "value": 22.2,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "9/11/2012",
+        "appliesDateTime": "2012-09-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3083,9 +3139,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 22.2
+          "value": 22.2,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "7/14/2012",
+        "appliesDateTime": "2012-07-14T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3107,9 +3164,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 21.9
+          "value": 21.9,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "5/18/2012",
+        "appliesDateTime": "2012-05-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3131,9 +3189,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 22.1
+          "value": 22.1,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "3/18/2012",
+        "appliesDateTime": "2012-03-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3155,9 +3214,10 @@
           "text": "BMI"
         },
         "valueQuantity": {
-          "value": 21.7
+          "value": 21.7,
+          "units": "kg/m2"
         },
-        "appliesDateTime": "1/11/2012",
+        "appliesDateTime": "2012-01-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3179,9 +3239,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 68
+          "value": 68.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "3/14/2015",
+        "appliesDateTime": "2015-03-14T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3203,9 +3264,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 70
+          "value": 70.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "1/14/2015",
+        "appliesDateTime": "2015-01-14T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3227,9 +3289,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 66
+          "value": 66.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "11/11/2014",
+        "appliesDateTime": "2014-11-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3251,9 +3314,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 66
+          "value": 66.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "9/18/2014",
+        "appliesDateTime": "2014-09-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3275,9 +3339,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 70
+          "value": 70.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "7/18/2014",
+        "appliesDateTime": "2014-07-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3299,9 +3364,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 62
+          "value": 62.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "5/20/2014",
+        "appliesDateTime": "2014-05-20T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3323,9 +3389,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 66
+          "value": 66.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "3/11/2014",
+        "appliesDateTime": "2014-03-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3347,9 +3414,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 66
+          "value": 66.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "1/29/2014",
+        "appliesDateTime": "2014-01-29T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3371,9 +3439,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 68
+          "value": 68.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "11/10/2013",
+        "appliesDateTime": "2013-11-10T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3395,9 +3464,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 68
+          "value": 68.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "9/29/2013",
+        "appliesDateTime": "2013-09-29T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3419,9 +3489,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 69
+          "value": 69.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "7/7/2013",
+        "appliesDateTime": "2013-07-07T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3443,9 +3514,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 65
+          "value": 65.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "5/29/2013",
+        "appliesDateTime": "2013-05-29T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3467,9 +3539,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 66
+          "value": 66.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "3/15/2013",
+        "appliesDateTime": "2013-03-15T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3491,9 +3564,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 68
+          "value": 68.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "1/12/2013",
+        "appliesDateTime": "2013-01-12T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3515,9 +3589,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 68
+          "value": 68.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "11/2/2012",
+        "appliesDateTime": "2012-11-02T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3539,9 +3614,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 66
+          "value": 66.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "9/11/2012",
+        "appliesDateTime": "2012-09-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3563,9 +3639,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 64
+          "value": 64.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "7/14/2012",
+        "appliesDateTime": "2012-07-14T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3587,9 +3664,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 65
+          "value": 65.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "5/18/2012",
+        "appliesDateTime": "2012-05-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3611,9 +3689,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 69
+          "value": 69.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "3/18/2012",
+        "appliesDateTime": "2012-03-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3635,9 +3714,10 @@
           "text": "Pulse"
         },
         "valueQuantity": {
-          "value": 70
+          "value": 70.0,
+          "units": "bpm"
         },
-        "appliesDateTime": "1/11/2012",
+        "appliesDateTime": "2012-01-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3659,9 +3739,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 37
+          "value": 37.0,
+          "units": "DegC"
         },
-        "appliesDateTime": "3/14/2015",
+        "appliesDateTime": "2015-03-14T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3683,9 +3764,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 37
+          "value": 37.0,
+          "units": "DegC"
         },
-        "appliesDateTime": "1/14/2015",
+        "appliesDateTime": "2015-01-14T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3707,9 +3789,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 37
+          "value": 37.0,
+          "units": "DegC"
         },
-        "appliesDateTime": "11/11/2014",
+        "appliesDateTime": "2014-11-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3731,9 +3814,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 37
+          "value": 37.0,
+          "units": "DegC"
         },
-        "appliesDateTime": "9/18/2014",
+        "appliesDateTime": "2014-09-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3755,9 +3839,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 37.1
+          "value": 37.1,
+          "units": "DegC"
         },
-        "appliesDateTime": "7/18/2014",
+        "appliesDateTime": "2014-07-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3779,9 +3864,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 36.8
+          "value": 36.8,
+          "units": "DegC"
         },
-        "appliesDateTime": "5/20/2014",
+        "appliesDateTime": "2014-05-20T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3803,9 +3889,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 36.8
+          "value": 36.8,
+          "units": "DegC"
         },
-        "appliesDateTime": "3/11/2014",
+        "appliesDateTime": "2014-03-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3827,9 +3914,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 37
+          "value": 37.0,
+          "units": "DegC"
         },
-        "appliesDateTime": "1/29/2014",
+        "appliesDateTime": "2014-01-29T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3851,9 +3939,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 37.1
+          "value": 37.1,
+          "units": "DegC"
         },
-        "appliesDateTime": "11/10/2013",
+        "appliesDateTime": "2013-11-10T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3875,9 +3964,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 37.1
+          "value": 37.1,
+          "units": "DegC"
         },
-        "appliesDateTime": "9/29/2013",
+        "appliesDateTime": "2013-09-29T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3899,9 +3989,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 37
+          "value": 37.0,
+          "units": "DegC"
         },
-        "appliesDateTime": "7/7/2013",
+        "appliesDateTime": "2013-07-07T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3923,9 +4014,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 36.8
+          "value": 36.8,
+          "units": "DegC"
         },
-        "appliesDateTime": "5/29/2013",
+        "appliesDateTime": "2013-05-29T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3947,9 +4039,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 36.8
+          "value": 36.8,
+          "units": "DegC"
         },
-        "appliesDateTime": "3/15/2013",
+        "appliesDateTime": "2013-03-15T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3971,9 +4064,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 37.1
+          "value": 37.1,
+          "units": "DegC"
         },
-        "appliesDateTime": "1/12/2013",
+        "appliesDateTime": "2013-01-12T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -3995,9 +4089,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 36.8
+          "value": 36.8,
+          "units": "DegC"
         },
-        "appliesDateTime": "11/2/2012",
+        "appliesDateTime": "2012-11-02T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4019,9 +4114,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 37.1
+          "value": 37.1,
+          "units": "DegC"
         },
-        "appliesDateTime": "9/11/2012",
+        "appliesDateTime": "2012-09-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4043,9 +4139,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 37
+          "value": 37.0,
+          "units": "DegC"
         },
-        "appliesDateTime": "7/14/2012",
+        "appliesDateTime": "2012-07-14T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4067,9 +4164,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 37.1
+          "value": 37.1,
+          "units": "DegC"
         },
-        "appliesDateTime": "5/18/2012",
+        "appliesDateTime": "2012-05-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4091,9 +4189,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 37
+          "value": 37.0,
+          "units": "DegC"
         },
-        "appliesDateTime": "3/18/2012",
+        "appliesDateTime": "2012-03-18T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4115,9 +4214,10 @@
           "text": "Temperature"
         },
         "valueQuantity": {
-          "value": 37
+          "value": 37.0,
+          "units": "DegC"
         },
-        "appliesDateTime": "1/11/2012",
+        "appliesDateTime": "2012-01-11T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4139,9 +4239,9 @@
           "text": "Aspartate aminotransferase (AST) concentration in serum/plasma"
         },
         "valueQuantity": {
-          "value": 18
+          "value": 18.0
         },
-        "appliesDateTime": "10/1/2013",
+        "appliesDateTime": "2013-10-01T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4163,9 +4263,9 @@
           "text": "Aspartate aminotransferase (AST) concentration in serum/plasma"
         },
         "valueQuantity": {
-          "value": 23
+          "value": 23.0
         },
-        "appliesDateTime": "9/30/2014",
+        "appliesDateTime": "2014-09-30T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4187,9 +4287,9 @@
           "text": "Aspartate aminotransferase (AST) concentration in serum/plasma"
         },
         "valueQuantity": {
-          "value": 18
+          "value": 18.0
         },
-        "appliesDateTime": "5/22/2014",
+        "appliesDateTime": "2014-05-22T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4211,9 +4311,9 @@
           "text": "Aspartate aminotransferase (AST) concentration in serum/plasma"
         },
         "valueQuantity": {
-          "value": 19
+          "value": 19.0
         },
-        "appliesDateTime": "10/9/2014",
+        "appliesDateTime": "2014-10-09T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4235,9 +4335,9 @@
           "text": "Aspartate aminotransferase (AST) concentration in serum/plasma"
         },
         "valueQuantity": {
-          "value": 17
+          "value": 17.0
         },
-        "appliesDateTime": "6/8/2013",
+        "appliesDateTime": "2013-06-08T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4259,9 +4359,9 @@
           "text": "Alkaline phosphatase serum/plasma"
         },
         "valueQuantity": {
-          "value": 91
+          "value": 91.0
         },
-        "appliesDateTime": "9/30/2014",
+        "appliesDateTime": "2014-09-30T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4283,9 +4383,9 @@
           "text": "Alkaline phosphatase serum/plasma"
         },
         "valueQuantity": {
-          "value": 200
+          "value": 200.0
         },
-        "appliesDateTime": "5/22/2014",
+        "appliesDateTime": "2014-05-22T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4307,9 +4407,9 @@
           "text": "Alkaline phosphatase serum/plasma"
         },
         "valueQuantity": {
-          "value": 211
+          "value": 211.0
         },
-        "appliesDateTime": "10/9/2012",
+        "appliesDateTime": "2012-10-09T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4331,9 +4431,9 @@
           "text": "Alkaline phosphatase serum/plasma"
         },
         "valueQuantity": {
-          "value": 220
+          "value": 220.0
         },
-        "appliesDateTime": "6/8/2014",
+        "appliesDateTime": "2014-06-08T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4355,9 +4455,9 @@
           "text": "Alkaline phosphatase serum/plasma"
         },
         "valueQuantity": {
-          "value": 209
+          "value": 209.0
         },
-        "appliesDateTime": "10/1/2011",
+        "appliesDateTime": "2011-10-01T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4379,9 +4479,9 @@
           "text": "hemoglobin"
         },
         "valueQuantity": {
-          "value": 12
+          "value": 12.0
         },
-        "appliesDateTime": "5/22/2014",
+        "appliesDateTime": "2014-05-22T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4405,7 +4505,7 @@
         "valueQuantity": {
           "value": 12.4
         },
-        "appliesDateTime": "2/19/2014",
+        "appliesDateTime": "2014-02-19T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4429,7 +4529,7 @@
         "valueQuantity": {
           "value": 12.1
         },
-        "appliesDateTime": "12/4/2013",
+        "appliesDateTime": "2013-12-04T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4451,9 +4551,9 @@
           "text": "hemoglobin"
         },
         "valueQuantity": {
-          "value": 12
+          "value": 12.0
         },
-        "appliesDateTime": "10/1/2012",
+        "appliesDateTime": "2012-10-01T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4475,9 +4575,9 @@
           "text": "Alanine aminotransferase serum/plasma"
         },
         "valueQuantity": {
-          "value": 17
+          "value": 17.0
         },
-        "appliesDateTime": "10/1/2014",
+        "appliesDateTime": "2014-10-01T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4499,9 +4599,9 @@
           "text": "Alanine aminotransferase serum/plasma"
         },
         "valueQuantity": {
-          "value": 18
+          "value": 18.0
         },
-        "appliesDateTime": "9/30/2014",
+        "appliesDateTime": "2014-09-30T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4523,9 +4623,9 @@
           "text": "Alanine aminotransferase serum/plasma"
         },
         "valueQuantity": {
-          "value": 16
+          "value": 16.0
         },
-        "appliesDateTime": "5/22/2014",
+        "appliesDateTime": "2014-05-22T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4547,9 +4647,9 @@
           "text": "Alanine aminotransferase serum/plasma"
         },
         "valueQuantity": {
-          "value": 17
+          "value": 17.0
         },
-        "appliesDateTime": "10/9/2013",
+        "appliesDateTime": "2013-10-09T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4571,9 +4671,9 @@
           "text": "Alanine aminotransferase serum/plasma"
         },
         "valueQuantity": {
-          "value": 18
+          "value": 18.0
         },
-        "appliesDateTime": "6/8/2014",
+        "appliesDateTime": "2014-06-08T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4597,7 +4697,7 @@
         "valueQuantity": {
           "value": 9.6
         },
-        "appliesDateTime": "10/1/2013",
+        "appliesDateTime": "2013-10-01T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4621,7 +4721,7 @@
         "valueQuantity": {
           "value": 9.9
         },
-        "appliesDateTime": "5/22/2014",
+        "appliesDateTime": "2014-05-22T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4645,7 +4745,7 @@
         "valueQuantity": {
           "value": 9.8
         },
-        "appliesDateTime": "2/19/2014",
+        "appliesDateTime": "2014-02-19T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4667,9 +4767,9 @@
           "text": "white blood cell count (in blood, automated)"
         },
         "valueQuantity": {
-          "value": 10
+          "value": 10.0
         },
-        "appliesDateTime": "12/4/2013",
+        "appliesDateTime": "2013-12-04T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4691,9 +4791,9 @@
           "text": "platelet count, automated"
         },
         "valueQuantity": {
-          "value": 200
+          "value": 200.0
         },
-        "appliesDateTime": "10/1/2014",
+        "appliesDateTime": "2014-10-01T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4715,9 +4815,9 @@
           "text": "platelet count, automated"
         },
         "valueQuantity": {
-          "value": 200
+          "value": 200.0
         },
-        "appliesDateTime": "5/22/2014",
+        "appliesDateTime": "2014-05-22T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4739,9 +4839,9 @@
           "text": "platelet count, automated"
         },
         "valueQuantity": {
-          "value": 200
+          "value": 200.0
         },
-        "appliesDateTime": "2/19/2014",
+        "appliesDateTime": "2014-02-19T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4763,9 +4863,9 @@
           "text": "platelet count, automated"
         },
         "valueQuantity": {
-          "value": 200
+          "value": 200.0
         },
-        "appliesDateTime": "12/4/2014",
+        "appliesDateTime": "2014-12-04T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4787,9 +4887,9 @@
           "text": "Protein [Presence] in Urine by Test strip"
         },
         "valueQuantity": {
-          "value": 30
+          "value": 30.0
         },
-        "appliesDateTime": "9/30/2014",
+        "appliesDateTime": "2014-09-30T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4811,7 +4911,7 @@
           "text": "Protein [Presence] in Urine by Test strip"
         },
         "valueString": "Neg",
-        "appliesDateTime": "11/7/2014",
+        "appliesDateTime": "2014-11-07T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4833,7 +4933,7 @@
           "text": "Protein [Presence] in Urine by Test strip"
         },
         "valueString": "Neg",
-        "appliesDateTime": "8/24/2013",
+        "appliesDateTime": "2013-08-24T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4855,7 +4955,7 @@
           "text": "Protein [Presence] in Urine by Test strip"
         },
         "valueString": "Neg",
-        "appliesDateTime": "10/1/2012",
+        "appliesDateTime": "2012-10-01T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4877,7 +4977,7 @@
           "text": "hemoglobin in urine, by test strip"
         },
         "valueString": "Neg",
-        "appliesDateTime": "10/1/2013",
+        "appliesDateTime": "2013-10-01T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4899,7 +4999,7 @@
           "text": "hemoglobin in urine, by test strip"
         },
         "valueString": "Trace",
-        "appliesDateTime": "9/30/2014",
+        "appliesDateTime": "2014-09-30T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4921,7 +5021,7 @@
           "text": "hemoglobin in urine, by test strip"
         },
         "valueString": "Neg",
-        "appliesDateTime": "11/7/2012",
+        "appliesDateTime": "2012-11-07T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4943,7 +5043,7 @@
           "text": "hemoglobin in urine, by test strip"
         },
         "valueString": "Trace",
-        "appliesDateTime": "8/24/2014",
+        "appliesDateTime": "2014-08-24T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4965,9 +5065,9 @@
           "text": "creatine kinase"
         },
         "valueQuantity": {
-          "value": 42
+          "value": 42.0
         },
-        "appliesDateTime": "9/30/2014",
+        "appliesDateTime": "2014-09-30T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -4989,9 +5089,9 @@
           "text": "creatine kinase"
         },
         "valueQuantity": {
-          "value": 78
+          "value": 78.0
         },
-        "appliesDateTime": "11/7/2012",
+        "appliesDateTime": "2012-11-07T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5013,9 +5113,9 @@
           "text": "RA"
         },
         "valueQuantity": {
-          "value": 13
+          "value": 13.0
         },
-        "appliesDateTime": "10/7/2014",
+        "appliesDateTime": "2014-10-07T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5037,9 +5137,9 @@
           "text": "RA"
         },
         "valueQuantity": {
-          "value": 11
+          "value": 11.0
         },
-        "appliesDateTime": "10/7/2014",
+        "appliesDateTime": "2014-10-07T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5061,9 +5161,9 @@
           "text": "RA"
         },
         "valueQuantity": {
-          "value": 12
+          "value": 12.0
         },
-        "appliesDateTime": "6/8/2014",
+        "appliesDateTime": "2014-06-08T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5085,7 +5185,7 @@
           "text": "hepatits c ab"
         },
         "valueString": "Neg",
-        "appliesDateTime": "9/2/2014",
+        "appliesDateTime": "2014-09-02T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5107,7 +5207,7 @@
           "text": "hep b surface ag"
         },
         "valueString": "Neg",
-        "appliesDateTime": "9/2/2014",
+        "appliesDateTime": "2014-09-02T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5129,9 +5229,9 @@
           "text": "creatinine, serum/plasma"
         },
         "valueQuantity": {
-          "value": 1
+          "value": 1.0
         },
-        "appliesDateTime": "5/22/2014",
+        "appliesDateTime": "2014-05-22T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5155,7 +5255,7 @@
         "valueQuantity": {
           "value": 1.1
         },
-        "appliesDateTime": "2/19/2014",
+        "appliesDateTime": "2014-02-19T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5177,9 +5277,9 @@
           "text": "creatinine, serum/plasma"
         },
         "valueQuantity": {
-          "value": 1
+          "value": 1.0
         },
-        "appliesDateTime": "12/4/2014",
+        "appliesDateTime": "2014-12-04T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5201,9 +5301,9 @@
           "text": "creatinine, serum/plasma"
         },
         "valueQuantity": {
-          "value": 1
+          "value": 1.0
         },
-        "appliesDateTime": "11/7/2014",
+        "appliesDateTime": "2014-11-07T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5227,7 +5327,7 @@
         "valueQuantity": {
           "value": 0.6
         },
-        "appliesDateTime": "10/9/2013",
+        "appliesDateTime": "2013-10-09T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5251,7 +5351,7 @@
         "valueQuantity": {
           "value": 0.6
         },
-        "appliesDateTime": "6/8/2013",
+        "appliesDateTime": "2013-06-08T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5275,7 +5375,7 @@
         "valueQuantity": {
           "value": 0.7
         },
-        "appliesDateTime": "10/1/2013",
+        "appliesDateTime": "2013-10-01T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5297,9 +5397,9 @@
           "text": "Albumin level, serum/plasma"
         },
         "valueQuantity": {
-          "value": 4
+          "value": 4.0
         },
-        "appliesDateTime": "10/1/2014",
+        "appliesDateTime": "2014-10-01T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5323,7 +5423,7 @@
         "valueQuantity": {
           "value": 4.2
         },
-        "appliesDateTime": "9/30/2014",
+        "appliesDateTime": "2014-09-30T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5345,9 +5445,9 @@
           "text": "Albumin level, serum/plasma"
         },
         "valueQuantity": {
-          "value": 4
+          "value": 4.0
         },
-        "appliesDateTime": "5/22/2014",
+        "appliesDateTime": "2014-05-22T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5371,7 +5471,7 @@
         "valueQuantity": {
           "value": 4.1
         },
-        "appliesDateTime": "10/9/2013",
+        "appliesDateTime": "2013-10-09T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {
@@ -5393,9 +5493,9 @@
           "text": "Albumin level, serum/plasma"
         },
         "valueQuantity": {
-          "value": 4
+          "value": 4.0
         },
-        "appliesDateTime": "6/8/2013",
+        "appliesDateTime": "2013-06-08T00:00:00Z",
         "status": "final",
         "reliability": "ok",
         "subject": {

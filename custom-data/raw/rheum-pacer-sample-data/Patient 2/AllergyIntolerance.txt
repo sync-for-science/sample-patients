@@ -11,7 +11,8 @@
                     "reference": "Patient/624598"
                 },
                 "substance": {
-                    "reference": "Substance/1191"
+                    "reference": "Substance/1191",
+                    "display": "Aspirin"
                 }
             }
         },
@@ -25,7 +26,8 @@
                     "reference": "Patient/624598"
                 },
                 "substance": {
-                    "reference": "Substance/QE1QX6B99R"
+                    "reference": "Substance/4053",
+                    "display": "Erythromycin"
                 }
             }
         },
@@ -39,6 +41,7 @@
                     "reference": "Patient/624598"
                 },
                 "substance": {
+                    "reference": "Substance/QE1QX6B99R",
                     "display": "Peanuts"
                 }
             }

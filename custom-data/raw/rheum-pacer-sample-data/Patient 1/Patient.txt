@@ -30,7 +30,7 @@
     "careProvider": [
         {
             "reference": "Practitioner/989",
-            "display": "Thomas P Olenginski-Like MD"
+            "display": "Eric Newman MD"
         }
     ]
 }
