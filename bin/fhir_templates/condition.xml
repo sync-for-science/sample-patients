@@ -18,7 +18,7 @@
       <text value="{{c.name}}"/>
     </code>
    <clinicalStatus value="confirmed"/>
-   <onsetDate value="{{c.start}}"/>
+   <onsetDateTime value="{{c.start}}"/>
    {% if c.end %}
    <abatementDate value="{{c.end}}"/>
    {% endif %}
