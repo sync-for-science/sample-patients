@@ -1,0 +1,33 @@
+{
+    "resourceType": "Bundle",
+    "entry": [
+        {
+            "content": {
+                "resourceType": "AllergyIntolerance",
+                "sensitivityType": "allergy",
+                "recordedDate": "2014-10-02T00:00:00Z",
+                "status": "confirmed",
+                "subject": {
+                    "reference": "Patient/552356"
+                },
+                "substance": {
+                    "reference": "Substance/QE1QX6B99R"
+                }
+            }
+        },
+        {
+            "content": {
+                "resourceType": "AllergyIntolerance",
+                "sensitivityType": "allergy",
+                "recordedDate": "2015-03-17T00:00:00Z",
+                "status": "confirmed",
+                "subject": {
+                    "reference": "Patient/552356"
+                },
+                "substance": {
+                    "reference": "Substance/EYO007VX98"
+                }
+            }
+        }
+    ]
+}

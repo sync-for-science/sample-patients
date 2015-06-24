@@ -1,0 +1,164 @@
+{
+    "resourceType": "Bundle",
+    "entry": [
+        {
+            "content": {
+                "resourceType": "MedicationPrescription",
+                "contained": [
+                    {
+                        "resourceType": "Medication",
+                        "id": "2000",
+                        "text": {
+                            "id": "methotrexate 10 mg oral tablet"
+                        },
+                        "name": "methotrexate 10 mg oral tablet",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                                    "code": "105586",
+                                    "display": "methotrexate 10 mg oral tablet"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/552356"
+                },
+                "prescriber": {
+                    "reference": "Practitioner/989"
+                },
+                "medication": {
+                    "reference": "2000",
+                    "display": "methotrexate 10 mg oral tablet"
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "10 mg, 2 tab(s), Oral, qWeek, 2 tabs",
+                        "timingSchedule": {
+                            "event": [
+                                {
+                                    "start": "2014-05-01T00:00:00Z"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "dispense": {
+                    "quantity": {
+                        "value": 1,
+                        "units": "tabs"
+                    }
+                }
+            }
+        },
+        {
+            "content": {
+                "resourceType": "MedicationPrescription",
+                "contained": [
+                    {
+                        "resourceType": "Medication",
+                        "id": "2001",
+                        "text": {
+                            "id": "prednisone 5 mg oral tablet"
+                        },
+                        "name": "prednisone 5 mg oral tablet",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                                    "code": "312617",
+                                    "display": "prednisone 5 mg oral tablet"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/552356"
+                },
+                "prescriber": {
+                    "reference": "Practitioner/989"
+                },
+                "medication": {
+                    "reference": "2001",
+                    "display": "prednisone 5 mg oral tablet"
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "1 tabs, Oral, Daily, 30 tabs",
+                        "timingSchedule": {
+                            "event": [
+                                {
+                                    "start": "2013-03-01T00:00:00Z"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "dispense": {
+                    "quantity": {
+                        "value": 30,
+                        "units": "tabs"
+                    }
+                }
+            }
+        },
+        {
+            "content": {
+                "resourceType": "MedicationPrescription",
+                "contained": [
+                    {
+                        "resourceType": "Medication",
+                        "id": "2002",
+                        "text": {
+                            "id": "Lisinopril 10 mg oral tablet"
+                        },
+                        "name": "Lisinopril 10 mg oral tablet",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                                    "code": "314077",
+                                    "display": "Lisinopril 10 mg oral tablet"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/552356"
+                },
+                "prescriber": {
+                    "reference": "Practitioner/989"
+                },
+                "medication": {
+                    "reference": "2002",
+                    "display": "Lisinopril 10 mg oral tablet"
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "1 daily",
+                        "timingSchedule": {
+                            "event": [
+                                {
+                                    "start": "2013-06-07T00:00:00Z"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "dispense": {
+                    "quantity": {
+                        "value": 60,
+                        "units": "tabs"
+                    }
+                }
+            }
+        }
+    ]
+}

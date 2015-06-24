@@ -1,0 +1,27 @@
+{
+    "resourceType": "Encounter",
+    "identifier": [
+        {
+            "label": "CSN",
+            "value": "256789"
+        }
+    ],
+    "subject": {
+        "reference": "Patient/552356"
+    },
+    "period": {
+        "start": "2015-03-12T10:30:00Z",
+        "end": "2015-03-12T11:15:00Z"
+    },
+    "location": [
+        {
+            "location": {
+                "display": "BW Rheumatology"
+            },
+            "period": {
+                "start": "2015-03-12T10:30:00Z",
+                "end": "2015-03-12T11:15:00Z"
+            }
+        }
+    ]
+}

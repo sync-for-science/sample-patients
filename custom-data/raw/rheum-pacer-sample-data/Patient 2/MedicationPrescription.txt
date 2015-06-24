@@ -1,0 +1,218 @@
+{
+    "resourceType": "Bundle",
+    "entry": [
+        {
+            "content": {
+                "resourceType": "MedicationPrescription",
+                "contained": [
+                    {
+                        "resourceType": "Medication",
+                        "id": "5000",
+                        "text": {
+                            "id": "prednisone 5 mg oral tablet"
+                        },
+                        "name": "prednisone 5 mg oral tablet",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                                    "code": "312617",
+                                    "display": "prednisone 5 mg oral tablet"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/624598"
+                },
+                "prescriber": {
+                    "reference": "Practitioner/989"
+                },
+                "medication": {
+                    "reference": "5000",
+                    "display": "prednisone 5 mg oral tablet"
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "1 tabs, Oral, Daily, 30 tabs",
+                        "timingSchedule": {
+                            "event": [
+                                {
+                                    "start": "2012-12-28T00:00:00Z",
+                                    "end": "2015-03-03T00:00:00Z"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "dispense": {
+                    "quantity": {
+                        "value": 30,
+                        "units": "tabs"
+                    }
+                }
+            }
+        },
+        {
+            "content": {
+                "resourceType": "MedicationPrescription",
+                "contained": [
+                    {
+                        "resourceType": "Medication",
+                        "id": "5001",
+                        "text": {
+                            "id": "Procardia XL 30 mg oral tablet, extended release"
+                        },
+                        "name": "Procardia XL 30 mg oral tablet, extended release",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                                    "code": "134409",
+                                    "display": "Procardia XL 30 mg oral tablet, extended release"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/624598"
+                },
+                "prescriber": {
+                    "reference": "Practitioner/989"
+                },
+                "medication": {
+                    "reference": "5001",
+                    "display": "Procardia XL 30 mg oral tablet, extended release"
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "1 tabs, Oral, Daily, 30 tabs",
+                        "timingSchedule": {
+                            "event": [
+                                {
+                                    "start": "2013-02-11T00:00:00Z"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "dispense": {
+                    "quantity": {
+                        "value": 30,
+                        "units": "tabs"
+                    }
+                }
+            }
+        },
+        {
+            "content": {
+                "resourceType": "MedicationPrescription",
+                "contained": [
+                    {
+                        "resourceType": "Medication",
+                        "id": "5002",
+                        "text": {
+                            "id": "Zocor 10 mg oral tablet"
+                        },
+                        "name": "Zocor 10 mg oral tablet",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                                    "code": "196503",
+                                    "display": "Zocor 10 mg oral tablet"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/624598"
+                },
+                "prescriber": {
+                    "reference": "Practitioner/989"
+                },
+                "medication": {
+                    "reference": "5002",
+                    "display": "Zocor 10 mg oral tablet"
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "1 tabs, Oral, Once a Day (at bedtime), 30 tabs",
+                        "timingSchedule": {
+                            "event": [
+                                {
+                                    "start": "2013-04-30T00:00:00Z"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "dispense": {
+                    "quantity": {
+                        "value": 30,
+                        "units": "tabs"
+                    }
+                }
+            }
+        },
+        {
+            "content": {
+                "resourceType": "MedicationPrescription",
+                "contained": [
+                    {
+                        "resourceType": "Medication",
+                        "id": "5003",
+                        "text": {
+                            "id": "methotrexate 10 mg oral tablet"
+                        },
+                        "name": "methotrexate 10 mg oral tablet",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                                    "code": "105586",
+                                    "display": "methotrexate 10 mg oral tablet"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/624598"
+                },
+                "prescriber": {
+                    "reference": "Practitioner/989"
+                },
+                "medication": {
+                    "reference": "5003",
+                    "display": "methotrexate 10 mg oral tablet"
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "10 mg, 1 tab(s), Oral, qWeek, 1 tabs",
+                        "timingSchedule": {
+                            "event": [
+                                {
+                                    "start": "2012-03-15T00:00:00Z"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "dispense": {
+                    "quantity": {
+                        "value": 1,
+                        "units": "tabs"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -9,3 +9,4 @@ settings.py
 *#
 sessions/*
 session/*
+*.swp

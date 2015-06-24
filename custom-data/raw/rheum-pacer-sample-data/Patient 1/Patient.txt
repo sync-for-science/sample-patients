@@ -1,0 +1,36 @@
+{
+    "resourceType": "Patient",
+    "identifier": [
+        {
+            "label": "MRN",
+            "value": "552356"
+        }
+    ],
+    "name": [
+        {
+            "text": "Rheum, Test One",
+            "family": [
+                "Rheum"
+            ],
+            "given": [
+                "Test"
+            ]
+        }
+    ],
+    "gender": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/v3/AdministrativeGender",
+                "code": "F",
+                "display": "Female"
+            }
+        ]
+    },
+    "birthDate": "1963-06-17T00:00:00Z",
+    "careProvider": [
+        {
+            "reference": "Practitioner/989",
+            "display": "Eric Newman MD"
+        }
+    ]
+}

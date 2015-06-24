@@ -1,0 +1,97 @@
+{
+    "resourceType": "Bundle",
+    "entry": [
+        {
+            "content": {
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/624598"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9",
+                            "code": "729.1",
+                            "display": "Myalgia and myositis NOS"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "288225004",
+                            "display": "Myalgia and myositis NOS"
+                        }
+                    ]
+                },
+                "status": "confirmed"
+            }
+        },
+        {
+            "content": {
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/624598"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9",
+                            "code": "710.2",
+                            "display": "Keratoconjunctivitis Sicca/Sjogren's Syndrome"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "83901003",
+                            "display": "Keratoconjunctivitis Sicca/Sjogren's Syndrome"
+                        }
+                    ]
+                },
+                "status": "confirmed"
+            }
+        },
+        {
+            "content": {
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/624598"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9",
+                            "code": "714.0",
+                            "display": "Rheumatoid Arthritis"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "69896004",
+                            "display": "Rheumatoid Arthritis"
+                        }
+                    ]
+                },
+                "status": "confirmed"
+            }
+        },
+        {
+            "content": {
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/624598"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9",
+                            "code": "401.1",
+                            "display": "HTN, goal below 140/90"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "1201005",
+                            "display": "HTN, goal below 140/90"
+                        }
+                    ]
+                },
+                "status": "confirmed"
+            }
+        }
+    ]
+}

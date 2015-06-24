@@ -1,0 +1,4633 @@
+{
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2015-03-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3000"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3001"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3000",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 141.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2015-03-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3001",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 91.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2015-03-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2015-01-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3002"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3003"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3002",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 145.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2015-01-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3003",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 90.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2015-01-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2014-12-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3004"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3005"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3004",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 141.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-12-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3005",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 90.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-12-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2014-11-30T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3006"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3007"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3006",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 142.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-11-30T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3007",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 91.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-11-30T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2014-10-31T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3008"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3009"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3008",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 143.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-10-31T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3009",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 92.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-10-31T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2014-09-25T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3010"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3011"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3010",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 144.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-09-25T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3011",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 93.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-09-25T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2014-07-13T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3012"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3013"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3012",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 142.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-07-13T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3013",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 93.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-07-13T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2014-06-02T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3014"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3015"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3014",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 144.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-06-02T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3015",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 94.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-06-02T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2014-05-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3016"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3017"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3016",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 144.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-05-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3017",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 95.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-05-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2014-04-16T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3018"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3019"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3018",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 140.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-04-16T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3019",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 92.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-04-16T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2014-03-11T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3020"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3021"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3020",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 145.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-03-11T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3021",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 91.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-03-11T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2014-02-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3022"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3023"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3022",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 142.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-02-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3023",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 92.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-02-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2014-01-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3024"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3025"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3024",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 142.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-01-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3025",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 92.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2014-01-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2013-12-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3026"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3027"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3026",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 141.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2013-12-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3027",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 91.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2013-12-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2013-10-29T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3028"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3029"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3028",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 143.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2013-10-29T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3029",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 93.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2013-10-29T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2013-09-07T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3030"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3031"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3030",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 144.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2013-09-07T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3031",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 92.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2013-09-07T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2013-06-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3032"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3033"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3032",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 141.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2013-06-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3033",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 90.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2013-06-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2013-03-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3034"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3035"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3034",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 142.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2013-03-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3035",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 91.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2013-03-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2013-01-04T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3036"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3037"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3036",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 143.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2013-01-04T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3037",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 92.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2013-01-04T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "55284-4"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "appliesDateTime": "2012-11-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        },
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3038"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "Observation/3039"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3038",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 141.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2012-11-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3039",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 92.0,
+          "units": "mmHg"
+        },
+        "appliesDateTime": "2012-11-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3040",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "11367-0"
+            }
+          ],
+          "text": "Use:"
+        },
+        "valueString": "None",
+        "appliesDateTime": "2015-03-17T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3041",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "1366-2"
+            }
+          ],
+          "text": "Use:"
+        },
+        "valueString": "Denies Tobacco Use",
+        "appliesDateTime": "2015-03-17T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3042",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2015-03-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3043",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2015-01-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3044",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2014-12-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3045",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2014-11-30T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3046",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2014-10-31T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3047",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2014-09-25T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3048",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2014-07-13T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3049",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2014-06-02T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3050",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2014-05-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3051",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2014-04-16T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3052",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2014-03-11T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3053",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2014-02-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3054",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2014-01-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3055",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2013-12-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3056",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2013-10-29T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3057",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2013-09-07T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3058",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2013-06-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3059",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2013-03-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3060",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2013-01-04T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3061",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8302-2"
+            }
+          ],
+          "text": "Height"
+        },
+        "valueQuantity": {
+          "value": 59.0,
+          "units": "in"
+        },
+        "appliesDateTime": "2012-11-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3062",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 122.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2015-03-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3063",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 125.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2015-01-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3064",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 123.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2014-12-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3065",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 124.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2014-11-30T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3066",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 125.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2014-10-31T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3067",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 123.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2014-09-25T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3068",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 124.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2014-07-13T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3069",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 126.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2014-06-02T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3070",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 123.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2014-05-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3071",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 124.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2014-04-16T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3072",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 125.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2014-03-11T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3073",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 123.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2014-02-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3074",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 124.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2014-01-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3075",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 125.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2013-12-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3076",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 123.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2013-10-29T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3077",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 124.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2013-09-07T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3078",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 125.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2013-06-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3079",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 123.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2013-03-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3080",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 129.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2013-01-04T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3081",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "3141-9"
+            }
+          ],
+          "text": "Weight"
+        },
+        "valueQuantity": {
+          "value": 131.0,
+          "units": "lb"
+        },
+        "appliesDateTime": "2012-11-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3082",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 24.6,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2015-03-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3083",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 25.2,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2015-01-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3084",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 24.8,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2014-12-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3085",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 25.0,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2014-11-30T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3086",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 25.2,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2014-10-31T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3087",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 24.8,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2014-09-25T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3088",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 25.0,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2014-07-13T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3089",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 25.4,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2014-06-02T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3090",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 24.8,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2014-05-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3091",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 25.0,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2014-04-16T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3092",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 25.2,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2014-03-11T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3093",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 24.8,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2014-02-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3094",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 25.0,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2014-01-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3095",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 25.2,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2013-12-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3096",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 24.8,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2013-10-29T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3097",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 25.0,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2013-09-07T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3098",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 25.2,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2013-06-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3099",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 24.8,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2013-03-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3100",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 26.1,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2013-01-04T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3101",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "39156-5"
+            }
+          ],
+          "text": "BMI"
+        },
+        "valueQuantity": {
+          "value": 26.5,
+          "units": "kg/m2"
+        },
+        "appliesDateTime": "2012-11-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3102",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 69.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2015-03-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3103",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 64.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2015-01-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3104",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 68.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2014-12-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3105",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 89.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2014-11-30T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3106",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 64.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2014-10-31T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3107",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 68.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2014-09-25T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3108",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 88.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2014-07-13T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3109",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 64.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2014-06-02T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3110",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 68.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2014-05-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3111",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 87.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2014-04-16T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3112",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 64.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2014-03-11T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3113",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 68.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2014-02-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3114",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 86.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2014-01-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3115",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 64.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2013-12-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3116",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 68.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2013-10-29T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3117",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 85.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2013-09-07T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3118",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 64.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2013-06-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3119",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 68.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2013-03-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3120",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 64.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2013-01-04T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3121",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8867-4"
+            }
+          ],
+          "text": "Pulse"
+        },
+        "valueQuantity": {
+          "value": 68.0,
+          "units": "bpm"
+        },
+        "appliesDateTime": "2012-11-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3122",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 39.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2015-03-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3123",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 38.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2015-01-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3124",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 39.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2014-12-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3125",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 39.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2014-11-30T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3126",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 38.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2014-10-31T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3127",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 39.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2014-09-25T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3128",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 39.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2014-07-13T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3129",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 38.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2014-06-02T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3130",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 39.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2014-05-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3131",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 39.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2014-04-16T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3132",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 38.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2014-03-11T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3133",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 39.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2014-02-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3134",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 39.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2014-01-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3135",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 38.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2013-12-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3136",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 39.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2013-10-29T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3137",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 39.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2013-09-07T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3138",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 38.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2013-06-10T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3139",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 39.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2013-03-01T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3140",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 38.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2013-01-04T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3141",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "8310-5"
+            }
+          ],
+          "text": "Temperature"
+        },
+        "valueQuantity": {
+          "value": 39.0,
+          "units": "DegC"
+        },
+        "appliesDateTime": "2012-11-20T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3142",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "6690-2"
+            }
+          ],
+          "text": "white blood cell count (in blood, automated)"
+        },
+        "valueQuantity": {
+          "value": 6.63
+        },
+        "appliesDateTime": "2015-03-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3143",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "6690-2"
+            }
+          ],
+          "text": "white blood cell count (in blood, automated)"
+        },
+        "valueQuantity": {
+          "value": 7.35
+        },
+        "appliesDateTime": "2014-02-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3144",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "718-7"
+            }
+          ],
+          "text": "hemoglobin"
+        },
+        "valueQuantity": {
+          "value": 11.3
+        },
+        "appliesDateTime": "2015-03-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3145",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "718-7"
+            }
+          ],
+          "text": "hemoglobin"
+        },
+        "valueQuantity": {
+          "value": 11.3
+        },
+        "appliesDateTime": "2014-02-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3146",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "777-3"
+            }
+          ],
+          "text": "platelet count, automated"
+        },
+        "valueQuantity": {
+          "value": 121.0
+        },
+        "appliesDateTime": "2015-03-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3147",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "777-3"
+            }
+          ],
+          "text": "platelet count, automated"
+        },
+        "valueQuantity": {
+          "value": 115.0
+        },
+        "appliesDateTime": "2014-02-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3148",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "38483-4"
+            }
+          ],
+          "text": "creatinine, serum/plasma"
+        },
+        "valueQuantity": {
+          "value": 1.2
+        },
+        "appliesDateTime": "2015-03-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3149",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "38483-4"
+            }
+          ],
+          "text": "creatinine, serum/plasma"
+        },
+        "valueQuantity": {
+          "value": 1.5
+        },
+        "appliesDateTime": "2014-02-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3150",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "1751-7"
+            }
+          ],
+          "text": "Albumin level, serum/plasma"
+        },
+        "valueQuantity": {
+          "value": 4.1
+        },
+        "appliesDateTime": "2015-03-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3151",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "1742-6"
+            }
+          ],
+          "text": "Alanine aminotransferase serum/plasma"
+        },
+        "valueQuantity": {
+          "value": 26.0
+        },
+        "appliesDateTime": "2015-03-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3152",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "1920-8"
+            }
+          ],
+          "text": "Aspartate aminotransferase (AST) concentration in serum/plasma"
+        },
+        "valueQuantity": {
+          "value": 33.0
+        },
+        "appliesDateTime": "2015-03-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3153",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "1783-0"
+            }
+          ],
+          "text": "Alkaline phosphatase serum/plasma"
+        },
+        "valueQuantity": {
+          "value": 91.0
+        },
+        "appliesDateTime": "2015-03-15T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3154",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "6690-2"
+            }
+          ],
+          "text": "white blood cell count (in blood, automated)"
+        },
+        "valueQuantity": {
+          "value": 4.9
+        },
+        "appliesDateTime": "2015-03-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3155",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "11572-5"
+            }
+          ],
+          "text": "RA"
+        },
+        "valueQuantity": {
+          "value": 160.0
+        },
+        "appliesDateTime": "2015-03-12T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3156",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "6690-2"
+            }
+          ],
+          "text": "white blood cell count (in blood, automated)"
+        },
+        "valueQuantity": {
+          "value": 4.8
+        },
+        "appliesDateTime": "2015-01-02T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3157",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "16128-1"
+            }
+          ],
+          "text": "hepatits c ab"
+        },
+        "valueString": "Neg",
+        "appliesDateTime": "2014-09-02T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    },
+    {
+      "content": {
+        "resourceType": "Observation",
+        "id": "Observation/3158",
+        "name": {
+          "coding": [
+            {
+              "system": "http://loinc.org/",
+              "code": "5195-3"
+            }
+          ],
+          "text": "hep b surface ag"
+        },
+        "valueString": "Neg",
+        "appliesDateTime": "2014-09-02T00:00:00Z",
+        "status": "final",
+        "reliability": "ok",
+        "subject": {
+          "reference": "Patient/552356"
+        }
+      }
+    }
+  ]
+}

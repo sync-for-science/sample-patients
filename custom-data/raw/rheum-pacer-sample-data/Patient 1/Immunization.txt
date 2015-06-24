@@ -1,0 +1,24 @@
+{
+    "resourceType": "Bundle",
+    "entry": [
+        {
+            "content": {
+                "resourceType": "Immunization",
+                "date": "2014-09-25T00:00:00Z",
+                "vaccineType": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/implement/standards/fhir/v3/VaccineType/",
+                            "code": "88",
+                            "display": "Fluzone"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/552356"
+                },
+                "refusedIndicator": false
+            }
+        }
+    ]
+}
