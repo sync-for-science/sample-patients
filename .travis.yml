@@ -5,6 +5,10 @@ before_install:
   - git submodule update --init --recursive
 install:
   - "pip install -r requirements.txt"
+  - |
+    for m in $(find custom-data/ -name "requirements.txt"); do
+      pip install -r $m
+    done
 script:
  - cd bin
  - python generate.py --write-fhir ../generated-data
