@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 for f in ./raw/*;
     do
@@ -8,4 +9,3 @@ for f in ./raw/*;
 	    cd - ;
 	fi;
     done;
-
