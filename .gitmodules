@@ -1,0 +1,3 @@
+[submodule "custom-data/raw/hca-fhir-importer"]
+	path = custom-data/raw/hca-fhir-importer
+	url = https://github.com/smart-on-fhir/hca-fhir-importer.git
