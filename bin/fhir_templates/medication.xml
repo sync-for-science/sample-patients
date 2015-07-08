@@ -61,19 +61,25 @@
   </dosageInstruction>
   {%- if m.refills or m.q or m.days %}
   <dispense>
+     {%- if m.refills %}
      <numberOfRepeatsAllowed value="{{m.refills}}"/>
+     {% endif %}
+     {%- if m.q %}
      <quantity>
         <value value="{{m.q}}"/>
         <units value="{{m.qttunit}}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{{m.qttunit}}"/>
      </quantity>
+     {% endif %}
+     {%- if m.days %}
      <expectedSupplyDuration>
         <value value="{{m.days}}"/>
         <units value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
+     {% endif %}
   </dispense>
   {% endif %}
 </MedicationPrescription>
