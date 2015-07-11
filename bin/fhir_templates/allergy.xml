@@ -12,9 +12,9 @@
         <type value="immune"/>
         <recordedDate value="{{al.start}}"/>
         <status value="confirmed"/>
-        <subject>
+        <patient>
           <reference value="{{pid}}"/>
-        </subject>
+        </patient>
         <substance>
           <coding>
             <system value="{{al.system}}"/>
