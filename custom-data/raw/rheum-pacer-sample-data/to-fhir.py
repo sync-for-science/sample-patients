@@ -9,26 +9,28 @@ types = ["AllergyIntolerance", "Condition", "Encounter", "MedicationPrescription
 
 resources = []
 def add_resource(rid, r):
-    resources.append({'id': rid, 'content': r})
+    r['id'] = rid
+    resources.append({'resource': r})
 
 resource_num = 1000
-def generate_id(r_type, base=None):
+def generate_ids(r_type, base=None):
     global resource_num
     if base == None:
         resource_num += 1
         base = resource_num
-    return "%s/rheum-pacer-sample-data-%s"%(r_type,base)
+    id = "rheum-pacer-sample-data-%s" % base
+    return ("%s/%s"%(r_type,id),id)
 
 id_map = {}
-def add_remap(old_id, new_id):
-    id_map[old_id] = new_id
+def add_remap(old_id, new_rid):
+    id_map[old_id] = new_rid
 
 def set_id(r, r_type):
-    rid = generate_id(r_type)
+    (rid,id) = generate_ids(r_type)
     if 'id' in r:
         add_remap("%s/%s"%(r_type, r['id']), rid)
         del r['id']
-    return (rid, r)
+    return (id, r)
 
 
 substances = {
@@ -105,9 +107,9 @@ for p in patients:
         rs = [t_file]
         if 'entry' in t_file: rs = [r['content'] for r in t_file['entry']]
         for one_resource in rs:
-            rid, r = set_id(one_resource, r_type)
+            id, r = set_id(one_resource, r_type)
             resource_cleanup(r)
-            add_resource(rid, r)
+            add_resource(id, r)
 
 cleanup(resources)
 feed = {
