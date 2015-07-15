@@ -5,13 +5,14 @@
             "content": {
                 "resourceType": "AllergyIntolerance",
                 "sensitivityType": "allergy",
-                "recordedDate": "2014-10-02T00:00:00Z",
+                "recordedDate": "2015-03-14T00:00:00Z",
                 "status": "confirmed",
                 "subject": {
-                    "reference": "Patient/552356"
+                    "reference": "Patient/624598"
                 },
                 "substance": {
-                    "reference": "Substance/QE1QX6B99R"
+                    "reference": "Substance/1191",
+                    "display": "Aspirin"
                 }
             }
         },
@@ -19,13 +20,29 @@
             "content": {
                 "resourceType": "AllergyIntolerance",
                 "sensitivityType": "allergy",
-                "recordedDate": "2015-03-17T00:00:00Z",
+                "recordedDate": "2015-03-14T00:00:00Z",
                 "status": "confirmed",
                 "subject": {
-                    "reference": "Patient/552356"
+                    "reference": "Patient/624598"
                 },
                 "substance": {
-                    "reference": "Substance/EYO007VX98"
+                    "reference": "Substance/4053",
+                    "display": "Erythromycin"
+                }
+            }
+        },
+        {
+            "content": {
+                "resourceType": "AllergyIntolerance",
+                "sensitivityType": "allergy",
+                "recordedDate": "2015-03-14T00:00:00Z",
+                "status": "confirmed",
+                "subject": {
+                    "reference": "Patient/624598"
+                },
+                "substance": {
+                    "reference": "Substance/QE1QX6B99R",
+                    "display": "Peanuts"
                 }
             }
         }

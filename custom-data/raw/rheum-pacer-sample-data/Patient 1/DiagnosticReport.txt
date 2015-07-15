@@ -13,30 +13,11 @@
                     ],
                     "text": "FOOT, 3+ VIEWS"
                 },
-                "issued": "2013-06-15T00:00:00Z",
+                "issued": "2013-03-07T00:00:00Z",
                 "subject": {
-                    "reference": "Patient/552356"
+                    "reference": "Patient/624598"
                 },
-                "conclusion": "History: Psoriatic arthropathy. Findings: AP, oblique and lateral views of the left foot show no significant arthritic changes and no change from the prior study from 2008. Findings: AP, oblique and lateral views of the right foot show what appear to represent degenerative changes involving some of the components of the Lisfranc joint. No other significant arthritic changes are seen. There is a plantar calcaneal spur. No significant change from the prior study is seen. Findings: PA, oblique and lateral views of the left hand and wrist show nonspecific arthritic changes involving most of the interphalangeal joints. The index and ring fingers are partially flexed at the proximal interphalangeal joints with an appearance suggesting chronic deformity. The study is otherwise unremarkable. There are no arthritic changes specific for psoriatic arthritis. Findings: PA, oblique and lateral views of the right hand and wrist show nonspecific narrowing of most of the interphalangeal joints with no other arthritic changes seen. The proximal interphalangeal joints of the index and ring fingers of the right hand are also partially flexed in a chronic appearing fashion, similar to the left hand. Impression: There are no arthritic changes which are more specific for psoriatic arthritis. Most of the interphalangeal joint changes are probably those of degenerative arthritis."
-            }
-        },
-        {
-            "content": {
-                "resourceType": "DiagnosticReport",
-                "name": {
-                    "coding": [
-                        {
-                            "system": "http://loinc.org/",
-                            "code": "24721-3"
-                        }
-                    ],
-                    "text": "HAND 2 VIEWS"
-                },
-                "issued": "2014-05-05T00:00:00Z",
-                "subject": {
-                    "reference": "Patient/552356"
-                },
-                "conclusion": "Examination of the hands shows no evidence of fracture or bone disease. Impression: Negative hands Examination of the knees shows no evidence of fracture or bone disease. A knee joint spaces are maintained. Impression: Negative knees."
+                "conclusion": "LEFT FOOT - 12/23/2010 INDICATION: Pain. Three views compared to 7/18/2008. Interval appearance is unchanged. There is a stable plantar spur. Midfoot degenerative changes are associated with a pes planus alignment. Forefoot unremarkable and no acute pathology is seen."
             }
         },
         {
@@ -51,30 +32,11 @@
                     ],
                     "text": "CHEST 1 VIEW"
                 },
-                "issued": "2004-05-24T00:00:00Z",
+                "issued": "2013-03-07T00:00:00Z",
                 "subject": {
-                    "reference": "Patient/552356"
+                    "reference": "Patient/624598"
                 },
-                "conclusion": "PORTABLE CHEST - 5/20/04 HISTORY: Decreased O2 saturations in the 80s. Status post right TKA. Abnormal density is present in the left lung base consistent with infiltrate or other air-space disease. There is also abnormal density in the right lung base consistent with atelectasis. The cardiomediastinal silhouette is midline. The pulmonary vasculature is within normal limits. The bony thorax is grossly intact. IMPRESSION: 1. Abnormal density in the left lung base consistent with infiltrate versus other air-space disease. 2. Atelectasis at the right lung base. I have personally reviewed this examination and agree with the resident/fellow physician's interpretation. Resident Physician: SELENA M HINTON MD [71891] Radiologist: BERNARD DENNIS M GO MD [24035]"
-            }
-        },
-        {
-            "content": {
-                "resourceType": "DiagnosticReport",
-                "name": {
-                    "coding": [
-                        {
-                            "system": "http://loinc.org/",
-                            "code": "48737-1"
-                        }
-                    ],
-                    "text": "HAND + WRIST, 3+ VIEWS"
-                },
-                "issued": "2012-08-18T00:00:00Z",
-                "subject": {
-                    "reference": "Patient/552356"
-                },
-                "conclusion": "RIGHT HAND - 8/9/10 HISTORY: Rheumatoid arthritis diagnosed in September 2009. TECHNIQUE: AP, lateral, and oblique views of the right hand are obtained. No prior studies available for comparison. FINDINGS: Osseous structures are intact and anatomically aligned. There is mild diffuse periarticular osteopenia. There is mild irregular joint space narrowing with marginal osteophyte formation involving the 1st carpometacarpal and interphalangeal joints. The remainder of the joint spaces are maintained. No definite erosions are identified. Vascular calcification is noted. No focal soft tissue swelling or calcifications are noted. IMPRESSION: 1. Mild osteoarthritic changes of the right hand. 2. Nonspecific mild diffuse periarticular osteopenia which may be seen as an early change of rheumatoid arthritis. 3. Atherosclerotic disease."
+                "conclusion": "HISTORY:preop CHEST 1 VIEW -- 05/10/11 An AP supine view of the chest was acquired and compared with prior PA erect examination dated 8/21/09. The cardiac silhouette and pulmonary vascular pattern are within normal limits for the supine position. The lungs are clear of infiltrates. No displaced rib fractures are identified. There is subluxation of the right humeral head which is unchanged since the prior exam. IMPRESSION: No pulmonary infiltrates or congestive failure."
             }
         },
         {
@@ -87,13 +49,13 @@
                             "code": "36398-7"
                         }
                     ],
-                    "text": "HAND-WRIST 2 VIEWS"
+                    "text": "WRIST, 2 VIEWS"
                 },
-                "issued": "2014-02-16T00:00:00Z",
+                "issued": "2013-09-12T00:00:00Z",
                 "subject": {
-                    "reference": "Patient/552356"
+                    "reference": "Patient/624598"
                 },
-                "conclusion": "LEFT HAND, TWO VIEWS CLINICAL HISTORY: Left hand pain. FINDINGS: There are no prior comparison studies available at present. There is no visualization of any fractures or dislocations involving the bones of the left hand. There is mild narrowing of the joint spaces, especially in the region of the distal interphalangeal joints. There is no evidence of any periarticular osteoporosis, periosteal reactions or any focal erosions. IMPRESSION: Findings suggestive of joint space narrowing, in a distal distribution, suggestive of changes of osteoarthritis."
+                "conclusion": "LEFT WRIST - 10/31/2011 Indication is followup fracture. Two views are compared to 07/27/2011. A distal left radial fracture site shows continued healing in otherwise unchanged appearance and alignment from the July examination."
             }
         },
         {
@@ -103,16 +65,16 @@
                     "coding": [
                         {
                             "system": "http://loinc.org/",
-                            "code": "46343-0"
+                            "code": "46348-9"
                         }
                     ],
-                    "text": "HAND-WRIST MINIMUM 3 VIEWS VIEWS"
+                    "text": "CXR 2 VIEWS AP/PA & LATERAL"
                 },
-                "issued": "2012-03-22T00:00:00Z",
+                "issued": "2014-01-19T00:00:00Z",
                 "subject": {
-                    "reference": "Patient/552356"
+                    "reference": "Patient/624598"
                 },
-                "conclusion": "History: Right thumb pain. Finger pain both hands. Had carpometacarpal arthroplasty done 02/06/06. Findings: PA, oblique and lateral views of the left hand and wrist again show absence of the greater multangular. The space between the proximal end of the metacarpal and the navicular has narrowed somewhat in the interval and there appears to be more irregularity of the proximal end of the metacarpal than on the prior study, but that could be due to projection alone. There is degenerative spurring about the joint which is unchanged. The wrist is otherwise unchanged. The hand shows nonspecific narrowing of many of the interphalangeal joints. There is also evidence of chondrocalcinosis involving the triangular cartilage at the distal end of the ulna which was present previously. Findings: PA, oblique and lateral views of the right hand and wrist show that there is narrowing of the joint between the navicular and the multangulars and the carpometacarpal joint of the thumb representing degenerative change. There is also nonspecific narrowing of a number of the interphalangeal joints. There is also calcification of the triangular cartilage. Impression: Postoperative changes of the left wrist and degenerate changes generally about both hands and wrists. There is also chondrocalcinosis involving both triangular cartilages and the possibility of CPPD should be considered."
+                "conclusion": "HISTORY:shortness of breath with exertion CHEST 2 VIEWS AP OR PA AND LATERAL -- 03/12/12 PA and lateral views of the chest were acquired and compared with the prior examination dated 11/19/10. The cardiomediastinal silhouette is within normal limits of size and configuration. The pulmonary vascular pattern is normal. The lungs are clear infiltrates. There are no pleural effusions. Degenerative changes of the thoracic spine are stable. IMPRESSION: No active cardiopulmonary disease."
             }
         },
         {
@@ -127,11 +89,11 @@
                     ],
                     "text": "FOOT COMPLETE MINIMUM 3 VIEWS"
                 },
-                "issued": "2013-01-30T00:00:00Z",
+                "issued": "2013-06-03T00:00:00Z",
                 "subject": {
-                    "reference": "Patient/552356"
+                    "reference": "Patient/624598"
                 },
-                "conclusion": "History: Right foot and ankle pain. Findings: AP, oblique and lateral views of the left foot with the lateral view taken standing show a plantar calcaneal spur. There is some bony irregularity about the lateral aspect of the proximal end of the fifth metatarsal of uncertain significance. This may be an old post traumatic change. The foot is otherwise unremarkable. Findings: AP and lateral views of the left ankle are compared to a prior study of 12/02/05. The ankle is unchanged and is unremarkable. Impression: Plantar calcaneal spur and irregular bone formation about the proximal fifth metatarsal."
+                "conclusion": "Left foot 10/7/2005 History: Cellulitis left leg, rheumatoid arthritis, rule out gas producing organ A PA PA oblique and lateral views show soft tissue generally over the foot, predominantly dorsally. There is mild generalized demineralization of bony parts. No other specific abnormalities are noted. In particular, I do not identify radiopaque foreign body or gas within the soft tissues."
             }
         },
         {
@@ -141,16 +103,187 @@
                     "coding": [
                         {
                             "system": "http://loinc.org/",
-                            "code": "37697-0"
+                            "code": "36398-7"
                         }
                     ],
-                    "text": "FOOT, 2 VIEWS"
+                    "text": "HAND + WRIST, 2 VIEWS"
                 },
-                "issued": "2013-02-07T00:00:00Z",
+                "issued": "2013-07-19T00:00:00Z",
                 "subject": {
-                    "reference": "Patient/552356"
+                    "reference": "Patient/624598"
                 },
-                "conclusion": "History: Likely adult Still's disease; assess for erosive disease Three views of the right hand/wrist including PA, oblique and lateral views, February 5, 2010: No recent fracture or dislocation is identified. There is very mild joint space narrowing of the fifth DIP joint. No cortical erosion is noted. No soft tissue abnormality is noted. Impression: Mild osteoarthritic changes. Three views of the left hand/wrist including PA, oblique and lateral views, February 5, 2010: No recent fracture or dislocation is identified. No cortical erosion is noted. There is mild osteophyte lipping along the head of the second and third middle phalanges medially. No soft tissue abnormality is noted. Impression: Mild osteoarthritic changes. AP and lateral views of the right foot, February 5, 2010: No recent fracture or dislocation is identified. No cortical erosion is noted. There is mild osteophyte lipping along the head of the first metatarsal laterally. There is an osteophyte spur along the inferior border of the calcaneus. No soft tissue abnormality is noted. Impression: Mild osteoarthritic changes. Calcaneal spur. AP and lateral views of the left foot, February 5, 2010: No recent fracture or dislocation is identified. No cortical erosion is noted. There is no osteophyte lipping along the head of the first metatarsal laterally. There is an osteophyte spur along the inferior border of the calcaneus. No soft tissue abnormality is noted. Impression: Mild osteoarthritc changes. Calcaneal spur."
+                "conclusion": "EXAM: HAND/WRIST, 2 VIEWS - 05/10/11 11:54:00 HISTORY: RIGHT HAND SWELLING ?? RA CHANGES, ? OA ?? CPPD? OTHER. OTHER MALAISE AND FATIGUE . PAIN IN JOINT INVOLVING MULTIPLE SITES. Muscle weakness (generalized) TECHNIQUE: Two views of the right hand are submitted for interpretation. COMPARISON: 10/13/09 FINDINGS: Posttraumatic changes are again noted involving the distal radius with radiocarpal joint space narrowing. There is mild sclerosis and joint space narrowing at the first carpometacarpal joint. Similar changes are present at the first MCP. There is mild joint space narrowing of the DIP joints without erosions. No erosive changes can be identified within the limits of the study. No significant soft tissue calcifications are identified. IMPRESSION: 1. Posttraumatic changes involving the distal radius. 2. Osteoarthritic changes as detailed above."
+            }
+        },
+        {
+            "content": {
+                "resourceType": "DiagnosticReport",
+                "name": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org/",
+                            "code": "46343-0"
+                        }
+                    ],
+                    "text": "HAND >2 VIEWS"
+                },
+                "issued": "2013-07-19T00:00:00Z",
+                "subject": {
+                    "reference": "Patient/624598"
+                },
+                "conclusion": "LEFT HAND - 2/20/03 INDICATION: Post injury evaluation. Three views submitted. Osseous structures appear intact and normally aligned."
+            }
+        },
+        {
+            "content": {
+                "resourceType": "DiagnosticReport",
+                "name": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org/",
+                            "code": "36643-5"
+                        }
+                    ],
+                    "text": "CHEST 2 VIEWS"
+                },
+                "issued": "2013-06-10T00:00:00Z",
+                "subject": {
+                    "reference": "Patient/624598"
+                },
+                "conclusion": "CHEST 2 VIEWS PA AND LATERAL: 01/28/08 09:45:00 HISTORY: left sided rib pain, lower left anterior and posterior TECHNIQUE: PA and lateral views of the chest were performed. Comparison is made to a prior study dated 6/9/07. FINDINGS: The lungs are clear and well expanded. No acute infiltrate, pleural effusion, or pneumothorax is identified. There is normal vascularity. The cardiovascular silhouette is within normal limits. Visualized bones and soft tissues are unremarkable. No displaced rib fractures are seen. IMPRESSION: There is no evidence of acute cardiopulmonary disease. I have personally reviewed this examination and agree with the resident/fellow physicians interpretation. Resident Physician: ROBERT T ABBOTT MD [100353] Radiologist: GEORGE R FUNKHOUSER MD [177]"
+            }
+        },
+        {
+            "content": {
+                "resourceType": "DiagnosticReport",
+                "name": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org/",
+                            "code": "36643-5"
+                        }
+                    ],
+                    "text": "CHEST 2 VIEWS"
+                },
+                "issued": "2013-09-15T00:00:00Z",
+                "subject": {
+                    "reference": "Patient/624598"
+                },
+                "conclusion": "CHEST - 11/17/05 INDICATION: Evaluating cough. P-A and lateral views are submitted. Cardiomediastinal silhouette unremarkable. Lungs symmetrically and satisfactorily perfused and aerated. No pleural pathology present. IMPRESSION: Age appropriate plain film study of the chest."
+            }
+        },
+        {
+            "content": {
+                "resourceType": "DiagnosticReport",
+                "name": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org/",
+                            "code": "36398-7"
+                        }
+                    ],
+                    "text": "HAND, 2 VIEWS"
+                },
+                "issued": "2013-12-27T00:00:00Z",
+                "subject": {
+                    "reference": "Patient/624598"
+                },
+                "conclusion": "EXAM: RIGHT AND LEFT HAND - 06/04/12 HISTORY: 76 year-old female with pain in both hands/history of auto immune disease for few years. TECHNIQUE: 2 views of the hands are submitted for evaluation. COMPARISON: None. FINDINGS: RIGHT: Irregular joint space narrowing around the DIP joint of the second and third digit, with central erosion and peripheral bony proliferation, most indicative of erosive osteoarthritis. Osteoarthritic changes with subchondral cysts are also noted at the PIP joint of the third, fourth and fifth digits, the triscaphe joint, the first through fourth MCP joints, and the interphalangeal joint of the thumb. Osseous structures are osteopenic. LEFT: Irregular joint space narrowing around PIP of the second digit and to a lesser extent of the fifth digit with central erosion and peripheral bony proliferation, most indicative of erosive osteoarthritis. Osteoarthritic changes with subchondral cyst also noted at the PIP of the fifth digit, triscaphe joint, first, third and fourth MCP joints, and the interphalangeal joint of the thumb. Osseous structures are osteopenic. Cystic changes at the proximal ulnar aspect of the lunate may be from ulnar abutment. IMPRESSION: Bilateral erosive osteoarthritis (R>L). Possible left ulnar abutment syndrome. I have personally reviewed this examination and agree with the resident/fellow physician's interpretation. Resident Physician: TIMOTHY J ROLLE [126322] Radiologist: PETER R BOLOS MD [93089]"
+            }
+        },
+        {
+            "content": {
+                "resourceType": "DiagnosticReport",
+                "name": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org/",
+                            "code": "36398-7"
+                        }
+                    ],
+                    "text": "HAND 2 VIEWS"
+                },
+                "issued": "2014-03-11T00:00:00Z",
+                "subject": {
+                    "reference": "Patient/624598"
+                },
+                "conclusion": "Examination of the hands and wrists shows advanced arthritic changes of the distal interphalangeal joints of these second third fourth and fifth fingers and the interphalangeal joint of the first finger. The wrists appear normal. Impression: Advanced arthritic changes both hands. Negative wrists."
+            }
+        },
+        {
+            "content": {
+                "resourceType": "DiagnosticReport",
+                "name": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org/",
+                            "code": "38268-9"
+                        }
+                    ],
+                    "text": "MOBILE DXA"
+                },
+                "issued": "2014-05-28T00:00:00Z",
+                "subject": {
+                    "reference": "Patient/624598"
+                },
+                "conclusion": "Level(s) normal ........................"
+            }
+        },
+        {
+            "content": {
+                "resourceType": "DiagnosticReport",
+                "name": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org/",
+                            "code": "36307-7"
+                        }
+                    ],
+                    "text": "FOOT, 3+ VIEWS"
+                },
+                "issued": "2014-05-19T00:00:00Z",
+                "subject": {
+                    "reference": "Patient/624598"
+                },
+                "conclusion": "Examination of the feet shows no evidence of fracture or bone disease. Impression: Negative feet. Addendum Begins There are spurs on the inferior pole of the calcanei bilaterally. Addendum Ends Examination of the feet shows no evidence of fracture or bone disease. Impression: Negative feet."
+            }
+        },
+        {
+            "content": {
+                "resourceType": "DiagnosticReport",
+                "name": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org/",
+                            "code": "37699-6"
+                        }
+                    ],
+                    "text": "FOOT COMPLETE MINIMUM 3 VIEWS"
+                },
+                "issued": "2014-05-19T00:00:00Z",
+                "subject": {
+                    "reference": "Patient/624598"
+                },
+                "conclusion": "LEFT FOOT - 8/28/07 1341 HOURS HISTORY: New patient - left ankle pain. Erect P-A, erect lateral, and P-A oblique views of the left foot. Visualized bony parts and related soft tissues are within normal limits."
+            }
+        },
+        {
+            "content": {
+                "resourceType": "DiagnosticReport",
+                "name": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org/",
+                            "code": "36307-7"
+                        }
+                    ],
+                    "text": "FOOT, 3+ VIEWS"
+                },
+                "issued": "2014-05-22T00:00:00Z",
+                "subject": {
+                    "reference": "Patient/624598"
+                },
+                "conclusion": "Examination of the left foot shows a spur on the inferior pole of the calcaneus. There is no evidence of fracture or bone disease. Impression: Spur formation left calcaneus."
             }
         }
     ]

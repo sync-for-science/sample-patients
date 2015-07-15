@@ -4,7 +4,7 @@
         {
             "content": {
                 "resourceType": "Immunization",
-                "date": "2014-03-11T00:00:00Z",
+                "date": "2014-09-25T00:00:00Z",
                 "vaccineType": {
                     "coding": [
                         {
@@ -15,7 +15,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/624598"
+                    "reference": "Patient/552356"
                 },
                 "refusedIndicator": false
             }

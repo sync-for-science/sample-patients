@@ -3,15 +3,15 @@
     "identifier": [
         {
             "label": "CSN",
-            "value": "256789"
+            "value": "16489"
         }
     ],
     "subject": {
-        "reference": "Patient/552356"
+        "reference": "Patient/624598"
     },
     "period": {
-        "start": "2015-03-12T10:30:00Z",
-        "end": "2015-03-12T11:15:00Z"
+        "start": "2015-03-17T14:30:00Z",
+        "end": "2015-03-17T15:15:00Z"
     },
     "location": [
         {
@@ -19,8 +19,8 @@
                 "display": "BW Rheumatology"
             },
             "period": {
-                "start": "2015-03-12T10:30:00Z",
-                "end": "2015-03-12T11:15:00Z"
+                "start": "2015-03-17T14:30:00Z",
+                "end": "2015-03-17T15:15:00Z"
             }
         }
     ]
