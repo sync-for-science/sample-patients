@@ -5,30 +5,7 @@
             "content": {
                 "resourceType": "Condition",
                 "subject": {
-                    "reference": "Patient/624598"
-                },
-                "code": {
-                    "coding": [
-                        {
-                            "system": "http://hl7.org/fhir/sid/icd-9",
-                            "code": "729.1",
-                            "display": "Myalgia and myositis NOS"
-                        },
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "288225004",
-                            "display": "Myalgia and myositis NOS"
-                        }
-                    ]
-                },
-                "status": "confirmed"
-            }
-        },
-        {
-            "content": {
-                "resourceType": "Condition",
-                "subject": {
-                    "reference": "Patient/624598"
+                    "reference": "Patient/552356"
                 },
                 "code": {
                     "coding": [
@@ -51,7 +28,7 @@
             "content": {
                 "resourceType": "Condition",
                 "subject": {
-                    "reference": "Patient/624598"
+                    "reference": "Patient/552356"
                 },
                 "code": {
                     "coding": [
@@ -74,7 +51,7 @@
             "content": {
                 "resourceType": "Condition",
                 "subject": {
-                    "reference": "Patient/624598"
+                    "reference": "Patient/552356"
                 },
                 "code": {
                     "coding": [
