@@ -1,6 +1,6 @@
   {% extends "entry.xml" %}
   {% block content %}
-    <FamilyHistory>
+    <FamilyMemberHistory>
   {{resource_id}}
       {%- if fh.heightcm %}
       <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height">
@@ -19,7 +19,6 @@
       <patient>
          <reference value="{{pid}}"/>
       </patient>
-      <relation>
         <relationship>
           <coding>
            {%- if fh.relativecode == '66839005' %}
@@ -66,6 +65,5 @@
           </type>
         </condition>
         {% endif %}
-      </relation>
-    </FamilyHistory>
+    </FamilyMemberHistory>
   {% endblock %}
