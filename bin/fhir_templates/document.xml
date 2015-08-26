@@ -7,7 +7,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">{{d.title}}</div>
         </text>
         <subject>
-          <reference value="{{pid}}"/>
+          <reference value="{{base_url}}{{pid}}"/>
         </subject>
         <type>
           <coding>

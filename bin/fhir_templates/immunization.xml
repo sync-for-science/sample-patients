@@ -7,7 +7,7 @@
             <div xmlns="http://www.w3.org/1999/xhtml">{{i.cvx_title}}</div>
         </text>
         <patient>
-            <reference value="{{pid}}"/>
+            <reference value="{{base_url}}{{pid}}"/>
         </patient>
         <date value="{{i.date}}"/>
         <vaccineType>

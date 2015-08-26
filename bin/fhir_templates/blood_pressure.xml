@@ -28,18 +28,18 @@
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
-      <reference value="{{pid}}"/>
+      <reference value="{{base_url}}{{pid}}"/>
     </subject>
     <related>
       <type value="has-component"/>
       <target>
-        <reference value="{{systolicid}}"/>
+        <reference value="{{base_url}}{{systolicid}}"/>
       </target>
     </related>
     <related>
       <type value="has-component"/>
       <target>
-        <reference value="{{diastolicid}}"/>
+        <reference value="{{base_url}}{{diastolicid}}"/>
       </target>
     </related>
     {%- if bp.site %}
@@ -62,7 +62,7 @@
     {% endif %}
     {%- if bp.encounter_id %}
     <encounter>
-      <reference value="{{bp.encounter_id}}"/>
+      <reference value="{{base_url}}{{bp.encounter_id}}"/>
     </encounter>
     {% endif %}
 

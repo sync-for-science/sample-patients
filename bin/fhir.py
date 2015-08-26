@@ -55,9 +55,14 @@ def getVital(v, vt, encounter_id):
     }
 
 class FHIRSamplePatient(object):
-  def __init__(self, pid, path):
+  def __init__(self, pid, path, base_url=""):
     self.path = path
     self.pid = pid
+    
+    if len(base_url) > 0 and not base_url.endswith("/"):
+        base_url += "/"
+
+    self.base_url = base_url
     
     return
 
@@ -67,6 +72,7 @@ class FHIRSamplePatient(object):
     p = Patient.mpi[self.pid]
 
     now = datetime.datetime.now().isoformat()
+    base_url = self.base_url
     
     if self.pid == '99912345':
         vpatient = generate_patient()

@@ -17,11 +17,11 @@
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
-      <reference value="{{pid}}"/>
+      <reference value="{{base_url}}{{pid}}"/>
     </subject>
     {%- if o.encounter_id %}
     <encounter>
-      <reference value="{{o.encounter_id}}"/>
+      <reference value="{{base_url}}{{o.encounter_id}}"/>
     </encounter>
     {% endif %}
   </Observation>

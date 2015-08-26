@@ -17,7 +17,7 @@
         <div xmlns="http://www.w3.org/1999/xhtml">Data on patient's {{fh.relativetitle}}</div>
       </text>
       <patient>
-         <reference value="{{pid}}"/>
+         <reference value="{{base_url}}{{pid}}"/>
       </patient>
         <relationship>
           <coding>

@@ -14,7 +14,7 @@
             </coding>
         </code>
         <subject>
-          <reference value="{{pid}}"/>
+          <reference value="{{base_url}}{{pid}}"/>
         </subject>
         <date value="{{al.start}}"/>
         <mode value="snapshot"/>

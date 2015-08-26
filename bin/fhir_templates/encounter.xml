@@ -9,7 +9,7 @@
       <status value="finished"/>
       <class value="{{v.encounter_type}}"/>
       <patient>
-        <reference value="{{pid}}"/>
+        <reference value="{{base_url}}{{pid}}"/>
       </patient>
       <period>
        <start value="{{v.start_date}}"/>

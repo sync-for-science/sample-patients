@@ -25,7 +25,7 @@
 
   <status value="{{m.status}}" />
   <patient>
-    <reference value="{{pid}}"/>
+    <reference value="{{base_url}}{{pid}}"/>
   </patient>
 
   <medication>

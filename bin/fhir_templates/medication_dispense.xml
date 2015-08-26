@@ -27,11 +27,11 @@
   <status value="completed"/>
 
   <patient>
-    <reference value="{{pid}}"/>
+    <reference value="{{base_url}}{{pid}}"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="{{medid}}"/>
+    <reference value="{{base_url}}{{medid}}"/>
   </authorizingPrescription>
 
   <quantity>

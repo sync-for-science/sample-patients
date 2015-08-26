@@ -8,7 +8,7 @@
       </text>
       <started value="{{s.date}}"/>
       <patient>
-        <reference value="{{pid}}"/>
+        <reference value="{{base_url}}{{pid}}"/>
       </patient>
       <uid value="urn:sampleoid:{{s.oid}}"/>
       <accession>

@@ -13,7 +13,7 @@
         <recordedDate value="{{al.start}}"/>
         <status value="confirmed"/>
         <patient>
-          <reference value="{{pid}}"/>
+          <reference value="{{base_url}}{{pid}}"/>
         </patient>
         <substance>
           <coding>

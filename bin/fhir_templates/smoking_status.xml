@@ -23,7 +23,7 @@
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
-      <reference value="{{pid}}"/>
+      <reference value="{{base_url}}{{pid}}"/>
     </subject>
   </Observation>
   {% endblock %}
