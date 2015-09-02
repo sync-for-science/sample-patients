@@ -4,19 +4,19 @@
   {{resource_id}}
    <text>
      <status value="generated"/>
-     <div xmlns="http://www.w3.org/1999/xhtml">{{w.name}}</div>   
+     <div xmlns="http://www.w3.org/1999/xhtml">{{w.name}}</div>
    </text>
-   <patient>
+   <subject>
       <reference value="{{base_url}}{{pid}}"/>
-   </patient>
-   <type> 
+   </subject>
+   <code>
       <coding>
         <system value="http://snomed.info/sct"/>
         <code value="{{w.snomed}}"/>
         <display value="{{w.name}}"/>
       </coding>
       <text value="{{w.name}}"/>
-   </type>
+   </code>
    <performedDateTime value="{{w.date}}"/>
    {%- if w.notes %}
    <notes value="{{w.notes}}"/>

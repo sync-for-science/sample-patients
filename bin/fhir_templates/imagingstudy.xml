@@ -30,7 +30,7 @@
         <instance>
           <number value="{{img.number}}"/>
           <uid value="urn:sampleoid:{{img.oid}}"/>
-          <sopclass value="urn:oid:{{img.sop}}"/>
+          <sopClass value="urn:oid:{{img.sop}}"/>
           <title value="{{img.title}}"/>
           <content>
              <url value="{{img.binary_id}}"/>

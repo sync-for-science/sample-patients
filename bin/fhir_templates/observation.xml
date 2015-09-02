@@ -17,11 +17,12 @@
         <code value="{{o.code}}"/>
         <display value="{{o.name}}"/>
       </coding>
+      <text value="{{o.name}}"/>
     </code>
     {%- if o.scale is defined and o.scale == 'Qn' %}
     <valueQuantity>
       <value value="{{o.value | float(0)}}"/>
-      <units value="{{o.units}}"/>
+      <unit value="{{o.units}}"/>
       <system value="http://unitsofmeasure.org" />
       <code value="{{o.unitsCode}}"/>
     </valueQuantity>
@@ -29,9 +30,8 @@
     {%- if o.scale is defined and (o.scale == 'Ord' or o.scale == 'Nom')%}
     <valueString value="{{o.value}}"/>
     {% endif %}
-    <appliesDateTime value="{{o.date}}"/>
+    <effectiveDateTime value="{{o.date}}"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
       <reference value="{{base_url}}{{pid}}"/>
     </subject>
@@ -48,19 +48,20 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="{{o.low | float(0)}}"/>
-          <units value="{{o.units}}"/>
-          <code value="{{o.units}}"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="{{o.high | float(0)}}"/>
-          <units value="{{o.units}}"/>
-          <code value="{{o.units}}"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="{{o.low | float(0)}}"/>
+        <unit value="{{o.units}}"/>
+        <code value="{{o.units}}"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="{{o.high | float(0)}}"/>
+        <unit value="{{o.units}}"/>
+        <code value="{{o.units}}"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     {% endif %}
   </Observation>

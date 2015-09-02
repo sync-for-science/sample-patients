@@ -10,13 +10,13 @@
             <reference value="{{base_url}}{{pid}}"/>
         </patient>
         <date value="{{i.date}}"/>
-        <vaccineType>
+        <vaccineCode>
             <coding>
-        	<system value="{{i.cvx_system}}"/>
-		 <code value="{{i.cvx_id}}"/>
-       		 <display value="{{i.cvx_title}}"/>
-		</coding>
-        </vaccineType>
+                <system value="{{i.cvx_system}}"/>
+                <code value="{{i.cvx_id}}"/>
+                <display value="{{i.cvx_title}}"/>
+            </coding>
+        </vaccineCode>
         <reported value="false"/>
     {%- if i.administration_status == 'http://smarthealthit.org/terms/codes/ImmunizationAdministrationStatus#doseGiven' %}
         <wasNotGiven value="false"/>

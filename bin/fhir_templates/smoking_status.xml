@@ -12,6 +12,7 @@
         <code value="72166-2"/>
         <display value="Tobacco smoking status"/>
       </coding>
+      <text value="Tobacco smoking status"/>
     </code>
     <valueCodeableConcept>
       <coding>
@@ -19,9 +20,9 @@
         <code value="{{t.smokingStatusCode}}"/>
         <display value="{{t.smokingStatusText}}"/>
       </coding>
+      <text value="{{t.smokingStatusText}}"/>
     </valueCodeableConcept>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
       <reference value="{{base_url}}{{pid}}"/>
     </subject>

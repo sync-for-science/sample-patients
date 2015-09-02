@@ -15,6 +15,7 @@
             <code value="{{d.code}}"/>
             <display value="{{d.display}}"/>
           </coding>
+          <text value="{{d.display}}"/>
         </type>
         <author>
           <reference value="Practitioner/1234"/>
@@ -24,12 +25,14 @@
         <status value="current"/>
         <description value="{{d.title}}"/>
         <content>
-                <contentType value="{{d.mime_type}}"/>
-        {%- if d.size and d.hash %}
-                <!-- <size value="{{d.size}}"/> -->
+            <attachment>
+                {%- if d.size and d.hash %}
+                <size value="{{d.size}}"/>
                 <hash value="{{d.hash}}"/>
-        {%- endif %}
+                {%- endif %}
                 <url value="/{{d.binary_id}}"/>
+               <contentType value="{{d.mime_type}}"/>
+            </attachment>
         </content>
     </DocumentReference>
   {% endblock %}

@@ -9,7 +9,7 @@
         {%- if al.criticality %}
         <criticality value="{{al.criticality}}"/>
         {% endif %}
-        <type value="immune"/>
+        <category value="{{al.typeDescription}}"/>
         <recordedDate value="{{al.start}}"/>
         <status value="confirmed"/>
         <patient>
@@ -21,9 +21,10 @@
             <code value="{{al.code}}"/>
             <display value="{{al.allergen}}"/>
           </coding>
+          <text value="{{al.allergen}}"/>
         </substance>
         {%- if al.reaction_id %}
-        <event>
+        <reaction>
           <manifestation>
             <coding>
               <system value="http://snomed.info/sct"/>
@@ -35,7 +36,7 @@
         {%- if al.severity %}
           <severity value="{{al.severity}}"/>
         {% endif %}
-        </event>
+        </reaction>
         {% endif %}
     </AllergyIntolerance>
   {% endblock %}

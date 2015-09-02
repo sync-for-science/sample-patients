@@ -18,6 +18,7 @@
           <code value="MR"/>
           <display value="Medical record number"/>
         </coding>
+        <text value="Medical record number"/>
       </type>
       <system value="http://hospital.smarthealthit.org"/>
       <value value="{{p.pid}}"/>
@@ -72,7 +73,6 @@
     <photo>
      <contentType value="{{p.photo_code}}"/>
      <url value="/{{p.photo_binary_id}}"/>
-     <!--<size value="{{p.photo_size}}"/>-->
      <hash value="{{p.photo_hash}}"/>
      <title value="{{p.photo_title}}"/>
     </photo>

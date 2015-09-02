@@ -6,7 +6,7 @@
       <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height">
         <valueQuantity>
           <value value="{{fh.heightcm}}"/>
-          <units value="centimeters"/>
+          <unit value="centimeters"/>
           <system value="http://unitsofmeasure.org"/>
           <code value="cm"/>
         </valueQuantity>
@@ -56,13 +56,14 @@
         {% endif %}
         {%- if fh.problemcode %}
         <condition>
-          <type>
+          <code>
               <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="{{fh.problemcode}}"/>
                 <display value="{{fh.problemtitle}}"/>
               </coding>
-          </type>
+              <text value="{{fh.problemtitle}}"/>
+          </code>
         </condition>
         {% endif %}
     </FamilyMemberHistory>

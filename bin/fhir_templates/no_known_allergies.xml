@@ -12,6 +12,7 @@
                <code value="{{al.loinc_code}}"/>
                <display value="{{al.loinc_display}}"/>
             </coding>
+            <text value="{{al.loinc_display}}"/>
         </code>
         <subject>
           <reference value="{{base_url}}{{pid}}"/>
@@ -24,6 +25,7 @@
                 <code value="nilknown"/>
                 <display value="Nil Known"/>
             </coding>
+            <text value="Nil Known"/>
         </emptyReason>
     </List>
   {% endblock %}

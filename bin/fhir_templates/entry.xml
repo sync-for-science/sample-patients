@@ -4,8 +4,8 @@
     {% block content -%}
     {%- endblock content %}
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="{{id}}"/>
-  </transaction>
+  </request>
 </entry>

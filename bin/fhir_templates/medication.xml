@@ -1,6 +1,6 @@
 {%- extends "entry.xml" %}
 {%- block content %}
-<MedicationPrescription>
+<MedicationOrder>
   {{resource_id}}
   <text>
     <status value="generated"/>
@@ -9,49 +9,40 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{{m.name}}"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="{{m.rxn}}"/>
-	  <display value="{{m.name}}"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="{{m.status}}" />
   <patient>
     <reference value="{{base_url}}{{pid}}"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="{{m.rxn}}"/>
+        <display value="{{m.name}}"/>
+    </coding>
+    <text value="{{m.name}}"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       {%- if m.freqduration %}
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="{{m.start}}"/>
           {%- if m.end is defined and m.end != "" %}
           <end value="{{m.end}}"/>
           {% endif %}
-        </bounds>
+        </boundsPeriod>
         <frequency value="{{m.freq}}"/>
-        <duration value="1"/>
-        <durationUnits value="{{m.freqduration}}"/>
+        <period value="1"/>
+        <periodUnits value="{{m.freqduration}}"/>
       </repeat>
       {% endif %}
-    </scheduledTiming>
+    </timing>
     {%- if m.qtt %}
     <doseQuantity>
       <value value="{{m.qtt}}"/>
-      <units value="{{m.qttunit}}"/>
+      <unit value="{{m.qttunit}}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{{m.qttunit}}"/>
     </doseQuantity>
@@ -62,14 +53,14 @@
     <text value="{{m.sig}}"/>
   </dosageInstruction>
   {%- if m.refills or m.q or m.days %}
-  <dispense>
+  <dispenseRequest>
      {%- if m.refills %}
      <numberOfRepeatsAllowed value="{{m.refills}}"/>
      {% endif %}
      {%- if m.q %}
      <quantity>
         <value value="{{m.q}}"/>
-        <units value="{{m.qttunit}}"/>
+        <unit value="{{m.qttunit}}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{{m.qttunit}}"/>
      </quantity>
@@ -77,12 +68,12 @@
      {%- if m.days %}
      <expectedSupplyDuration>
         <value value="{{m.days}}"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
      {% endif %}
-  </dispense>
+  </dispenseRequest>
   {% endif %}
-</MedicationPrescription>
+</MedicationOrder>
 {% endblock %}
