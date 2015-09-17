@@ -23,7 +23,7 @@
           </coding>
           <text value="{{al.allergen}}"/>
         </substance>
-        {%- if al.reaction_id %}
+        {%- if al.reaction %}
         <reaction>
           <manifestation>
             <coding>
