@@ -503,7 +503,7 @@
                 "schedule":{
                     "reference":"Schedule/USECASESCHEDULE3"
                 },
-                "start":"2016-12-10T011:30:00Z",
+                "start":"2016-12-10T01:30:00Z",
                 "end":"2016-12-10T10:12:00Z"
             },
             "request" :
@@ -862,7 +862,7 @@
                     "text":"Counseling for Depression"
                 },
                 "description":"Counseling for Depression",
-                "start":"2016-12-10T011:30:00Z",
+                "start":"2016-12-10T01:30:00Z",
                 "end":"2016-12-10T10:12:00Z",
                 "slot":[
                     {

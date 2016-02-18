@@ -21,7 +21,7 @@
                                                 ]
                                     }
                                 ],
-                        "birthDate" : "2016-01-04T00:00:00",
+                        "birthDate" : "2016-01-04",
                         "gender" : "male",
                         "extension" :
                                 [
@@ -386,7 +386,7 @@
                                                 ]
                                     }
                                 ],
-                        "birthDate" : "2016-02-04T00:00:00",
+                        "birthDate" : "2016-02-04",
                         "gender" : "male",
                         "extension" :
                                 [
@@ -652,7 +652,7 @@
                                                 ]
                                     }
                                 ],
-                        "birthDate" : "2016-02-28T00:00:00",
+                        "birthDate" : "2016-02-28",
                         "gender" : "female",
                         "extension" :
                                 [
@@ -687,7 +687,7 @@
                                                 ]
                                     }
                                 ],
-                        "birthDate" : "2016-02-28T00:00:00",
+                        "birthDate" : "2016-02-28",
                         "gender" : "female",
                         "extension" :
                                 [
