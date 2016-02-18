@@ -46,11 +46,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -79,11 +79,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -112,11 +112,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -145,11 +145,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -178,11 +178,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -211,11 +211,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -244,11 +244,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -277,11 +277,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -310,11 +310,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -343,11 +343,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -411,11 +411,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -444,11 +444,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -477,11 +477,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -510,11 +510,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -543,11 +543,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -576,11 +576,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
@@ -609,11 +609,11 @@
                         "code" :
                         {
                             "coding" :
-                            {
+                            [{
                                 "system" : "http://loinc.org",
                                 "code" : "58941-6",
                                 "display" : "Transcutaneous Bilirubin"
-                            }
+                            }]
                         },
                         "valueQuantity" :
                         {
