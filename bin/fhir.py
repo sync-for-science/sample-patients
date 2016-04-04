@@ -37,6 +37,7 @@ def uid(resource_type=None, id=None):
     if not id:
         base += 1
         id = base
+    id = "smart-" + id
     if (resource_type == None):
       return str(id)
     else:
@@ -101,7 +102,7 @@ class FHIRSamplePatient(object):
             p.photo_hash = d.hash
             p.photo_title = d.title
 
-    id = "Patient/%s"%self.pid
+    id = "Patient/smart-%s"%self.pid
     pid = id
     template = template_env.get_template('patient.xml')
     print >>pfile, template.render(dict(globals(), **locals()))
