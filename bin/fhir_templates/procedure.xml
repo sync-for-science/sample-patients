@@ -6,6 +6,16 @@
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">{{w.name}}</div>
    </text>
+   <meta>
+      <security>
+          <system value="http://smarthealthit.org/security/categories"/>
+          <code value="procedures"/>
+      </security>
+            <security>
+                <system value="http://smarthealthit.org/security/users"/>
+                <code value="{{pid}}"/>
+            </security>
+   </meta>
    <subject>
       <reference value="{{base_url}}{{pid}}"/>
    </subject>

@@ -37,11 +37,10 @@ def uid(resource_type=None, id=None):
     if not id:
         base += 1
         id = base
-    id = "smart-" + id
     if (resource_type == None):
       return str(id)
     else:
-      return "%s/%s"%(resource_type, str(id))
+      return "%s/smart-%s-%s"%(resource_type, resource_type.lower(), str(id))
 
 def getVital(v, vt, encounter_id):
   return {

@@ -8,6 +8,16 @@
       {{m.name}} (rxnorm: {{m.rxn}})
     </div>
   </text>
+  <meta>
+    <security>
+        <system value="http://smarthealthit.org/security/categories"/>
+        <code value="medications"/>
+    </security>
+            <security>
+                <system value="http://smarthealthit.org/security/users"/>
+                <code value="{{pid}}"/>
+            </security>
+  </meta>
 
   <status value="{{m.status}}" />
   <patient>

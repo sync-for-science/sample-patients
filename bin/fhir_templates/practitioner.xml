@@ -6,6 +6,12 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">Practitioner: John Smith</div>
         </text>
+        <meta>
+            <security>
+                <system value="http://smarthealthit.org/security/category"/>
+                <code value="public"/>
+            </security>
+        </meta>
         <name>
            <use value="usual"/>
            <family value="Smith"/>

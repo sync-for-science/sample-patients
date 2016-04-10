@@ -10,6 +10,16 @@
         {%- endblock %}
       </div>
     </text>
+    <meta>
+        <security>
+            <system value="http://smarthealthit.org/security/categories"/>
+            <code value="patient"/>
+        </security>
+            <security>
+                <system value="http://smarthealthit.org/security/users"/>
+                <code value="{{pid}}"/>
+            </security>
+    </meta>
     <identifier>
       <use value="usual"/>
       <type>

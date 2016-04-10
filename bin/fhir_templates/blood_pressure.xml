@@ -2,6 +2,16 @@
   {% block content %}
   <Observation>
     {{resource_id}}
+    <meta>
+        <security>
+            <system value="http://smarthealthit.org/security/categories"/>
+            <code value="vital-signs"/>
+        </security>
+            <security>
+                <system value="http://smarthealthit.org/security/users"/>
+                <code value="{{pid}}"/>
+            </security>
+    </meta>
     {%- if bp.position %}
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position">
       <valueCodeableConcept>

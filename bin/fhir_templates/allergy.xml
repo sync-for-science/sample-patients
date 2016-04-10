@@ -6,6 +6,16 @@
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">Sensitivity to {{al.allergen}}</div>
         </text>
+        <meta>
+            <security>
+                <system value="http://smarthealthit.org/security/categories"/>
+                <code value="allergy"/>
+            </security>
+            <security>
+                <system value="http://smarthealthit.org/security/users"/>
+                <code value="{{pid}}"/>
+            </security>
+        </meta>
         {%- if al.criticality %}
         <criticality value="{{al.criticality}}"/>
         {% endif %}

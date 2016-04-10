@@ -5,7 +5,17 @@
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">{{c.name}}</div>   
-   </text>
+    </text>
+    <meta>
+        <security>
+            <system value="http://smarthealthit.org/security/categories"/>
+            <code value="problems"/>
+        </security>
+            <security>
+                <system value="http://smarthealthit.org/security/users"/>
+                <code value="{{pid}}"/>
+            </security>
+    </meta>
     <patient>
       <reference value="{{base_url}}{{pid}}"/>
     </patient>

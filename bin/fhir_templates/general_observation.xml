@@ -6,6 +6,16 @@
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">{{o.name}}</div>
     </text>
+    <meta>
+        <security>
+          <system value="http://smarthealthit.org/security/categories"/>
+          <code value="{{o.categoryCode}}"/>
+        </security>
+            <security>
+                <system value="http://smarthealthit.org/security/users"/>
+                <code value="{{pid}}"/>
+            </security>
+    </meta>
     <category>
       <coding>
           <system value="http://hl7.org/fhir/observation-category"/>
