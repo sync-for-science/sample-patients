@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	<type value="batch"/>
 	<entry>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5002-lab"/>
 				<text>
 					<status value="generated"/>
@@ -45,13 +45,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/2"/>
+			<url value="Observation/5002-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/4"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5004-lab"/>
 				<text>
 					<status value="generated"/>
@@ -93,13 +92,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/4"/>
+			<url value="Observation/5004-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/6"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5006-lab"/>
 				<text>
 					<status value="generated"/>
@@ -141,13 +139,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/6"/>
+			<url value="Observation/5006-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/8"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5008-lab"/>
 				<text>
 					<status value="generated"/>
@@ -189,13 +186,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/8"/>
+			<url value="Observation/5008-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/10"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5010-lab"/>
 				<text>
 					<status value="generated"/>
@@ -237,13 +233,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/10"/>
+			<url value="Observation/5010-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/12"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5014-lab"/>
 				<text>
 					<status value="generated"/>
@@ -294,14 +289,13 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/12"/>
+			<url value="Observation/5014-lab"/>
 		</request>
 	</entry>
 
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/16"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5016-lab"/>
 				<text>
 					<status value="generated"/>
@@ -343,13 +337,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/16"/>
+			<url value="Observation/5016-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/18"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5018-lab"/>
 				<text>
 					<status value="generated"/>
@@ -400,13 +393,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/18"/>
+			<url value="Observation/5018-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/20"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5020-lab"/>
 				<text>
 					<status value="generated"/>
@@ -448,13 +440,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/20"/>
+			<url value="Observation/5020-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/22"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5022-lab"/>
 				<text>
 					<status value="generated"/>
@@ -496,13 +487,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/22"/>
+			<url value="Observation/5022-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/24"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5024-lab"/>
 				<text>
 					<status value="generated"/>
@@ -544,13 +534,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/24"/>
+			<url value="Observation/5024-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/26"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5026-lab"/>
 				<text>
 					<status value="generated"/>
@@ -585,13 +574,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/26"/>
+			<url value="Observation/5026-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/28"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5028-lab"/>
 				<text>
 					<status value="generated"/>
@@ -633,13 +621,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/28"/>
+			<url value="Observation/5028-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/30"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5030-lab"/>
 				<text>
 					<status value="generated"/>
@@ -687,13 +674,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/30"/>
+			<url value="Observation/5030-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/32"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5032-lab"/>
 				<text>
 					<status value="generated"/>
@@ -741,13 +727,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/32"/>
+			<url value="Observation/5032-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/34"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Observation>
 				<id value="5034-lab"/>
 				<text>
 					<status value="generated"/>
@@ -789,13 +774,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/34"/>
+			<url value="Observation/5034-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/36"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml">
+			<Observation>
 				<id value="7002-lab"/>
 				<text>
 					<status value="generated"/>
@@ -889,13 +873,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/36"/>
+			<url value="Observation/7002-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/38"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml">
+			<Observation>
 				<id value="7004-lab"/>
 				<text>
 					<status value="generated"/>
@@ -961,13 +944,12 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/38"/>
+			<url value="Observation/7004-lab"/>
 		</request>
 	</entry>
 	<entry>
-		<fullUrl value="http://fhir2.healthintersections.com.au/open/Observation/40"/>
 		<resource>
-			<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml">
+			<Observation>
 				<id value="7006-lab"/>
 				<text>
 					<status value="generated"/>
@@ -1117,7 +1099,7 @@
 		</resource>
 		<request>
 			<method value="PUT"/>
-			<url value="Observation/40"/>
+			<url value="Observation/7006-lab"/>
 		</request>
 	</entry>
 </Bundle>
