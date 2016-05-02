@@ -241,7 +241,7 @@ class FHIRSamplePatient(object):
     template = template_env.get_template('family_history.xml')
     if self.pid in FamilyHistory.familyHistories:
       for fh in FamilyHistory.familyHistories[self.pid]:
-        id = uid("FamilyHistory", fh.id)
+        id = uid("FamilyMemberHistory", fh.id)
         print >>pfile, template.render(dict(globals(), **locals()))
 
     template = template_env.get_template('smoking_status.xml')
