@@ -331,7 +331,7 @@ class FHIRSamplePatient(object):
     addedPractitioner = False
 
     if self.pid in ClinicalNote.clinicalNotes:
-        id = 'Practitioner/1234'
+        id = uid("Practitioner", "1234")
         template = template_env.get_template('practitioner.xml')
         print >>pfile, template.render(dict(globals(), **locals()))
         addedPractitioner = True
@@ -353,7 +353,7 @@ class FHIRSamplePatient(object):
 
     if self.pid in Document.documents:
         if not addedPractitioner:
-            id = 'Practitioner/1234'
+            id = uid("Practitioner", "1234")
             template = template_env.get_template('practitioner.xml')
             print >>pfile, template.render(dict(globals(), **locals()))
         for d in [doc for doc in Document.documents[self.pid] if doc.type != 'photograph']:

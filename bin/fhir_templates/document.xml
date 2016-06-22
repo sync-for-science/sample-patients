@@ -18,7 +18,7 @@
           <text value="{{d.display}}"/>
         </type>
         <author>
-          <reference value="Practitioner/1234"/>
+          <reference value="Practitioner/smart-practitioner-1234"/>
         </author>
         <created value="{{d.date}}"/>
         <indexed value="{{now}}"/>
