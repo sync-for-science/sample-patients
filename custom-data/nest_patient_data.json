@@ -4,6 +4,7 @@
 	"entry": [{
 			"resource": {
 				"resourceType": "Patient",
+				
 				"id": "nest-patient-1",
 				"name": [{
 					"family": [
@@ -26,10 +27,27 @@
 					"postalCode": "17815",
 					"country": "USA"
 				}],
-				"extension": [{
-					"url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
-					"valueDateTime": "2016-01-04T00:00:00"
-				}],
+				"extension" : [{
+								"url" : "http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial",
+								"extension" : [{
+								  "url" : "NCT",
+								  "valueString" : "123456789"
+								}, {
+								  "url" : "period", 
+								  "valuePeriod" : {
+									 "start" : "2009-03-14" 
+								  }   
+								},  {
+								  "url" : "reason",
+								  "valueCodeableConcept" : {
+									  "coding" : [{
+										 "system" : "http://acme.org/codes/general",
+										  "code":"2028-9",
+										 "display":"Asian"
+									  }]
+								   }
+								}]
+							  }],
 				"active": true
 			},
 			"request": {
@@ -420,7 +438,8 @@
 				"method": "PUT",
 				"url": "Observation/nest-patient-1-OBS10"
 			}
-		}, {
+		}, 
+		{
 			"resource": {
 				"resourceType": "Observation",
 				"id": "nest-patient-1-OBS11",
@@ -460,7 +479,52 @@
 				"url": "Observation/nest-patient-1-OBS11"
 			}
 		},
-		      {
+		
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"id": "nest-patient-1-OBS12",
+				"code": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "58941-6",
+						"display": "Hemoglobin"
+					}],
+					"text": "Hgb"
+				},
+				"valueQuantity": {
+					"value": 8,
+					"unit": "mg/dL",
+					"system": "http://unitsofmeasure.org",
+					"code": "mg/dL"
+				},
+				"effectiveDateTime": "2016-01-06T20:18:00",
+				"status": "final",
+				"category": {
+					"coding": [{
+						"system": "http://hl7.org/fhir/observation-category",
+						"code": "procedure",
+						"display": "Procedure"
+
+					}]
+				},
+				"subject": {
+					"reference": "Patient/nest-patient-1"
+				},
+				"encounter": {
+					"reference": "Encounter/nest-patient-1-ENC1"
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"url": "Observation/nest-patient-1-OBS12"
+			}
+		},
+		
+		
+		      
+			  
+			  {
 				
 				"resource": {
 
@@ -2150,7 +2214,17 @@
                }
             ],
             "text": "Diuretic"
-         }
+         },
+		 "dosageInstruction": [
+    {
+		"doseQuantity": {
+        "value":245 ,
+        "unit": "mg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg"
+						}
+    }
+							 ]
       },
       "search": {
          "mode": "match"
