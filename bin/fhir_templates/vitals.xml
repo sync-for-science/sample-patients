@@ -1,0 +1,47 @@
+  {% extends "entry.xml" %}
+  {% block content %}
+  <Observation>
+    {{resource_id}}
+    <meta>
+        <security>
+            <system value="http://smarthealthit.org/security/categories"/>
+            <code value="vital-signs"/>
+        </security>
+            <security>
+                <system value="http://smarthealthit.org/security/users"/>
+                <code value="{{pid}}"/>
+            </security>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">{{date}}: Vitals</div>
+    </text>
+    <status value="final"/>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8716-3"/>
+        <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </code>
+    <subject>
+      <reference value="{{base_url}}{{pid}}"/>
+    </subject>
+    <effectiveDateTime value="{{date}}"/>
+  {% for s in sign_ids %}
+    <related>
+        <type value="has-member" />
+        <target value="{{s}}" />
+    </related>
+    {% endfor %}
+  </Observation>
+  {% endblock %}

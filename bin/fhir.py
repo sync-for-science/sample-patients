@@ -106,63 +106,63 @@ class FHIRSamplePatient(object):
     template = template_env.get_template('patient.xml')
     print >>pfile, template.render(dict(globals(), **locals()))
 
-    bps = []
-    othervitals = []
-
-    if self.pid in VitalSigns.vitals:
-      encounters = []
-      for v in  VitalSigns.vitals[self.pid]:
-          encounter_id = None
-          e = [i for i in encounters if i['date'] == v.start_date and i['type'] == v.encounter_type]
-          if len(e) > 0:
-              encounter_id = e[0]['id']
-          else:
-              encounter_id = uid("Encounter", v.id)
-              encounters.append ({'date': v.start_date, 'type': v.encounter_type, 'id': encounter_id})
-              id = encounter_id
-              template = template_env.get_template('encounter.xml')
-              print >>pfile, template.render(dict(globals(), **locals()))
-          for vt in VitalSigns.vitalTypes:
-              try:
-                  othervitals.append(getVital(v, vt, encounter_id))
-              except: pass
-          try:
-              systolic = getVital(v, VitalSigns.systolic, encounter_id)
-              diastolic = getVital(v, VitalSigns.diastolic, encounter_id)
-              bp = systolic
-              bp['systolic'] = int(systolic['value'])
-              bp['diastolic'] = int(diastolic['value'])
-              bp['site'] = v.bp_site
-              bp['id'] = v.id
-              if bp['site']:
+    encounters = []
+    for v in  VitalSigns.vitals.get(self.pid, []):
+        bps = []
+        othervitals = []
+        sign_ids = []
+        encounter_id = None
+        e = [i for i in encounters if i['date'] == v.start_date and i['type'] == v.encounter_type]
+        if len(e) > 0:
+            encounter_id = e[0]['id']
+        else:
+            encounter_id = uid("Encounter", v.id)
+            encounters.append ({'date': v.start_date, 'type': v.encounter_type, 'id': encounter_id})
+            id = encounter_id
+            template = template_env.get_template('encounter.xml')
+            print >>pfile, template.render(dict(globals(), **locals()))
+        for vt in VitalSigns.vitalTypes:
+            try:
+                othervitals.append(getVital(v, vt, encounter_id))
+            except: pass
+        try:
+            systolic = getVital(v, VitalSigns.systolic, encounter_id)
+            diastolic = getVital(v, VitalSigns.diastolic, encounter_id)
+            bp = systolic
+            bp['systolic'] = int(systolic['value'])
+            bp['diastolic'] = int(diastolic['value'])
+            bp['site'] = v.bp_site
+            bp['id'] = v.id
+            if bp['site']:
                 for pc in VitalSigns.bpPositionCodes:
                     if pc['name'] == bp['site']:
                         bp['site_code'] = pc['code']
                         bp['site_system'] = pc['system']
-              bp['method'] = v.bp_method
-              if bp['method']:
+            bp['method'] = v.bp_method
+            if bp['method']:
                 for pc in VitalSigns.bpPositionCodes:
                     if pc['name'] == bp['method']:
                         bp['method_code'] = pc['code']
                         bp['method_system'] = pc['system']
-              bp['position'] = v.bp_position
-              if bp['position']:
+            bp['position'] = v.bp_position
+            if bp['position']:
                 for pc in VitalSigns.bpPositionCodes:
                     if pc['name'] == bp['position']:
                         bp['position_code'] = pc['code']
                         bp['position_system'] = pc['system']
-              bps.append(bp)
-          except: pass
+            bps.append(bp)
+        except: pass
 
-    for bp in bps:
-        systolicid = uid("Observation", "%s-systolic" % bp['id'])
-        diastolicid = uid("Observation", "%s-diastolic" % bp['id'])
-        id = uid("Observation", "%s-bp" % bp['id'])
-        template = template_env.get_template('blood_pressure.xml')
-        print >>pfile, template.render(dict(globals(), **locals()))
+        for bp in bps:
+            systolicid = uid("Observation", "%s-systolic" % bp['id'])
+            diastolicid = uid("Observation", "%s-diastolic" % bp['id'])
+            id = uid("Observation", "%s-bp" % bp['id'])
+            sign_ids.append(id)
+            template = template_env.get_template('blood_pressure.xml')
+            print >>pfile, template.render(dict(globals(), **locals()))
 
-        id = systolicid
-        o = {
+            id = systolicid
+            o = {
                 "date": bp['date'],
                 "code": "8480-6",
                 "name": "Systolic blood pressure",
@@ -172,33 +172,40 @@ class FHIRSamplePatient(object):
                 "unitsCode": "mm[Hg]",
                 "categoryCode": "vital-signs",
                 "categoryDisplay": "Vital Signs"
-        }
-        template = template_env.get_template('observation.xml')
-        print >>pfile, template.render(dict(globals(), **locals()))
+            }
+            template = template_env.get_template('observation.xml')
+            print >>pfile, template.render(dict(globals(), **locals()))
 
-        id = diastolicid
-        o = {
-                "date": bp['date'],
-                "code": "8462-4",
-                "name": "Diastolic blood pressure",
-                "scale": "Qn",
-                "value": bp['diastolic'],
-                "units": "mm[Hg]",
-                "unitsCode": "mm[Hg]",
-                "categoryCode": "vital-signs",
-                "categoryDisplay": "Vital Signs"
-        }
-        template = template_env.get_template('observation.xml')
-        print >>pfile, template.render(dict(globals(), **locals()))
+            id = diastolicid
+            o = {
+                    "date": bp['date'],
+                    "code": "8462-4",
+                    "name": "Diastolic blood pressure",
+                    "scale": "Qn",
+                    "value": bp['diastolic'],
+                    "units": "mm[Hg]",
+                    "unitsCode": "mm[Hg]",
+                    "categoryCode": "vital-signs",
+                    "categoryDisplay": "Vital Signs"
+            }
+            template = template_env.get_template('observation.xml')
+            print >>pfile, template.render(dict(globals(), **locals()))
 
-    template = template_env.get_template('observation.xml')
-    for o in othervitals:
-        id = uid("Observation", '-'.join((o["id"], o["name"].lower().replace(' ', '').replace('_', ''))))
-        if "units" in o.keys():
-           o["unitsCode"] = o["units"]
-           o["categoryCode"] = "vital-signs"
-           o["categoryDisplay"] = "Vital Signs"
-        print >>pfile, template.render(dict(globals(), **locals()))
+        template = template_env.get_template('observation.xml')
+        for o in othervitals:
+            id = uid("Observation", '-'.join((o["id"], o["name"].lower().replace(' ', '').replace('_', ''))))
+            sign_ids.append(id)
+            if "units" in o.keys():
+                o["unitsCode"] = o["units"]
+                o["categoryCode"] = "vital-signs"
+                o["categoryDisplay"] = "Vital Signs"
+            print >>pfile, template.render(dict(globals(), **locals()))
+
+        if len(othervitals) > 0:
+            date = othervitals[0]["date"]
+            id = uid("Observation", "%s-vitals" % v.id)
+            template = template_env.get_template('vitals.xml')
+            print >>pfile, template.render(dict(globals(), **locals()))
 
     if self.pid in Lab.results:
       for o in Lab.results[self.pid]:
