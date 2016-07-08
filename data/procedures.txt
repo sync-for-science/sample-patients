@@ -22,3 +22,5 @@ ID	PID	DATE	SNOMED	NAME	NOTES
 21	8888802	2011-10-26	36228007	Ophthalmic examination and evaluation	normal
 22	8888802	2012-11-06	36228007	Ophthalmic examination and evaluation	normal
 23	99912345	2011-02-15	80146002	Appendectomy	
+24	1288992	2002-05-23	35637008	Alcohol rehabilitation	
+25	1288992	2000-02-12	384742004	Smoking cessation assistance	
