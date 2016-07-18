@@ -104,7 +104,6 @@ class FHIRSamplePatient(object):
         id = "Patient/smart-%s"%self.pid
         pid = id
         template = template_env.get_template('patient.xml')
-        print("Print patient", pid, id)
         print >>pfile, template.render(dict(globals(), **locals()))
 
         encounters = []
