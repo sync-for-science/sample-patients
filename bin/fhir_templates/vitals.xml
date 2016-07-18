@@ -40,7 +40,9 @@
   {% for s in sign_ids %}
     <related>
         <type value="has-member" />
-        <target value="{{s}}" />
+        <target>
+            <reference value="{{s}}" />
+        </target>
     </related>
     {% endfor %}
   </Observation>
