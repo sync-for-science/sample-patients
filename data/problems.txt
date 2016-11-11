@@ -22,6 +22,7 @@ ID	PID	START_DATE	END_DATE	SNOMED	NAME
 21	1288992	2008-08-08		26929004	Alzheimer's disease
 22	1288992	2008-08-08		191519005	Dementia associated with another disease
 23	1288992	2008-08-08		185903001	Needs influenza immunization
+23	1288992	2009-07-18		356744012	Thiopurine methyltransferase deficiency
 24	2502813	2003-12-05		54150009	Acute upper respiratory infection
 25	2502813	2003-12-05		13645005	Chronic obstructive lung disease
 26	2502813	2003-12-05		38341003	Essential hypertension
