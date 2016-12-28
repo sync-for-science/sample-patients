@@ -32,15 +32,17 @@ SMOKINGCODES = {
 }
 
 base=0
-def uid(resource_type=None, id=None):
+def uid(resource_type=None, id=None, prefix=None):
     global base
     if not id:
         base += 1
         id = base
     if (resource_type == None):
       return str(id)
+    elif (prefix == None):
+      return "%s/%s-%s"%(resource_type, resource_type, str(id))
     else:
-      return "%s/%s"%(resource_type, str(id))
+      return "%s/%s-%s-%s"%(resource_type, prefix, resource_type, str(id))
 
 def getVital(v, vt, encounter_id):
   return {
@@ -66,7 +68,7 @@ class FHIRSamplePatient(object):
 
     return
 
-  def writePatientData(self):
+  def writePatientData(self, prefix=None):
 
     pfile = open(os.path.join(self.path, "patient-%s.fhir-bundle.xml"%self.pid), "w")
     p = Patient.mpi[self.pid]
@@ -91,7 +93,7 @@ class FHIRSamplePatient(object):
             d.size = data['size']
             d.hash = data['hash']
             b = d
-            id = uid("Binary", "%s-photo" % d.id)
+            id = uid("Binary", "%s-photo" % d.id, prefix)
             d.binary_id = id
             template = template_env.get_template('binary.xml')
             print >>pfile, template.render(dict(globals(), **locals()))
@@ -101,7 +103,10 @@ class FHIRSamplePatient(object):
             p.photo_hash = d.hash
             p.photo_title = d.title
 
-    id = "Patient/%s"%self.pid
+    if (prefix == None):
+	    id = "Patient/%s"%self.pid
+    else:
+    	id = "Patient/%s-%s"%(prefix,self.pid)
     pid = id
     template = template_env.get_template('patient.xml')
     print >>pfile, template.render(dict(globals(), **locals()))
@@ -117,7 +122,7 @@ class FHIRSamplePatient(object):
           if len(e) > 0:
               encounter_id = e[0]['id']
           else:
-              encounter_id = uid("Encounter", v.id)
+              encounter_id = uid("Encounter", v.id, prefix)
               encounters.append ({'date': v.start_date, 'type': v.encounter_type, 'id': encounter_id})
               id = encounter_id
               template = template_env.get_template('encounter.xml')
@@ -155,9 +160,9 @@ class FHIRSamplePatient(object):
           except: pass
 
     for bp in bps:
-        systolicid = uid("Observation", "%s-systolic" % bp['id'])
-        diastolicid = uid("Observation", "%s-diastolic" % bp['id'])
-        id = uid("Observation", "%s-bp" % bp['id'])
+        systolicid = uid("Observation", "%s-systolic" % bp['id'], prefix)
+        diastolicid = uid("Observation", "%s-diastolic" % bp['id'], prefix)
+        id = uid("Observation", "%s-bp" % bp['id'], prefix)
         template = template_env.get_template('blood_pressure.xml')
         print >>pfile, template.render(dict(globals(), **locals()))
 
@@ -193,7 +198,7 @@ class FHIRSamplePatient(object):
 
     template = template_env.get_template('observation.xml')
     for o in othervitals:
-        id = uid("Observation", '-'.join((o["id"], o["name"].lower().replace(' ', '').replace('_', ''))))
+        id = uid("Observation", '-'.join((o["id"], o["name"].lower().replace(' ', '').replace('_', ''))), prefix)
         if "units" in o.keys():
            o["unitsCode"] = o["units"]
            o["categoryCode"] = "vital-signs"
@@ -202,7 +207,7 @@ class FHIRSamplePatient(object):
 
     if self.pid in Lab.results:
       for o in Lab.results[self.pid]:
-        id = uid("Observation", "%s-lab" % o.id)
+        id = uid("Observation", "%s-lab" % o.id, prefix)
         o.categoryCode = "laboratory"
         o.categoryDisplay = "Laboratory"
         print >>pfile, template.render(dict(globals(), **locals()))
@@ -211,29 +216,29 @@ class FHIRSamplePatient(object):
     dispensetemplate = template_env.get_template('medication_dispense.xml')
     if self.pid in Med.meds:
       for m in Med.meds[self.pid]:
-        medid = id = uid("MedicationOrder", m.id)
+        medid = id = uid("MedicationOrder", m.id, prefix)
         print >>pfile, medtemplate.render(dict(globals(), **locals()))
 
         for f in Refill.refill_list(m.pid, m.rxn):
-          id = uid("MedicationDispense", f.id)
+          id = uid("MedicationDispense", f.id, prefix)
           print >>pfile, dispensetemplate.render(dict(globals(), **locals()))
 
     template = template_env.get_template('condition.xml')
     if self.pid in Problem.problems:
       for c in Problem.problems[self.pid]:
-        id = uid("Condition", c.id)
+        id = uid("Condition", c.id, prefix)
         print >>pfile, template.render(dict(globals(), **locals()))
 
     template = template_env.get_template('procedure.xml')
     if self.pid in Procedure.procedures:
       for w in Procedure.procedures[self.pid]:
-        id = uid("Procedure", w.id)
+        id = uid("Procedure", w.id, prefix)
         print >>pfile, template.render(dict(globals(), **locals()))
 
     template = template_env.get_template('immunization.xml')
     if self.pid in Immunization.immunizations:
       for i in Immunization.immunizations[self.pid]:
-        id = uid("Immunization", i.id)
+        id = uid("Immunization", i.id, prefix)
         i.cvx_system, i.cvx_id = i.cvx.rsplit("cvx",1)
         i.cvx_system += "cvx"
         print >>pfile, template.render(dict(globals(), **locals()))
@@ -241,14 +246,14 @@ class FHIRSamplePatient(object):
     template = template_env.get_template('family_history.xml')
     if self.pid in FamilyHistory.familyHistories:
       for fh in FamilyHistory.familyHistories[self.pid]:
-        id = uid("FamilyMemberHistory", fh.id)
+        id = uid("FamilyMemberHistory", fh.id, prefix)
         print >>pfile, template.render(dict(globals(), **locals()))
 
     template = template_env.get_template('smoking_status.xml')
     if self.pid in SocialHistory.socialHistories:
         t = SocialHistory.socialHistories[self.pid]
         t.smokingStatusText = SMOKINGCODES[t.smokingStatusCode]
-        id = uid("Observation", '-'.join((t.id,"smokingstatus")))
+        id = uid("Observation", '-'.join((t.id,"smokingstatus")), prefix)
         print >>pfile, template.render(dict(globals(), **locals()))
 
     if p.gestage:
@@ -264,7 +269,7 @@ class FHIRSamplePatient(object):
             "categoryCode": "exam",
             "categoryDisplay": "Exam"
         }
-        id = uid("Observation", "%s-gestage" % self.pid)
+        id = uid("Observation", "%s-gestage" % self.pid, prefix)
         print >>pfile, template.render(dict(globals(), **locals()))
 
     if self.pid in Allergy.allergies:
@@ -297,20 +302,20 @@ class FHIRSamplePatient(object):
                         al.criticality = 'CRITU'
                     else:
                         al.severity = None
-                id = uid("AllergyIntolerance", al.id)
+                id = uid("AllergyIntolerance", al.id, prefix)
                 template = template_env.get_template('allergy.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
             elif al.statement == 'negative' and al.type == 'general':
                 if al.code == '160244002':
                     template = template_env.get_template('no_known_allergies.xml')
-                    id = uid("List", al.id)
+                    id = uid("List", al.id, prefix)
                     al.loinc_code = '52473-6'
                     al.loinc_display = 'Allergy'
                     al.text = 'No known allergies'
                     print >>pfile, template.render(dict(globals(), **locals()))
                 elif al.code == '409137002':
                     template = template_env.get_template('no_known_allergies.xml')
-                    id = uid("List", al.id)
+                    id = uid("List", al.id, prefix)
                     al.loinc_code = '11382-9'
                     al.loinc_display = 'Medication allergy'
                     al.text = 'No known history of drug allergy'
@@ -325,13 +330,16 @@ class FHIRSamplePatient(object):
                         "categoryCode": "exam",
                         "categoryDisplay": "Exam"
                     }
-                    id = uid("Observation", "%s-allergy" % al.id)
+                    id = uid("Observation", "%s-allergy" % al.id, prefix)
                     print >>pfile, template.render(dict(globals(), **locals()))
 
     addedPractitioner = False
 
     if self.pid in ClinicalNote.clinicalNotes:
-        id = 'Practitioner/1234'
+    	if (prefix == None):
+        	id = 'Practitioner/1234'
+        else:
+        	id = 'Practitioner/%s-1234'%(prefix) 
         template = template_env.get_template('practitioner.xml')
         print >>pfile, template.render(dict(globals(), **locals()))
         addedPractitioner = True
@@ -340,11 +348,11 @@ class FHIRSamplePatient(object):
                 data = fetch_document (self.pid, d.file_name)
                 d.content = data['base64_content']
                 b = d
-                id = uid("Binary", "%s-note" % d.id)
+                id = uid("Binary", "%s-note" % d.id, prefix)
                 d.binary_id = id
                 template = template_env.get_template('binary.xml')
                 print >>pfile, template.render(dict(globals(), **locals()))
-                id = uid("DocumentReference", "%s-note" % d.id)
+                id = uid("DocumentReference", "%s-note" % d.id, prefix)
                 d.system = "http://loinc.org"
                 d.code = '34109-9'
                 d.display = 'Note'
@@ -353,20 +361,23 @@ class FHIRSamplePatient(object):
 
     if self.pid in Document.documents:
         if not addedPractitioner:
-            id = 'Practitioner/1234'
-            template = template_env.get_template('practitioner.xml')
-            print >>pfile, template.render(dict(globals(), **locals()))
+			if (prefix == None):
+				id = 'Practitioner/1234'
+			else:
+				id = 'Practitioner/%s-1234'%(prefix) 
+			template = template_env.get_template('practitioner.xml')
+			print >>pfile, template.render(dict(globals(), **locals()))
         for d in [doc for doc in Document.documents[self.pid] if doc.type != 'photograph']:
             data = fetch_document (self.pid, d.file_name)
             d.content = data['base64_content']
             d.size = data['size']
             d.hash = data['hash']
             b = d
-            id = uid("Binary", "%s-document" % d.id)
+            id = uid("Binary", "%s-document" % d.id, prefix)
             d.binary_id = id
             template = template_env.get_template('binary.xml')
             print >>pfile, template.render(dict(globals(), **locals()))
-            id = uid("DocumentReference", "%s-document" % d.id)
+            id = uid("DocumentReference", "%s-document" % d.id, prefix)
             d.system = 'http://smarthealthit.org/terms/codes/DocumentType#'
             d.code = d.type
             d.display = d.type
@@ -382,7 +393,7 @@ class FHIRSamplePatient(object):
             img.size = data['size']
             img.hash = data['hash']
             b = img
-            id = uid("Binary", "%s-dicom" % img.id)
+            id = uid("Binary", "%s-dicom" % img.id, prefix)
             img.binary_id = id
             template = template_env.get_template('binary.xml')
             print >>pfile, template.render(dict(globals(), **locals()))
@@ -423,7 +434,7 @@ class FHIRSamplePatient(object):
 
         for i in st:
             s = st[i]
-            id = uid("ImagingStudy", s['id'])
+            id = uid("ImagingStudy", s['id'], prefix)
             template = template_env.get_template('imagingstudy.xml')
             print >>pfile, template.render(dict(globals(), **locals()))
 

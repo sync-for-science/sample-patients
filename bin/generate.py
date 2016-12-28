@@ -64,6 +64,8 @@ if __name__=='__main__':
      help="displays patient summary (default is 'all')")
   group.add_argument('--write-fhir',dest='writeFHIR', metavar='dir', nargs='?', const='.',
      help="writes patient XML files to an FHIR sample data directory dir (default='.')")
+  parser.add_argument('--id-prefix',dest='prefix', metavar='id_prefix', nargs='?', const='',
+     help="adds the given prefix to the FHIR resource IDs (default=none)")
   parser.add_argument('--base-url',dest='baseURL', metavar='base_url', nargs='?', const='',
      help="uses the supplied URL base to generate absolute resource references (default='')")
 
@@ -89,8 +91,12 @@ if __name__=='__main__':
     baseURL = args.baseURL or ""
     if not os.path.exists(path):
       parser.error("Invalid path: '%s'.Path must already exist."%path)
+    if args.prefix:
+    	prefix = args.prefix
+    else:
+        prefix = None	 
     for pid in Patient.mpi:
-      fhir.FHIRSamplePatient(pid, path, baseURL).writePatientData()
+      fhir.FHIRSamplePatient(pid, path, baseURL).writePatientData(prefix)
       # Show progress with '.' characters
       sys.stdout.flush()
     parser.exit(0,"\nDone writing %d patient FHIR files!\n"%len(Patient.mpi))
