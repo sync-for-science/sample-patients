@@ -1236,7 +1236,7 @@
 
     <entry>
         <resource>
-            <MedicationOrder>
+            <MedicationRequest>
                 <id value="HB-medrx004"/>
                 <meta>
                     <versionId value="1"/>
@@ -1409,11 +1409,11 @@
                     </doseQuantity>
 
                 </dosageInstruction>
-            </MedicationOrder>
+            </MedicationRequest>
         </resource>
         <request>
             <method value="PUT"/>
-            <url value="MedicationOrder/HB-medrx004"/>
+            <url value="MedicationRequest/HB-medrx004"/>
         </request>
 
     </entry>

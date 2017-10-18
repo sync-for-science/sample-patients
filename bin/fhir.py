@@ -216,7 +216,7 @@ class FHIRSamplePatient(object):
     dispensetemplate = template_env.get_template('medication_dispense.xml')
     if self.pid in Med.meds:
       for m in Med.meds[self.pid]:
-        medid = id = uid("MedicationOrder", m.id, prefix)
+        medid = id = uid("MedicationRequest", m.id, prefix)
         print >>pfile, medtemplate.render(dict(globals(), **locals()))
 
         for f in Refill.refill_list(m.pid, m.rxn):
@@ -290,16 +290,16 @@ class FHIRSamplePatient(object):
                 if al.reaction:
                     if al.severity.lower() == 'mild':
                         al.severity = 'mild'
-                        al.criticality = 'CRITL'
+                        al.criticality = 'low'
                     elif al.severity.lower() == 'severe':
                         al.severity = 'severe'
-                        al.criticality = 'CRITH'
+                        al.criticality = 'high'
                     elif al.severity.lower() == 'life threatening' or al.severity.lower() == 'fatal':
                         al.severity = 'severe'
-                        al.criticality = 'CRITH'
+                        al.criticality = 'high'
                     elif al.severity.lower() == 'moderate':
                         al.severity = 'moderate'
-                        al.criticality = 'CRITU'
+                        al.criticality = 'unable-to-assess'
                     else:
                         al.severity = None
                 id = uid("AllergyIntolerance", al.id, prefix)

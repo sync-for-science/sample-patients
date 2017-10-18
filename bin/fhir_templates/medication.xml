@@ -1,6 +1,6 @@
 {%- extends "entry.xml" %}
 {%- block content %}
-<MedicationOrder>
+<MedicationRequest>
   {{resource_id}}
   <text>
     <status value="generated"/>
@@ -75,5 +75,5 @@
      {% endif %}
   </dispenseRequest>
   {% endif %}
-</MedicationOrder>
+</MedicationRequest>
 {% endblock %}
